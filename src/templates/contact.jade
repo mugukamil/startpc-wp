@@ -1,0 +1,178 @@
+---
+title: Contact
+---
+extends layouts/_layout
+block content
+  main#main
+    .contact
+      .contact-info
+        .container
+          .contact-table
+            p.contact-info__heading פרטי התקשרות:
+            table
+              tr.contact-table__row
+                th טלפון:
+                td
+                  p.contact-table__text
+                    a(href="tel:09-7737447") 09-7737447
+                  p.contact-table__text
+                    a(href="tel:052-7737270") 052-7737270&nbsp;
+                    span (טלפון וואטסאפ לבדיקת מצב ההזמנה בלבד)
+              tr.contact-table__row
+                th דוא”ל:
+                td
+                  p.contact-table__text
+                    a(href="mailto:GAMING@STARTPC.CO.IL") GAMING@STARTPC.CO.IL
+              tr.contact-table__row
+                th שעות פתיחה:
+                td
+                  p.contact-table__text
+                    | 19:00 - 10:30&nbsp;
+                    span (ראשון, שני, רביעי וחמישי)
+                  p.contact-table__text
+                    | 14:00 - 10:00&nbsp;
+                    span (שלישי ושישי)
+              tr.contact-table__row
+                th כתובת:
+                td
+                  p.contact-table__text
+                    | רחוב הדקל 35, מושב אודים&nbsp;
+                    span (ליד איקאה - נתניה)
+                  p.contact-table__text חפשו ב WAZE - “סטארט מחשבים”
+          .contact-form
+            p.contact-info__heading טופס צור קשר:
+            form
+              div
+                input.contact-form__input(type="text" placeholder="שם מלא" autocomplete="off" title="name")
+              div
+                input.contact-form__input(type="tel" placeholder="טלפון" autocomplete="off" title="telephone")
+              div
+                input.contact-form__input(type="email" placeholder="דוא”ל" autocomplete="off" title="email")
+              div
+                .sel.sel--black-panther.js-select.contact-form__select(tabindex="0")
+                  select.contact-form__select.js-repair#select-profession(title="repair")
+                    option(value="before-buy") בירור לפני רכישה
+                    option(value="repair") טופס תיקונים
+                    option(value="other") אחר
+                .contact-form__repair
+                  div
+                    input.contact-form__input(type="text" placeholder="תיאור התקלה" autocomplete="off" title="problem")
+                  div
+                    input.contact-form__input(type="text" placeholder="סיסמה למערכת ההפעלה" autocomplete="off" title="operating system")
+                  .contact-form__2col
+                    div.contact-form__col1.custom-radio
+                      input.contact-form__radio.custom-radio__input#repair-free(type="radio", name="repair-delivery" checked data-hide="js-repair-input")
+                      label.contact-form__label.custom-radio__label(for="repair-free" tabindex="0")
+                        span.custom-radio__icon(tabindex="0")
+                        | מסירה עצמאית לנקודת השירות
+                    div.contact-form__col2
+                      .sel.js-select.contact-form__select(tabindex="0")
+                        select.contact-form__select(title="service point")
+                          option בחר נקודת שירות
+                          option(value="בחר נקודת שירות") אודים, הדקל 35
+                          option(value="אשדוד, תש”ח 9") אשדוד, תש”ח 9
+                          option(value="תל אביב, אבן גבירול 1") תל אביב, אבן גבירול 1
+                          option(value="חיפה, מוריה 118") חיפה, מוריה 118
+                  div.custom-radio
+                    input.contact-form__radio.custom-radio__input#repair-paid(type="radio", name="repair-delivery" data-show="js-repair-input")
+                    label.contact-form__label.custom-radio__label(for="repair-paid" tabindex="0")
+                      span.custom-radio__icon(tabindex="0")
+                      | איסוף ע”י חברת שליחויות בעלות של 35 ₪
+                  div
+                    input.contact-form__input.js-repair-input(type="text" placeholder="כתובת מלאה (עיר, רחוב ומספר בית)" autocomplete="off" style="display: none" title="full address")
+                  div.custom-checkbox
+                    input.contact-form__checkbox.custom-checkbox__input#repair-apply(type="checkbox", name="repair-apply")
+                    label.contact-form__label.custom-checkbox__label(for="repair-apply" tabindex="0")
+                      span.custom-checkbox__icon()
+                      | אני מאשרת שארזתי את המוצר בקפידה ושכל זנק שנגרם ע”י חברת השליחויות הינו באחריותי.
+              div
+                textarea.contact-form__textarea(placeholder="הודעה" autocomplete="off" title="message")
+              div
+                input.contact-form__submit(type="submit", value="שלח הודעה")
+        #map.contact-info__map(data-marker-url='img/map.svg' aria-hidden="true")
+          .map-placeholder
+      .contact-extra
+        .container
+          .contact-extra__hr
+          p.contact-extra__title נקודות שירות נוספות&nbsp;
+            span (נא לתאם הגעה מראש)
+          .contact-extra__addresses
+            .contact-extra__address.contact-address
+              .contact-address__header
+                p נקודת שירות בצפון
+                p
+                  strong חיפה
+              .contact-address__table
+                table
+                  tr.contact-address__table-row
+                    th טלפון:
+                    td
+                      p.contact-address__table-text
+                        a(href="tel:09-7737447") 09-7737447
+                  tr.contact-address__table-row
+                    th שעות פתיחה:
+                    td
+                      p.contact-address__table-text
+                        | 19:00 - 11:00&nbsp;
+                        span (א’ - ה’)
+                      p.contact-address__table-text
+                        | בתאום מראש&nbsp;
+                        span (ו’)
+                  tr.contact-address__table-row
+                    th כתובת:
+                    td
+                      p.contact-address__table-text מוריה 118, חיפה
+            .contact-extra__address.contact-address
+              .contact-address__header
+                p נקודת שירות במרכז
+                p
+                  strong תל אביב
+              .contact-address__table
+                table
+                  tr.contact-address__table-row
+                    th טלפון:
+                    td
+                      p.contact-address__table-text
+                        a(href="tel:09-7737447") 09-7737447
+                  tr.contact-address__table-row
+                    th שעות פתיחה:
+                    td
+                      p.contact-address__table-text
+                        | 19:00 - 10:30&nbsp;
+                        span (א’ - ה’)
+                      p.contact-address__table-text
+                        | 14:00 - 10:00&nbsp;
+                        span (ו’)
+                  tr.contact-address__table-row
+                    th כתובת:
+                    td
+                      p.contact-address__table-text אבן גבירול 1, תל אביב
+            .contact-extra__address.contact-address
+              .contact-address__header
+                p נקודת שירות בדרום
+                p
+                  strong אשדוד
+              .contact-address__table
+                table
+                  tr.contact-address__table-row
+                    th טלפון:
+                    td
+                      p.contact-address__table-text
+                        a(href="tel:09-7737447") 09-7737447
+                  tr.contact-address__table-row
+                    th שעות פתיחה:
+                    td
+                      p.contact-address__table-text
+                        | 19:00 - 12:00&nbsp;
+                        span (א’ - ה’)
+                      p.contact-address__table-text
+                        | 13:00 - 10:00&nbsp;
+                        span (ו’)
+                  tr.contact-address__table-row
+                    th כתובת:
+                    td
+                      p.contact-address__table-text תש”ח 9, אשדוד
+                        span (מרכז סיטי)
+
+
+

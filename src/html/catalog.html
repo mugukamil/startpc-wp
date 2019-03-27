@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="he">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Catalog</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body>
+    <div id="skip"><a href="#main">Skip to main content</a></div>
+    <div id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true" class="modal fade modal--search">
+      <div class="modal__dialog"><button type="button" aria-label="close modal" class="modal__close js-close-modal"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewbox="0 0 26 26"><path fill="#fff" transform="translate(-787 -156)" d="M788.35 181.35l-.7-.7L799.29 169l-11.64-11.65.7-.7L800 168.29l11.65-11.64.7.7L800.71 169l11.64 11.65-.7.7L800 169.71z"></path></svg></button>
+        <div
+          role="document" class="modal__content">
+          <p id="searchModalLabel" class="modal__title">חיפוש באתר</p>
+          <form>
+            <div class="modal__input-out modal__input-out--empty"><input type="text" name="search-modal" placeholder="נא להזין את מונח החיפוש..." title="search" class="modal__input modal__input--search"><a href="search" aria-label="search" class="modal__search"></a></div>
+          </form>
+      </div>
+    </div>
+    </div>
+    <div id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true" class="modal fade modal--order">
+      <div class="modal__dialog"><button type="button" aria-label="close modal" class="modal__close js-close-modal"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewbox="0 0 26 26"><path fill="#fff" transform="translate(-787 -156)" d="M788.35 181.35l-.7-.7L799.29 169l-11.64-11.65.7-.7L800 168.29l11.65-11.64.7.7L800.71 169l11.64 11.65-.7.7L800 169.71z"></path></svg></button>
+        <div
+          role="document" class="modal__content">
+          <p id="orderModalLabel" class="modal__title">הזמנתך נקלטה בהצלחה</p>
+          <p class="modal__sub">אנו ניצור איתך קשר בהקדם האפשרי</p>
+      </div>
+    </div>
+    </div>
+    <div class="facebook"><button class="facebook__btn">facebook</button>
+      <div class="facebook__frame"><iframe name="f3f30d045e22348" width="285" height="300" allowfullscreen title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.4/plugins/page.php?adapt_container_width=true&amp;app_id=128011213963529&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F18W0fzbK7xg.js%3Fversion%3D42%23cb%3Dfd7eff5a453a8%26domain%3Dwww.startpc.co.il%26origin%3Dhttp%253A%252F%252Fwww.startpc.co.il%252Ff1e548f4919c874%26relation%3Dparent.parent&amp;container_width=465&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fstartpc.gaming&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=false&amp;width=285"
+          style="border: none; visibility: visible;"></iframe></div>
+    </div>
+    <header class="site-header">
+      <div class="container"><a href="/" aria-label="Link to home page" class="site-header__logo"><img src="img/logo.png" alt="StartPC Logo"></a>
+        <nav role="navigation" class="site-nav">
+          <div class="menu-toggle"><button aria-label="Menu" class="hamburger"><i aria-controls="navigation" aria-expanded="false" role="img" class="fa fa-bars"></i><i aria-controls="navigation" aria-expanded="false" role="img" class="fa fa-times"></i></button></div>
+          <ul id="navigation"
+            class="site-nav__menu">
+            <li class="site-nav__item"><a href="">עמוד ראשי</a></li>
+            <li class="site-nav__item site-nav__item--mega"><a href="">קטלוג מוצרים<span class="site-nav__sub-arrow"></span></a>
+              <ul class="site-nav__mega-menu mega-menu">
+                <li class="mega-menu__column">
+                  <ul>
+                    <li>
+                      <div class="mega-menu__header"><a href="">מחשבי גיימינג</a><img src="img/mega-menu1.png" alt="מחשבי גיימינג" class="mega-menu__img"></div>
+                      <ul class="mega-menu__links">
+                        <li class="mega-menu__link"><a href="">מערכות - VALUE</a></li>
+                        <li class="mega-menu__link"><a href="">מערכות - SOLID</a></li>
+                        <li class="mega-menu__link"><a href="">מערכות - SUPREME</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mega-menu__column">
+                  <ul>
+                    <li>
+                      <div class="mega-menu__header"><a href="">חומרה וציוד היקפי</a><img src="img/mega-menu2.png" alt="מחשבי גיימינג" class="mega-menu__img"></div>
+                      <ul class="mega-menu__links">
+                        <li class="mega-menu__link"><a href="">פתרונות קירור</a></li>
+                        <li class="mega-menu__link"><a href="">כרטיסי מסך</a></li>
+                        <li class="mega-menu__link"><a href="">דיסקים קשיחים</a></li>
+                        <li class="mega-menu__link"><a href="">מקלדות ועכברים</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mega-menu__column">
+                  <ul>
+                    <li>
+                      <div class="mega-menu__header"><a href="">מסכי מחשב</a><img src="img/mega-menu3.png" alt="מחשבי גיימינג" class="mega-menu__img"></div>
+                      <ul class="mega-menu__links">
+                        <li class="mega-menu__link"><a href="">מסכי מגע</a></li>
+                        <li class="mega-menu__link"><a href="">מסכים קעורים</a></li>
+                        <li class="mega-menu__link"><a href="">מסכי גיימינג</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mega-menu__column">
+                  <ul>
+                    <li>
+                      <div class="mega-menu__header"><a href="">מחשבים ניידים</a><img src="img/mega-menu4.png" alt="מחשבי גיימינג" class="mega-menu__img"></div>
+                      <ul class="mega-menu__links">
+                        <li class="mega-menu__link"><a href="">11.1 - 12.1 אינץ’</a></li>
+                        <li class="mega-menu__link"><a href="">12.1 - 14.1 אינץ’</a></li>
+                        <li class="mega-menu__link"><a href="">15 - 16 אינץ’</a></li>
+                        <li class="mega-menu__link"><a href="">17 אינץ’ ומעלה</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="site-nav__item"><a href="">הרכבה עצמית</a></li>
+            <li class="site-nav__item"><a href="">שירות ואחריות</a></li>
+            <li class="site-nav__item"><a href="">צור קשר</a></li>
+          </ul>
+        </nav>
+        <div class="cart-and-search">
+          <ul>
+            <li class="cart-and-search__item cart-and-search__item--cart"><a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="26px" height="32px" viewbox="0 0 26 33" class="icon-cart"><path fill="#fff" d="M26 28.66L24.12 8.03a.89.89 0 0 0-.89-.8h-3.82A6.38 6.38 0 0 0 13 1a6.38 6.38 0 0 0-6.42 6.22H2.76a.88.88 0 0 0-.9.8L.02 28.67l-.01.08C0 31.09 2.19 33 4.88 33h16.24c2.7 0 4.88-1.91 4.88-4.26v-.08zM13 2.76a4.6 4.6 0 0 1 4.62 4.46H8.38A4.6 4.6 0 0 1 13 2.77zm8.12 28.47H4.88c-1.7 0-3.06-1.1-3.09-2.45L3.57 9h3v2.68c0 .49.4.88.9.88s.9-.39.9-.88V9h9.25v2.68c0 .49.4.88.9.88s.9-.39.9-.88V9h3l1.79 19.78c-.03 1.35-1.4 2.45-3.09 2.45z"></path><text x="13" y="25" class="js-cart-qty icon-cart__text">3</text></svg></a>
+              <div
+                class="cart-dropdown">
+                <ul>
+                  <li><img src="img/cart-img1.png" alt="" class="cart-dropdown__img">
+                    <div class="cart-dropdown__info">
+                      <p class="cart-dropdown__title cart-dropdown__title--ltr">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                      <p class="cart-dropdown__price">3,675 ₪ / 2 יחידות</p>
+                    </div><button aria-label="remove item" class="cart-dropdown__close js-close"></button></li>
+                  <li><img src="img/cart-img2.png" alt="" class="cart-dropdown__img">
+                    <div class="cart-dropdown__info">
+                      <p class="cart-dropdown__title">מחשב בהרכבה עצמית</p>
+                      <p class="cart-dropdown__price">3,675 ₪ / 2 יחידות</p>
+                    </div><button aria-label="remove item" class="cart-dropdown__close js-close"></button></li>
+                  <li><img src="img/cart-img2.png" alt="" class="cart-dropdown__img">
+                    <div class="cart-dropdown__info">
+                      <p class="cart-dropdown__title">מחשב בהרכבה עצמית</p>
+                      <p class="cart-dropdown__price">3,675 ₪ / 2 יחידות</p>
+                    </div><button aria-label="remove item" class="cart-dropdown__close js-close"></button></li>
+                </ul>
+                <hr class="cart-dropdown__hr">
+                <p class="cart-dropdown__total">סה”כ: 10,801 ₪</p>
+                <div class="cart-dropdown__btn"><button class="btn">הזמנה</button></div>
+        </div>
+        </li>
+        <li class="cart-and-search__item"><button type="button" data-toggle="modal" data-target="searchModal" aria-label="Search" class="js-toggle-modal cart-and-search__button"></button></li>
+        </ul>
+      </div>
+      </div>
+    </header>
+    <div id="main" class="catalog">
+      <div class="container">
+        <div class="catalog__header">
+          <div class="catalog__tabs"><button data-tab="gaming computer" class="catalog__tab active"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="27" viewbox="0 0 32 27"><defs><path id="icon-pc" d="M1372 172.59v23.82a1.6 1.6 0 0 1-1.6 1.59h-8.53a1.6 1.6 0 0 1-1.6-1.59v-5.3H1356v2.12h.77c.57 0 1.09.32 1.36.82l.87 1.58a1.6 1.6 0 0 1-1.36 2.37h-10.75c-.55 0-1.05-.29-1.32-.76a1.6 1.6 0 0 1-.04-1.6l.88-1.6c.26-.5.78-.8 1.35-.8h.77v-2.12h-6.93a1.6 1.6 0 0 1-1.6-1.6v-12.7c0-.58.48-1.06 1.07-1.06h19.2v-3.17c0-.88.71-1.59 1.6-1.59h8.53c.88 0 1.6.71 1.6 1.59zm-30.93 4.76v10.6h22.4v-10.6c0-.29-.24-.53-.54-.53h-21.33a.53.53 0 0 0-.53.53zm15.7 16.94h-.77v.53c0 .59-.48 1.06-1.07 1.06h-5.33c-.59 0-1.07-.47-1.07-1.06v-.53h-.77c-.18 0-.34.1-.42.26l-.87 1.6c-.1.17-.09.38.01.55.09.15.24.24.41.24h10.75c.17 0 .33-.1.41-.24a.54.54 0 0 0 .01-.56l-.87-1.59a.47.47 0 0 0-.42-.26zm-1.84.53v-3.7h-5.33v3.7zm8-4.76c.3 0 .54-.24.54-.53V189h-22.4v.53c0 .3.24.53.53.53zm8 6.35V172.6c0-.3-.24-.53-.53-.53h-8.53c-.3 0-.54.24-.54.53v3.17h1.07v-2.11c0-.3.24-.53.53-.53h6.4c.3 0 .54.23.54.53v2.64c0 .3-.24.53-.54.53h-4.8v1.06h4.8c.3 0 .54.24.54.53v2.65c0 .3-.24.53-.54.53h-4.8v1.06h4.8c.3 0 .54.23.54.53 0 .29-.24.53-.54.53h-4.8v1.05h4.8c.3 0 .54.24.54.53 0 .3-.24.53-.54.53h-4.8v1.06h4.8c.3 0 .54.24.54.53 0 .3-.24.53-.54.53h-4.8V189h4.8c.3 0 .54.24.54.53 0 .3-.24.53-.54.53h-4.89a1.6 1.6 0 0 1-1.51 1.06h-1.6v5.3c0 .28.24.52.54.52h8.53c.29 0 .53-.24.53-.53zm-2.13-20.65v-1.58h-5.33v1.58zm-4.27 4.77h4.27v-1.59h-4.27zm4.8 13.23c0 1.17-.95 2.12-2.13 2.12a2.12 2.12 0 1 1 0-4.23c1.18 0 2.13.95 2.13 2.11zm-1.06 0c0-.58-.48-1.05-1.07-1.05-.59 0-1.07.47-1.07 1.05 0 .59.48 1.06 1.07 1.06.59.active 0 1.07-.47 1.07-1.06zm-4.27 0v.53c0 .3-.24.53-.53.53a.53.53 0 0 1-.54-.53v-.53c0-.29.24-.53.54-.53.29 0 .53.24.53.53zm-19.89-14.97l-1.07 1.06c-.1.1-.23.15-.37.15a.55.55 0 0 1-.38-.15.52.52 0 0 1 0-.75l1.07-1.06c.2-.2.54-.2.74 0 .21.2.22.54.01.75zm3.2 0l-3.2 3.17c-.21.2-.55.2-.75 0a.52.52 0 0 1 0-.75l3.2-3.17c.2-.2.54-.2.75 0 .21.2.21.54 0 .75z"></path></defs><g transform="translate(-1340 -171)"><use fill="#fff" xlink:href="#icon-pc"></use><use xlink:href="#icon-pc" fill="#fff" class="use-icon-pc"></use></g></svg><span>מחשבי גיימינג</span></button>
+            <button
+              data-tab="hardware" class="catalog__tab"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 27 27"><defs><path id="icon-cpu" d="M1130.25 182.2v1.67h3.12c.35 0 .63.28.63.63s-.28.63-.63.63h-3.12v1.68h3.12c.35 0 .63.28.63.63s-.28.63-.63.63h-3.12v1.67h3.12c.35 0 .63.29.63.64 0 .35-.28.63-.63.63h-3.12v2.6c0 .36-.28.64-.63.64h-2.61v3.12a.63.63 0 1 1-1.26 0v-3.12h-1.68v3.12a.63.63 0 1 1-1.26 0v-3.12h-1.68v3.12a.63.63 0 1 1-1.26 0v-3.12h-1.68v3.12a.63.63 0 1 1-1.26 0v-3.12h-1.68v3.12a.63.63 0 1 1-1.26 0v-3.12h-2.61a.63.63 0 0 1-.63-.63v-2.6h-3.12a.63.63 0 0 1-.63-.64c0-.35.28-.64.63-.64h3.12v-1.67h-3.12a.63.63 0 0 1-.63-.63c0-.35.28-.63.63-.63h3.12v-1.68h-3.12a.63.63 0 0 1-.63-.63c0-.35.28-.63.63-.63h3.12v-1.68h-3.12a.63.63 0 0 1-.63-.63c0-.35.28-.63.63-.63h3.12v-1.68h-3.12a.63.63 0 0 1-.63-.63c0-.35.28-.63.63-.63h3.12v-2.6c0-.36.28-.64.63-.64h2.61v-3.12a.63.63 0 1 1 1.26 0v3.12h1.68v-3.12a.63.63 0 1 1 1.26 0v3.12h1.68v-3.12a.63.63 0 1 1 1.26 0v3.12h1.68v-3.12a.63.63 0 1 1 1.26 0v3.12h1.68v-3.12a.63.63 0 1 1 1.26 0v3.12h2.61c.35 0 .63.28.63.63v2.6h3.12c.35 0 .63.3.63.64 0 .35-.28.63-.63.63h-3.12v1.68h3.12c.35 0 .63.28.63.63s-.28.63-.63.63zm-1.27 1.67v-1.68h-.56a.63.63 0 0 1-.63-.63c0-.35.28-.63.63-.63h.56v-1.68h-.56a.63.63 0 0 1-.63-.63c0-.35.28-.63.63-.63h.56v-1.97h-1.97v.56a.63.63 0 1 1-1.26 0v-.56h-1.68v.56a.63.63 0 1 1-1.26 0v-.56h-1.68v.56a.63.63 0 1 1-1.26 0v-.56h-1.68v.56a.63.63 0 1 1-1.26 0v-.56h-1.68v.56a.63.63 0 1 1-1.26 0v-.56h-1.97v1.97h.56c.35 0 .63.28.63.63s-.28.63-.63.63h-.56v1.68h.56c.35 0 .63.28.63.63s-.28.63-.63.63h-.56v1.68h.56c.35 0 .63.28.63.63s-.28.63-.63.63h-.56v1.68h.56c.35 0 .63.28.63.63s-.28.63-.63.63h-.56v1.67h.56c.35 0 .63.29.63.64 0 .35-.28.63-.63.63h-.56v1.97h1.97v-.56a.63.63 0 1 1 1.26 0v.56h1.68v-.56a.63.63 0 1 1 1.26 0v.56h1.68v-.56a.63.63 0 1 1 1.26 0v.56h1.68v-.56a.63.63 0 1 1 1.26 0v.56h1.68v-.56a.63.63 0 1 1 1.26 0v.56h1.97v-1.97h-.56a.63.63 0 0 1-.63-.63c0-.35.28-.64.63-.64h.56v-1.67h-.56a.63.63 0 0 1-.63-.63c0-.35.28-.63.63-.63h.56v-1.68h-.56a.63.63 0 0 1-.63-.63c0-.35.28-.63.63-.63zm-4.44-2.78v6.82c0 .35-.28.63-.63.63h-6.82a.63.63 0 0 1-.63-.63v-6.82c0-.35.28-.63.63-.63h6.82c.35 0 .63.28.63.63zm-1.27.64h-5.54v5.54h5.54z"></path></defs><g transform="translate(-1107 -171)"><use xlink:href="#icon-cpu"></use><use fill="#fff" xlink:href="#icon-cpu"></use></g></svg><span>חומרה וציוד היקפי</span></button>
+              <button
+                data-tab="monitors" class="catalog__tab"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="27" viewbox="0 0 29 27"><defs><path id="icon-monitor" d="M888.27 197.52c0 .26-.22.48-.49.48h-12.56a.48.48 0 0 1-.49-.48c0-.27.22-.48.49-.48h3.38v-2.41a.48.48 0 0 1 .97 0v2.4h3.86v-2.4a.48.48 0 0 1 .97 0v2.4h3.38c.27 0 .49.22.49.49zm-6.27-6.75c0 .26-.22.48-.49.48a.48.48 0 0 1-.48-.48c0-.27.21-.48.48-.48s.49.21.49.48zm7.38-14.13a.48.48 0 1 1 .68-.68l.97.97a.48.48 0 0 1-.35.82.48.48 0 0 1-.34-.14zm-2.9 0a.48.48 0 1 1 .68-.68l3.87 3.86a.48.48 0 0 1-.35.82.48.48 0 0 1-.34-.14zm9.52-3.23v17.36a2.54 2.54 0 0 1-2.42 2.4h-24.16a2.54 2.54 0 0 1-2.42-2.4V173.4a2.54 2.54 0 0 1 2.42-2.41h24.16a2.54 2.54 0 0 1 2.42 2.41zm-.97 17.36V173.4c0-.7-.74-1.45-1.45-1.45h-24.16c-.7 0-1.45.75-1.45 1.45v17.36c0 .7.74 1.44 1.45 1.44h24.16c.7 0 1.45-.74 1.45-1.44zm-.96-17.36v15.43c0 .26-.22.48-.49.48h-24.16a.48.48 0 0 1-.49-.48V173.4c0-.26.22-.48.49-.48h24.16c.27 0 .49.21.49.48zm-.97 14.95v-14.47h-23.2v14.47z"></path></defs><g transform="translate(-867 -171)"><use xlink:href="#icon-monitor"></use><use fill="#fff" xlink:href="#icon-monitor"></use></g></svg><span>מסכי מחשב</span></button>
+                <button
+                  data-tab="laptops" class="catalog__tab"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="27" viewbox="0 0 39 27"><defs><path id="icon-laptop" d="M657.9 197.73a.66.66 0 0 1-.54.27h-37.66a.66.66 0 0 1-.61-.91l3.25-7.78v-17.65c0-.37.3-.66.66-.66h31.73c.36 0 .66.3.66.66v17.67l2.6 7.8c.08.2.04.42-.08.6zm-34.25-8.95h30.4v-16.46h-30.4zm32.8 7.9l-2.21-6.58h-30.8l-2.76 6.58zm-25.53-23.32l.94.93-5.35 5.33-.93-.94zm-4.62 9.77l-.94-.93 8.87-8.84.93.93zm6.61 12.9v-1.31h11.25v1.31zm12.56 0v-1.31h3.31v1.31zm-17.19 0v-1.31h3.31v1.31z"></path></defs><g transform="translate(-619 -171)"><use xlink:href="#icon-laptop"></use><use fill="#fff" xlink:href="#icon-laptop"></use></g></svg><span>מחשבים ניידים</span></button>
+                  <button
+                    data-tab="consoles" class="catalog__tab"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="27" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 40 27"><defs><path id="icon-console" d="M419 188.65c0 5.16-4.3 9.35-9.57 9.35a9.58 9.58 0 0 1-7.97-4.15h-4.92a9.58 9.58 0 0 1-7.97 4.15 9.47 9.47 0 0 1-9.57-9.35c0-5.15 4.3-9.34 9.57-9.34h7.24v-.63a1.9 1.9 0 0 1 1.91-1.87h.64v-2.7a3.16 3.16 0 0 1 3.2-3.11h10.84c.36 0 .64.28.64.62 0 .35-.28.63-.64.63h-10.85a1.9 1.9 0 0 0-1.91 1.86v2.7h.64a1.9 1.9 0 0 1 1.91 1.87v.63h7.24c5.27 0 9.57 4.19 9.57 9.34zm-21.92-9.97v.63h3.83v-.63a.63.63 0 0 0-.63-.62h-2.56a.63.63 0 0 0-.64.63zm20.64 9.97a8.2 8.2 0 0 0-8.3-8.1h-20.85a8.21 8.21 0 0 0-8.3 8.1c0 4.47 3.73 8.1 8.3 8.1a8.3 8.3 0 0 0 7.07-3.85c.12-.19.33-.3.55-.3h5.62c.22 0 .43.11.55.3a8.3 8.3 0 0 0 7.07 3.85c4.57 0 8.3-3.63 8.3-8.1zm-23.4-1.24v2.49c0 .34-.29.62-.64.62h-3.2v3.12c0 .34-.28.62-.63.62h-2.55a.63.63 0 0 1-.64-.62v-3.12h-3.2a.63.63 0 0 1-.63-.62v-2.5c0-.34.29-.62.64-.62h3.19v-3.11c0-.35.29-.62.64-.62h2.55c.35 0 .64.27.64.62v3.11h3.2c.34 0 .63.28.63.63zm-1.28 1.87v-1.25h-3.19a.63.63 0 0 1-.64-.62v-3.12h-1.27v3.12c0 .34-.29.62-.64.62h-3.2v1.25h3.2c.35 0 .64.28.64.62v3.11h1.27v-3.11c0-.34.29-.62.64-.62zm7.24-.63c0 .35-.29.63-.64.63h-1.28a.63.63 0 0 1-.64-.63c0-.34.29-.62.64-.62h1.28c.35 0 .64.28.64.62zm11.06 3.74a1.9 1.9 0 0 1-1.91 1.87 1.9 1.9 0 0 1-1.92-1.87 1.9 1.9 0 0 1 1.92-1.87 1.9 1.9 0 0 1 1.91 1.87zm-1.28 0a.63.63 0 0 0-.63-.62.63.63 0 0 0-.64.62c0 .35.28.63.64.63.35 0 .63-.28.63-.63zm1.28-7.47a1.9 1.9 0 0 1-1.91 1.87 1.9 1.9 0 0 1-1.92-1.87 1.9 1.9 0 0 1 1.92-1.87 1.9 1.9 0 0 1 1.91 1.86zm-1.28 0a.63.63 0 0 0-.63-.63.63.63 0 0 0-.64.63c0 .34.28.62.64.62.35 0 .63-.28.63-.63zm-2.55 3.73a1.9 1.9 0 0 1-1.91 1.87 1.9 1.9 0 0 1-1.92-1.87 1.9 1.9 0 0 1 1.92-1.87 1.9 1.9 0 0 1 1.91 1.87zm-1.28 0a.63.63 0 0 0-.63-.62.63.63 0 0 0-.64.62c0 .35.28.63.64.63.35 0 .63-.28.63-.63zm8.94 0a1.9 1.9 0 0 1-1.92 1.87 1.9 1.9 0 0 1-1.91-1.87 1.9 1.9 0 0 1 1.92-1.87 1.9 1.9 0 0 1 1.91 1.87zm-1.28 0a.63.63 0 0 0-.63-.62.63.63 0 0 0-.64.62c0 .35.28.63.64.63.35 0 .63-.28.63-.63z"></path></defs><g transform="translate(-379 -171)"><use xlink:href="#icon-console"></use><use fill="#fff" xlink:href="#icon-console"></use></g></svg><span>קונסולות ואביזרים</span></button>
+          </div>
+        </div>
+        <main class="catalog__main main">
+          <aside class="site-sidebar catalog-sidebar sidebar">
+            <div class="catalog-sidebar__category">
+              <p class="catalog-sidebar__title">תת קטגוריה</p>
+              <ul class="catalog-sidebar__list">
+                <li class="catalog-sidebar__item"><a href="" data-tab="all-in-one" class="catalog-sidebar__link">מחשבי All-in-One</a></li>
+                <li class="catalog-sidebar__item"><a href="" data-tab="brand-pc" class="catalog-sidebar__link">מחשבי מותג</a></li>
+                <li class="catalog-sidebar__item"><a href="" data-tab="recommended" class="catalog-sidebar__link">מציאון ותצוגות</a></li>
+                <li class="catalog-sidebar__item"><a href="" data-tab="deals" class="catalog-sidebar__link">מבצעים</a></li>
+              </ul>
+            </div>
+            <div class="catalog-sidebar__category">
+              <p class="catalog-sidebar__title">יצרן ודגם המעבד</p>
+              <ul class="catalog-sidebar__list">
+                <li class="catalog-sidebar__item"><input type="checkbox" id="cpu-corei5" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="cpu-corei5" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>Intel Core i5</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="cpu-corei7" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="cpu-corei7" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>Intel Core i7</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="cpu-amd5" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="cpu-amd5" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>AMD Ryzen 5</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="cpu-amd7" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="cpu-amd7" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>AMD Ryzen 7</label></li>
+              </ul>
+            </div>
+            <div class="catalog-sidebar__category">
+              <p class="catalog-sidebar__title">ערכת שבבים</p>
+              <ul class="catalog-sidebar__list">
+                <li class="catalog-sidebar__item"><input type="checkbox" id="mb-x299" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="mb-x299" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>X299</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="mb-320m" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="mb-320m" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>320M</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="mb-b250" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="mb-b250" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>B250</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="mb-b350" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="mb-b350" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>B350</label></li>
+              </ul>
+            </div>
+            <div class="catalog-sidebar__category">
+              <p class="catalog-sidebar__title">גודל זכרון</p>
+              <ul class="catalog-sidebar__list">
+                <li class="catalog-sidebar__item"><input type="checkbox" id="mem-8gb" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="mem-8gb" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>8GB</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="mem-16gb" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="mem-16gb" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>16GB</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="mem-32gb" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="mem-32gb" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>32GB</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="mem-64gb" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="mem-64gb" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>64GB</label></li>
+              </ul>
+            </div>
+            <div class="catalog-sidebar__category">
+              <p class="catalog-sidebar__title">דיסק SSD</p>
+              <ul class="catalog-sidebar__list">
+                <li class="catalog-sidebar__item"><input type="checkbox" id="ssd-240gb" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="ssd-240gb" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>240GB</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="ssd-250gb" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="ssd-250gb" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>250GB</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="ssd-500gb" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="ssd-500gb" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>500GB</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="ssd-750gb" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="ssd-750gb" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>750GB</label></li>
+              </ul>
+            </div>
+            <div class="catalog-sidebar__category">
+              <p class="catalog-sidebar__title">כרטיס מסך</p>
+              <ul class="catalog-sidebar__list">
+                <li class="catalog-sidebar__item"><input type="checkbox" id="gc-nvidia" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="gc-nvidia" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>NVIDIA GeForce</label></li>
+                <li class="catalog-sidebar__item"><input type="checkbox" id="gc-amd" class="catalog-sidebar__checkbox js-filter-checkbox"><label for="gc-amd" tabindex="0" class="catalog-sidebar__label"><span tabindex="0"></span>AMD Radeon</label></li>
+              </ul>
+            </div>
+          </aside>
+          <div class="catalog__content calc-content">
+            <div class="calc-content__in">
+              <div class="calc-content__header">
+                <div class="calc-content__form-wrapper"><a role="button" title="show sidebar" class="js-show-sidebar"><i aria-controls="navigation" aria-expanded="false" role="img" class="fa fa-times"></i><span aria-controls="navigation" aria-expanded="true" role="img" class="hamlines"></span></a>
+                  <form
+                    class="calc-content__search">
+                    <div class="calc-content__search-container"><input type="text" placeholder="חיפוש..." autocomplete="off" title="search" class="calc-content__search-input"><a href="search.html" class="calc-content__search-btn"><i role="icon" class="fa fa-search"></i></a></div>
+                    </form>
+                </div>
+                <div class="calc-content__filter">
+                  <p class="calc-content__filter-text">סינון לפי</p>
+                  <div class="calc-content__filter-dropdown-out"><select title="filter dropdown" class="calc-content__filter-dropdown"><option value="מחשבי גיימינג">מחשבי גיימינג</option><option value="חומרה וציוד היקפי">חומרה וציוד היקפי</option><option value="מסכי מחשב">מסכי מחשב</option><option value="מחשבים ניידים">מחשבים ניידים</option><option value="קונסולות ואביזרים">קונסולות ואביזרים</option></select></div>
+                </div>
+                <div class="calc-content__shows"><button aria-label="grid view" class="calc-content__show active js-show-grid"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewbox="0 0 31 31"><path fill="#909090" d="M0 31V0h31v31z"></path><path fill="#fff" d="M13 18v-5h5v5zM13 26v-5h5v5zM13 10V5h5v5zM21 18v-5h5v5zM21 26v-5h5v5zM21 10V5h5v5zM5 18v-5h5v5zM5 26v-5h5v5zM5 10V5h5v5z"></path></svg></button>
+                  <button
+                    aria-label="list view" class="calc-content__show js-show-list"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewbox="0 0 31 31"><path fill="#909090" d="M0 31V0h31v31z"></path><path fill="#fff" d="M5 10V5h21v5zM5 18v-5h21v5zM5 26v-5h21v5z"></path></svg></button>
+                </div>
+              </div>
+              <div class="calc-content__products calc-products">
+                <div tabindex="0" data-cat="gaming computer" data-pid='0' data-filter="cpu-corei7" data-filtercat="all-in-one" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='0' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='0' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="consoles" data-pid='1' data-filter="cpu-corei7" data-filtercat="all-in-one" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='1' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='1' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="hardware" data-pid='2' data-filter="cpu-corei5" data-filtercat="all-in-one" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><span data-price="5252">₪5,252</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='2' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='2' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="gaming computer" data-pid='3' data-filter="cpu-corei5" data-filtercat="brand-pc" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='3' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='3' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="hardware" data-pid='4' data-filter="cpu-amd5" data-filtercat="brand-pc" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='4' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='4' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="laptops" data-pid='5' data-filter="cpu-amd5" data-filtercat="brand-pc" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='5' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='5' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="gaming computer" data-pid='6' data-filter="cpu-amd7" data-filtercat="recommended" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪2,648</s><span data-price="1348">₪1,348</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='6' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='6' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="monitors" data-pid='7' data-filter="cpu-amd7" data-filtercat="recommended" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='7' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='7' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="hardware" data-pid='8' data-filter="mb-x299" data-filtercat="recommended" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='8' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='8' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="gaming computer" data-pid='9' data-filter="mb-x299" data-filtercat="deals" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='9' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='9' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="hardware" data-pid='10' data-filter="mb-320m" data-filtercat="deals" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='10' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='10' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="consoles" data-pid='11' data-filter="mb-320m" data-filtercat="deals" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='11' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='11' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="gaming computer" data-pid='12' data-filter="mb-b250" data-filtercat="deals" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='12' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='12' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="consoles" data-pid='13' data-filter="mb-b250" data-filtercat="deals" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='13' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='13' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="hardware" data-pid='14' data-filter="mb-b350" data-filtercat="deals" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='14' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='14' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="gaming computer" data-pid='15' data-filter="mb-b350" data-filtercat="deals" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='15' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='15' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="hardware" data-pid='16' data-filter="mem-8gb" data-filtercat="deals" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='16' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='16' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="consoles" data-pid='17' data-filter="mem-8gb" data-filtercat="deals" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='17' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='17' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="gaming computer" data-pid='18' data-filter="mem-8gb" data-filtercat="deals" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='18' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='18' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+                <div tabindex="0" data-cat="consoles" data-pid='19' data-filter="mem-8gb" data-filtercat="deals" class="calc-product">
+                  <p class="calc-product__text">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                  <div class="calc-product__logo-out"><img src="img/amd.jpg" alt="product brand" class="calc-product__logo" /></div>
+                  <div class="calc-product__img-out"><img src="img/product-image.png" alt="product image" class="calc-product__img" /></div>
+                  <ul class="calc-product__tags product-tags">
+                    <li class="product-tags__tag">Unlocked</li>
+                    <li class="product-tags__tag">3.4GHz</li>
+                    <li class="product-tags__tag">8 Core</li>
+                  </ul>
+                  <p class="calc-product__warranty">5 שנות אחריות</p>
+                  <p class="calc-product__price"><s>₪7,648</s><span data-price="7312">₪7,312</span></p>
+                  <div class="calc-product__hover"><a href="product.html" target="_blank" class="calc-product__more">פרטים נוספים<span aria-hidden="true" class="calc-product__icon"></span></a><a href="" data-pid='19' data-cid="cpu" class="calc-product__add-to-cart">הוסף לסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                    <a
+                      href="" data-pid='19' class="calc-product__remove-from-cart">להסיר מסל<span aria-hidden="true" class="calc-product__icon"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer class="site-footer"><a href="#0" class="cd-top cd-is-visible">Scroll to top<i aria-hidden="true" class="fa fa-chevron-up"></i></a>
+      <div class="container">
+        <div class="site-footer__menu footer-menu">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><a href="">עמוד ראשי</a></li>
+            <li class="footer-menu__item"><a href="">קטלוג מוצרים</a></li>
+            <li class="footer-menu__item"><a href="">הרכבה עצמית</a></li>
+            <li class="footer-menu__item"><a href="">שירות ואחריות</a></li>
+            <li class="footer-menu__item"><a href="">צור קשר</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__copyright"><a href=""><span class="site-footer__copyright-text">UI & Graphics by</span><img src="img/veartix.png" alt="veartix" class="site-footer__copyright-img"></a></div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load(
+      {
+        google:
+        {
+          families: ['Arimo:400,700:latin,hebrew', 'Heebo:hebrew', 'Roboto']
+        }
+      });
+
+    </script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+
+</html>

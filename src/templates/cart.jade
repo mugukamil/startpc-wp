@@ -1,0 +1,138 @@
+---
+title: Cart
+---
+extends layouts/_layout
+block content
+  .simple-page.cart-page#main
+    .container
+      .simple-page__header
+        h1.simple-page__title: span סל הקניות שלך
+      main.cart-page__main
+        .cart-page__content
+          .cart-page__table
+            table.cart-table
+              thead
+                tr
+                  th תמונה
+                  th המוצר
+                  th כמות
+                  th מחיר
+                  th
+              tbody
+                tr.plus-minus
+                  td.cart-table__img
+                    img(src="img/cart-page-img1.png", alt="")
+                  td
+                    p.cart-table__name מסך מחשב 25 אינץ’ של חברת DELL
+                  td
+                    .input-plus-minus
+                      button.btn-number(type='button', data-type='plus' aria-label="increase quantity by 1")
+                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='15px', height='15px')
+                          path(fill-rule='evenodd', fill='rgb(255, 255, 255)', d='M15.000,7.994 L7.994,7.994 L7.994,15.000 L7.006,15.000 L7.006,7.994 L-0.000,7.994 L-0.000,7.006 L7.006,7.006 L7.006,-0.000 L7.994,-0.000 L7.994,7.006 L15.000,7.006 L15.000,7.994 Z')
+                      input.input-number(type='text', value='1', min='1', max='100' title="product quantity")
+                      button.btn-number(type='button', data-type='minus' aria-label="decrease quantity by 1")
+                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='15px', height='1px')
+                          path(fill-rule='evenodd', fill='rgb(255, 255, 255)', d='M0.000,0.994 L0.000,0.006 L15.000,0.006 L15.000,0.994 L0.000,0.994 Z')
+                  td
+                    p.cart-table__price.js-cart-price(data-price="7312") ₪7,312
+                  td
+                    button.cart-table__remove.js-remove-cart-item(aria-label="remove item")
+                      svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='14', height='14', viewbox='0 0 26 26')
+                        path(fill='#797979' transform='translate(-787 -156)' d='M788.35 181.35l-.7-.7L799.29 169l-11.64-11.65.7-.7L800 168.29l11.65-11.64.7.7L800.71 169l11.64 11.65-.7.7L800 169.71z')
+                tr.plus-minus
+                  td.cart-table__img
+                    img(src="img/cart-page-img2.png", alt="")
+                  td
+                    p.cart-table__name מחשב בהרכבה עצמית:
+                    p.cart-table__info מארז: Gigabyte XC300W
+                    p.cart-table__info מעבד: Intel i7-6900K 3.2GH
+                    p.cart-table__info לוח אם: MSI Z270 GAMING M5
+                    p.cart-table__info זכרון: 32G (2x16G) Corsair Vengance LPX
+                    p.cart-table__info כרטיס מסך: ASUS Nvidia GeForce GTX1080Ti
+                    p.cart-table__info דיסק קשיח: Seagate 4T 3.5'' Sata3 Barracuda
+                    p.cart-table__info ספק כוח: Antec HCP-1000 80
+                  td
+                    .input-plus-minus
+                      button.btn-number(type='button', data-type='plus' aria-label="increase quantity by 1")
+                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='15px', height='15px')
+                          path(fill-rule='evenodd', fill='rgb(255, 255, 255)', d='M15.000,7.994 L7.994,7.994 L7.994,15.000 L7.006,15.000 L7.006,7.994 L-0.000,7.994 L-0.000,7.006 L7.006,7.006 L7.006,-0.000 L7.994,-0.000 L7.994,7.006 L15.000,7.006 L15.000,7.994 Z')
+                      input.input-number(type='text', name='quant[2]', value='1', min='1', max='100' title="product quantity")
+                      button.btn-number(type='button', data-type='minus' aria-label="decrease quantity by 1")
+                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='15px', height='1px')
+                          path(fill-rule='evenodd', fill='rgb(255, 255, 255)', d='M0.000,0.994 L0.000,0.006 L15.000,0.006 L15.000,0.994 L0.000,0.994 Z')
+                  td
+                    p.cart-table__price.js-cart-price(data-price="12588") ₪12,588
+                  td
+                    button.cart-table__remove.js-remove-cart-item(aria-label="remove item")
+                      svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='14', height='14', viewbox='0 0 26 26')
+                        path(fill='#797979' transform='translate(-787 -156)' d='M788.35 181.35l-.7-.7L799.29 169l-11.64-11.65.7-.7L800 168.29l11.65-11.64.7.7L800.71 169l11.64 11.65-.7.7L800 169.71z')
+        aside.site-sidebar.cart-page__sidebar.cart-sidebar
+          p.cart-sidebar__title ביצוע הזמנה
+          form.cart-sidebar__form.cart-form(required)
+            .cart-form__50-50.cart-form__row
+              input.cart-form__input.js-heb-en(type="text" placeholder="שם פרטי *" required autocomplete="off" title="first name")
+              input.cart-form__input.js-heb-en(type="text" placeholder="שם משפחה *" required autocomplete="off" title="last name")
+            .cart-form__100.cart-form__row
+              input.cart-form__input(type="tel" placeholder="מספר טלפון *" required autocomplete="off" title="phone")
+            .cart-form__100.cart-form__row
+              -var pattern = `^([\\w]+[.-]?[^\\W_]?[a-zA-Z0-9]+)+\@([\\w][.-]?)*[\\w-]\\.[a-zA-Z_-]([\\w-]*)[^\\W_]$|^([\\w]+[.-]?[^\\W_]?[a-zA-Z0-9]+)+\@(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$`
+              input.cart-form__input.js-email(type="text", placeholder="דואר אלקטרוני *", required, autocomplete="off", title="email", pattern=(pattern))
+            .cart-form__60-40.cart-form__row
+              input.cart-form__input.js-heb-en(type="text" placeholder="עיר *" required autocomplete="off" title="city")
+              input.cart-form__input.js-heb-en(type="text" placeholder="רחוב *" required autocomplete="off" title="street")
+            .cart-form__40-30-30.cart-form__row
+              input.cart-form__input.js-num(type="text" placeholder="בית *" required autocomplete="off" title="home")
+              input.cart-form__input.js-num(type="text" placeholder="דירה *" required autocomplete="off" title="apartment")
+              input.cart-form__input.js-num(type="text" placeholder="מיקוד *" required autocomplete="off" title="postal code")
+            div.cart-form__row.custom-checkbox.cart-form__checkbox
+              input.custom-checkbox__input.js-checkbox-diff-name#diff-name(type="checkbox", name="checkout-different-name")
+              label.custom-checkbox__label(for="diff-name" tabindex="0")
+                span.custom-checkbox__icon.custom-checkbox__icon--small(tabindex="0")
+                | ברצוני לקבל חשבונית על שם אחר
+            .cart-form__100.cart-form__row.cart-form__small-margin.js-input-diff-name(style="display: none")
+              input.cart-form__input.js-heb-en(type="text" placeholder="שם על החשבונית" autocomplete="off" title="name on invoice")
+            .cart-form__2col.cart-form__row.cart-form__row--with-bg
+              div.cart-form__col1.custom-radio
+                input.cart-form__radio.custom-radio__input#self-collection(type="radio", name="self-collection" checked)
+                label.custom-radio__label(for="self-collection" tabindex="0")
+                  span.custom-radio__icon.custom-radio__icon--white(tabindex="0")
+                  | איסוף עצמי מסניף
+              div.cart-form__col2
+                .sel.js-select(tabindex="0").cart-form__select
+                  select.cart-form__select(hidden aria-hidden="true" title="place")
+                    option() אודים
+                    option(value="אודים") אודים
+                    option(value="אשדוד") אשדוד
+                    option(value="תל אביב") תל אביב
+                    option(value="חיפה") חיפה
+            .cart-form__100.cart-form__row.cart-form__row--with-bg.custom-radio
+              input.contact-form__radio.custom-radio__input#delivery-to-home(type="radio", name="self-collection")
+              label.custom-radio__label(for="delivery-to-home" tabindex="0")
+                span.custom-radio__icon.custom-radio__icon--white(tabindex="0")
+                | משלוח עד הבית: ₪39
+            hr.cart-form__hr
+            div.cart-form__row
+              div.cart-form__commission
+                span ₪1,845 לחודש ב-
+                .sel.js-select(tabindex="0").cart-form__commission-select
+                  select.cart-form__commission-select(hidden aria-hidden="true" title="per month")
+                    option() 11
+                    option(value="11") 11
+                    option(value="12") 12
+                    option(value="13") 13
+                span תשלומים (₪398 עמלה)
+            div.cart-form__row
+              p.cart-form__total סה”כ: ₪
+                span.js-cart-total 23,749
+            hr.cart-form__hr.cart-form__hr--small-margin
+            div.cart-form__row.custom-checkbox.cart-form__checkbox
+              input.custom-checkbox__input#agreement.js-agreement(type="checkbox", name="agreement")
+              label.custom-checkbox__label(for="agreement" tabindex="0")
+                span.custom-checkbox__icon.custom-checkbox__icon--small(tabindex="0")
+                | אני מאשרת שקראתי, הבנתי והסכמתי&nbsp;
+                a(href="") לתקנון
+            div.cart-form__row
+              input.cart-form__submit(type="submit" value="אישור הזמנה" disabled)
+
+
+

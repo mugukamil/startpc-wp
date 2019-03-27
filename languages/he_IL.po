@@ -1,0 +1,1840 @@
+# Copyright (C) {2018} {}
+# This file is distributed under the same license as the {{Veartix StartPC}} package.
+msgid ""
+msgstr ""
+"Project-Id-Version: {Veartix StartPC} {0.1.0}\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/{veartix-startpc}\n"
+"POT-Creation-Date: 2018-04-09 03:13+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-04-09 03:30+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: he_IL\n"
+
+#: 404.php:29 node_modules/undescores-for-npm/404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "לא ניתן למצוא את הדף."
+
+#: 404.php:36 node_modules/undescores-for-npm/404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"לא נמצא שום עסק במיקום זה , נסה את אחד הקישורים או נסה חיפוש חוזר. האם רשמת "
+"נכון את שם העסק?"
+
+#: 404.php:47 node_modules/undescores-for-npm/404.php:33
+msgid "Most Used Categories"
+msgstr "קטגוריות פופולרייות"
+
+#. translators: %1$s: smiley
+#: 404.php:68 node_modules/undescores-for-npm/404.php:51
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "נסה להסתכל בארכיון החודשי.%1$s"
+
+#: author.php:33
+msgid "About:"
+msgstr "אודות:"
+
+#: author.php:41 inc/custom-comments.php:30
+msgid "Website"
+msgstr "אתר"
+
+#: author.php:48
+msgid "Profile"
+msgstr "פרופיל"
+
+#: author.php:53
+msgid "Posts by"
+msgstr "נכתב ע\"י"
+
+#: author.php:65
+msgid "Permanent Link:"
+msgstr "קישור קבוע:"
+
+#: author.php:67
+msgid "in"
+msgstr "ב"
+
+#. translators: %s: post title
+#: comments.php:34
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "מחשבה אחת על &ldquo;%s&rdquo;"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:40
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "מחשבה אחת על &ldquo;%2$s&rdquo;"
+msgstr[1] ""
+
+#: comments.php:59 comments.php:89
+#: node_modules/undescores-for-npm/comments.php:40
+#: node_modules/undescores-for-npm/comments.php:61
+msgid "Comment navigation"
+msgstr "ניווט תגובות"
+
+#: comments.php:62 comments.php:92
+msgid "&larr; Older Comments"
+msgstr "&larr;  תגובות קודמות"
+
+#: comments.php:66 comments.php:96
+msgid "Newer Comments &rarr;"
+msgstr "תגובות חדשות יותר &rarr;"
+
+#: comments.php:111 node_modules/undescores-for-npm/comments.php:78
+msgid "Comments are closed."
+msgstr "תגובות סגורות."
+
+#: inc/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr "התקנת תוספים נדרשים"
+
+#: inc/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr "התקן פלאגינים"
+
+#. translators: %s: plugin name.
+#: inc/class-tgm-plugin-activation.php:337
+msgid "Installing Plugin: %s"
+msgstr "מתקין תוסף: %s"
+
+#. translators: %s: plugin name.
+#: inc/class-tgm-plugin-activation.php:339
+msgid "Updating Plugin: %s"
+msgstr "מעדכן  תוסף: %s"
+
+#: inc/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr "משהו השתבש עם ה API של התוסף."
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:377
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "להתקין את התוסף"
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "לעדכן את התוסף"
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "להפעיל את התוסף"
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr "חזרה למתקין התוספים הדרושים"
+
+#: inc/class-tgm-plugin-activation.php:393
+#: inc/class-tgm-plugin-activation.php:920
+#: inc/class-tgm-plugin-activation.php:2626
+#: inc/class-tgm-plugin-activation.php:3673
+msgid "Return to the Dashboard"
+msgstr "חזרה לאיזור האישי"
+
+#: inc/class-tgm-plugin-activation.php:394
+#: inc/class-tgm-plugin-activation.php:3252
+msgid "Plugin activated successfully."
+msgstr "התוסף הופעל בהצלחה."
+
+#: inc/class-tgm-plugin-activation.php:395
+#: inc/class-tgm-plugin-activation.php:3045
+msgid "The following plugin was activated successfully:"
+msgstr "התוסף הבא הופעל בהצלחה:"
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:397
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "לא בוצעה שום פעולה. התוסף %1$s כבר היה מופעל."
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:399
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"הפלאגין לא הופעל. יש צורך בגירסה גבוהה יותר של %s עבור נושא זה. אנא עדכן את "
+"הפלאגין."
+
+#. translators: 1: dashboard link.
+#: inc/class-tgm-plugin-activation.php:401
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "כל התוספים מותקנים ומופעלים בהצלחה.  %1$s"
+
+#: inc/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr "להסתיר הודעה זו"
+
+#: inc/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr "יש פלאגין אחד או יותר שנדרש או מומלץ להתקין, לעדכן או להפעיל."
+
+#: inc/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr "אנא צרו קשר עם מנהל האתר לעזרה."
+
+#: inc/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "תוסף זה צריך להיות מעודכן כדי להיות תואם את הנושא."
+
+#: inc/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr "נדרש עדכון"
+
+#: inc/class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr "הגדר את משתנה ה- הכותרת במקום זאת."
+
+#: inc/class-tgm-plugin-activation.php:1027
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr "חבילת התוסף המרוחק אינה מכילה תיקיה עם הקליע הרצוי ושינוי השם לא פעלה."
+
+#: inc/class-tgm-plugin-activation.php:1027
+#: inc/class-tgm-plugin-activation.php:1030
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"אנא פנה ליוצר התוסף ושאל אותם איך לארוז את התוסף שלהם על פי הנחיות וורדפרס."
+
+#: inc/class-tgm-plugin-activation.php:1030
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"חבילת התוסף המרוחק מורכבת מקובץ אחד או יותר, אך הקבצים אינם ארוזים בתיקייה."
+
+#: inc/class-tgm-plugin-activation.php:1214
+#: inc/class-tgm-plugin-activation.php:3041
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "ו"
+
+#. translators: %s: version number
+#: inc/class-tgm-plugin-activation.php:2075
+msgid "TGMPA v%s"
+msgstr "TGMPA ג%s"
+
+#: inc/class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr "שדה זה נחוץ"
+
+#: inc/class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr "מומלץ"
+
+#: inc/class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr "מאגר וורדפרס"
+
+#: inc/class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr "מקור חיצוני"
+
+#: inc/class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr "ארוז מראש - Pre-Packaged"
+
+#: inc/class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr "לא הותקן"
+
+#: inc/class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr "מותקן אך לא הופעל"
+
+#: inc/class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr "פעיל"
+
+#: inc/class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr "עדכון חובה לא זמין"
+
+#: inc/class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr "דורש עדכון"
+
+#: inc/class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr "מומלץ לעדכן"
+
+#. translators: 1: install status, 2: update status
+#: inc/class-tgm-plugin-activation.php:2435
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2481
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "כל ה-<span class=\"count\">(%s)</span>"
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2485
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "להתקין <span class=\"count\">(%s)</span>"
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2489
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "לעדכן <span class=\"count\">(%s)</span> זמינים"
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2493
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "להפעיל <span class=\"count\">(%s)</span>"
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2575
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "לא ידוע"
+
+#: inc/class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr "גרסה מותקנת:"
+
+#: inc/class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr "גרסה מינימלית נדרשת :"
+
+#: inc/class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr "גרסה זמינה:"
+
+#: inc/class-tgm-plugin-activation.php:2626
+msgid "No plugins to install, update or activate."
+msgstr "אין תוספים להתקנה, לעדכון או להפעלה."
+
+#: inc/class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr "תוסף"
+
+#: inc/class-tgm-plugin-activation.php:2641
+msgid "Source"
+msgstr "מקור"
+
+#: inc/class-tgm-plugin-activation.php:2642
+msgid "Type"
+msgstr "סוג"
+
+#: inc/class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr "גרסה"
+
+#: inc/class-tgm-plugin-activation.php:2647
+#: woocommerce/myaccount/my-orders.php:15
+msgid "Status"
+msgstr "סטטוס"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2696
+msgid "Install %2$s"
+msgstr "התקן %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2701
+msgid "Update %2$s"
+msgstr "עדכן %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2707
+msgid "Activate %2$s"
+msgstr "הפעל %2$s"
+
+#: inc/class-tgm-plugin-activation.php:2777
+msgid "Upgrade message from the plugin author:"
+msgstr "הודעת שדרוג ממחבר התוסף:"
+
+#: inc/class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr "התקן"
+
+#: inc/class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr "עדכון"
+
+#: inc/class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr "להפעיל"
+
+#: inc/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "לא נבחרו תוספים להתקנה. לא השתנה דבר."
+
+#: inc/class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "לא נבחרו תוספים לעדכון. לא השתנה דבר."
+
+#: inc/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr "לא נבחרו תוספים להתקנה. לא השתנה דבר."
+
+#: inc/class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr "לא נבחרו תוספים להתקנה. לא השתנה דבר."
+
+#: inc/class-tgm-plugin-activation.php:3001
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "לא נבחרו תוספים להפעלה. לא נעשתה שום פעולה."
+
+#: inc/class-tgm-plugin-activation.php:3027
+msgid "No plugins are available to be activated at this time."
+msgstr "אין תוספים זמינים מופעלים בשלב זה."
+
+#: inc/class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr "הפעלת התוסף נכשלה."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3591
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "מעדכן תוסף %1$s (%2$d/%3$d)"
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/class-tgm-plugin-activation.php:3594
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "אירעה שגיאה בעת ההתקנה %1$s: <strong>%2$s</strong>."
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3596
+msgid "The installation of %1$s failed."
+msgstr "התקנת %1$s  נכשלה."
+
+#: inc/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"תהליך ההתקנה וההפעלה מתחיל. תהליך זה עשוי להימשך זמן מה בשרתים מסוימים, אז "
+"נא להמתין בסבלנות."
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3602
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s הותקן והופעל בהצלחה."
+
+#: inc/class-tgm-plugin-activation.php:3602
+#: inc/class-tgm-plugin-activation.php:3610
+msgid "Show Details"
+msgstr "הצג פרטים"
+
+#: inc/class-tgm-plugin-activation.php:3602
+#: inc/class-tgm-plugin-activation.php:3610
+msgid "Hide Details"
+msgstr "הסתר פרטים"
+
+#: inc/class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr "כל ההתקנות וההפעלות הושלמו."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3605
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "מתקין ומפעיל את התוסף  %1$s (%2$d/%3$d)"
+
+#: inc/class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"תהליך ההתקנה מתחיל. תהליך זה עשוי להימשך זמן מה על כמה המארחים, אז אנא המתן "
+"בסבלנות."
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3610
+msgid "%1$s installed successfully."
+msgstr "%1$s הותקן בהצלחה."
+
+#: inc/class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr "כל התקנות הושלמו."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3613
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "מתקין פלאגאין %1$s (%2$d/%3$d)"
+
+#: inc/custom-comments.php:24 woocommerce/single-product-reviews.php:77
+msgid "Name"
+msgstr "שם"
+
+#: inc/custom-comments.php:27 page-contact.php:38
+#: woocommerce/single-product-reviews.php:79
+msgid "Email"
+msgstr "אימייל"
+
+#: inc/custom-comments.php:49
+msgctxt "noun"
+msgid "Comment"
+msgstr "תגובה"
+
+#: inc/custom-header.php:38
+msgid "Default Header Image"
+msgstr "תמונת כותרת כללית"
+
+#: inc/customizer.php:37
+msgid "Theme Layout Settings"
+msgstr "הגדרות פריסת נושא"
+
+#: inc/customizer.php:39
+msgid "Container width and sidebar defaults"
+msgstr "רוחב המיכל"
+
+#: inc/customizer.php:68
+msgid "Container Width"
+msgstr "רוחב המיכל"
+
+#: inc/customizer.php:69
+msgid "Choose between Bootstrap's container and container-fluid"
+msgstr "בחר בין מיכל למיכל מלא של בוטסטראפ"
+
+#: inc/customizer.php:74
+msgid "Fixed width container"
+msgstr "קונטיינר רוחב קבוע"
+
+#: inc/customizer.php:75
+msgid "Full width container"
+msgstr "קונטיינר רוחב מלא"
+
+#: inc/customizer.php:92
+msgid "Sidebar Positioning"
+msgstr "מיקום סרגל צדדי"
+
+#: inc/customizer.php:93
+msgid ""
+"Set sidebar's default position. Can either be: right, left, both or none. "
+"Note: this can be overridden on individual pages."
+msgstr ""
+"הגדר את מיקום ברירת המחדל של הסרגל הצידי. יכול גם להיות: ימין, שמאל, שניהם "
+"או אף אחד. הערה: זה יכול להתבטל בעמודים נפרדים."
+
+#: inc/customizer.php:100
+msgid "Right sidebar"
+msgstr "סרגל צדדי ימני"
+
+#: inc/customizer.php:101
+msgid "Left sidebar"
+msgstr "סרגל צדדי שמאלי"
+
+#: inc/customizer.php:102
+msgid "Left & Right sidebars"
+msgstr "סרגלים צידיים שמאלה וימינה"
+
+#: inc/customizer.php:103
+msgid "No sidebar"
+msgstr "ללא סרגל צדדי"
+
+#: inc/extras.php:93
+msgid "Post navigation"
+msgstr "ניווט בפרסומים"
+
+#: inc/extras.php:98
+msgctxt "Previous post link"
+msgid "<i class=\"fa fa-angle-left\"></i>&nbsp;%title"
+msgstr "<i class=\"fa fa-angle-left\"></i>&nbsp;%title"
+
+#: inc/extras.php:101
+msgctxt "Next post link"
+msgid "%title&nbsp;<i class=\"fa fa-angle-right\"></i>"
+msgstr "כותרת %&lt;i class=\"fa fa-angle-right\"&gt;&lt;/i&gt;"
+
+#: inc/setup.php:44 node_modules/undescores-for-npm/header.php:44
+msgid "Primary Menu"
+msgstr "תפריט ראשי"
+
+#: inc/setup.php:45
+msgid "Footer Menu"
+msgstr "תפרטי פוטר"
+
+#: inc/setup.php:122
+msgid "Read More..."
+msgstr "קרא עוד..."
+
+#: inc/template-tags.php:26
+#: node_modules/undescores-for-npm/inc/template-tags.php:28
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "פורסם בתאריך : %s"
+
+#: inc/template-tags.php:30
+#: node_modules/undescores-for-npm/inc/template-tags.php:33
+msgctxt "post author"
+msgid "by %s"
+msgstr "ע\"י %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:45 inc/template-tags.php:50
+#: node_modules/undescores-for-npm/inc/template-tags.php:50
+#: node_modules/undescores-for-npm/inc/template-tags.php:56
+msgid ", "
+msgstr ","
+
+#: inc/template-tags.php:47
+#: node_modules/undescores-for-npm/inc/template-tags.php:52
+msgid "Posted in %1$s"
+msgstr "פורסם ב:  %1$s"
+
+#: inc/template-tags.php:52
+#: node_modules/undescores-for-npm/inc/template-tags.php:58
+msgid "Tagged %1$s"
+msgstr "תויג %1$s"
+
+#: inc/template-tags.php:57
+msgid "Leave a comment"
+msgstr "השאר תגובה"
+
+#: inc/template-tags.php:57
+msgid "1 Comment"
+msgstr "תגובה 1"
+
+#: inc/template-tags.php:57
+msgid "% Comments"
+msgstr "%s תגובות"
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:63
+#: node_modules/undescores-for-npm/inc/template-tags.php:72
+#: node_modules/undescores-for-npm/template-parts/content-page.php:34
+msgid "Edit %s"
+msgstr "עריכת %s"
+
+#: inc/widgets.php:53
+msgid "Right Sidebar"
+msgstr "סרגל צד ימין"
+
+#: inc/widgets.php:63
+msgid "Left Sidebar"
+msgstr "סרגל צד שמאל"
+
+#: inc/widgets.php:73
+msgid "Hero Slider"
+msgstr "המחוון גיבור"
+
+#: inc/widgets.php:83
+msgid "Hero Static"
+msgstr "סטטי"
+
+#: inc/widgets.php:93
+msgid "Footer Full"
+msgstr "תחתונה מלאה"
+
+#: inc/woocommerce.php:146
+msgid "Details"
+msgstr "פרטים"
+
+#: inc/woocommerce.php:171
+msgid "Upgrade options"
+msgstr "עדכון"
+
+#: inc/woocommerce.php:206
+msgid "Video"
+msgstr "וידאו"
+
+#: inc/woocommerce.php:293
+msgid "Name On Invoice"
+msgstr "שם על הכרטיס"
+
+#: inc/woocommerce.php:299
+msgid "Self Collection In One of Pickup Places"
+msgstr ""
+
+#: inc/woocommerce.php:305
+msgid "Delivery to Home"
+msgstr ""
+
+#: inc/woocommerce.php:311
+msgid "Pickup Place"
+msgstr ""
+
+#: inc/woocommerce.php:338
+msgid "Billing Pickup Place"
+msgstr ""
+
+#: inc/woocommerce.php:339
+msgid "Billing Name on Invoice"
+msgstr ""
+
+#: inc/woocommerce.php:340
+msgid "Self Collection"
+msgstr ""
+
+#: inc/woocommerce.php:341
+msgid "Delivery to home"
+msgstr ""
+
+#: loop-templates/content-cart.php:25 woocommerce/cart/cart.php:34
+msgid "Image"
+msgstr "תמונה"
+
+#: loop-templates/content-cart.php:26 loop-templates/content-cart.php:58
+#: woocommerce/cart/cart.php:35 woocommerce/cart/cart.php:67
+#: woocommerce/checkout/form-pay.php:29
+#: woocommerce/checkout/review-order.php:26
+#: woocommerce/emails/email-order-details.php:44
+#: woocommerce/order/order-details.php:45
+msgid "Product"
+msgstr "מוצר"
+
+#: loop-templates/content-cart.php:27 loop-templates/content-cart.php:74
+#: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:83
+#: woocommerce/emails/email-order-details.php:45
+msgid "Quantity"
+msgstr "כמות"
+
+#: loop-templates/content-cart.php:28 loop-templates/content-cart.php:90
+#: woocommerce/cart/cart.php:37 woocommerce/cart/cart.php:99
+#: woocommerce/emails/email-order-details.php:46
+msgid "Price"
+msgstr "מחיר"
+
+#: loop-templates/content-cart.php:29 woocommerce/cart/cart-totals.php:92
+#: woocommerce/cart/cart-totals.php:93 woocommerce/cart/cart.php:38
+#: woocommerce/cart/cart.php:109 woocommerce/checkout/review-order.php:27
+#: woocommerce/checkout/review-order.php:106
+#: woocommerce/myaccount/my-orders.php:16
+#: woocommerce/order/order-details.php:46
+msgid "Total"
+msgstr "סה\"כ"
+
+#: loop-templates/content-cart.php:70 woocommerce/cart/cart.php:79
+msgid "Available on backorder"
+msgstr "זמין להזמנה מוקדמת"
+
+#: loop-templates/content-cart.php:104 woocommerce/cart/cart.php:121
+#: woocommerce/cart/mini-cart.php:47
+msgid "Remove this item"
+msgstr "הסר"
+
+#: loop-templates/content-cart.php:121 woocommerce/cart/cart.php:138
+msgid "Update cart"
+msgstr "עדכון עגלת קניות"
+
+#: loop-templates/content-cart.php:232 woocommerce/checkout/payment.php:43
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the <em>Update Totals</em> button before placing your "
+"order. You may be charged more than the amount stated above if you fail to "
+"do so."
+msgstr ""
+"מאחר שהדפדפן שלך אינו תומך בJavaScript או שהאופציה מנוטרלת,יש להקפיד ללחוץ "
+"על לחצן <em>עדכון סכומים</em> לפני ביצוע ההזמנה. ייתכן והחיוב יהיה יותר "
+"מהסכום האמור לעיל, אם לא יבוצע \"עדכון פרטים\"."
+
+#: loop-templates/content-cart.php:233
+#: woocommerce/cart/shipping-calculator.php:89
+#: woocommerce/checkout/payment.php:44
+msgid "Update totals"
+msgstr "עדכון סכום"
+
+#: loop-templates/content-none.php:16
+#: node_modules/undescores-for-npm/template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "לא נמצא כלום"
+
+#: loop-templates/content-none.php:27
+#: node_modules/undescores-for-npm/template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "סליחה, אבל לא מצאנו את מה שחיפשתם. נסו שוב עם מילות חיפוש אחרות."
+
+#: loop-templates/content-page.php:25 loop-templates/content-single.php:29
+#: loop-templates/content.php:37
+#: node_modules/undescores-for-npm/template-parts/content-page.php:22
+#: node_modules/undescores-for-npm/template-parts/content.php:38
+msgid "Pages:"
+msgstr "עמודים:"
+
+#: loop-templates/content-page.php:34 woocommerce/myaccount/my-address.php:53
+msgid "Edit"
+msgstr "ערוך"
+
+#: node_modules/undescores-for-npm/comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/undescores-for-npm/comments.php:43
+#: node_modules/undescores-for-npm/comments.php:64
+msgid "Older Comments"
+msgstr "תגובות ישנות יותר"
+
+#: node_modules/undescores-for-npm/comments.php:44
+#: node_modules/undescores-for-npm/comments.php:65
+msgid "Newer Comments"
+msgstr "תגובות חדשות יותר"
+
+#: node_modules/undescores-for-npm/footer.php:18
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: node_modules/undescores-for-npm/footer.php:18
+msgid "Proudly powered by %s"
+msgstr "בנוי על %s"
+
+#: node_modules/undescores-for-npm/footer.php:20
+msgid "Theme: %1$s by %2$s."
+msgstr "ערכת עיצוב: %1$s מבוסס  %2$s."
+
+#: node_modules/undescores-for-npm/functions.php:47
+msgid "Primary"
+msgstr "ראשי"
+
+#: node_modules/undescores-for-npm/functions.php:90
+msgid "Sidebar"
+msgstr "סרגל צדדי"
+
+#: node_modules/undescores-for-npm/functions.php:92
+msgid "Add widgets here."
+msgstr "הוסף ווידג'טים כאן."
+
+#: node_modules/undescores-for-npm/header.php:24
+msgid "Skip to content"
+msgstr "דלג לתוכן"
+
+#. translators: %s: post title
+#: node_modules/undescores-for-npm/inc/template-tags.php:65
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "השאירו תגובה<span class=\"screen-reader-text\"> -%s</span>"
+
+#. translators:
+#: node_modules/undescores-for-npm/search.php:19 search.php:13
+msgid "Search Results for: %s"
+msgstr "תוצאות חיפוש ל: %s"
+
+#: node_modules/undescores-for-npm/template-parts/content-none.php:21
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "מוכן לפרסם את הפוסט הראשון שלך? <a href=\"%1$s\">נא להתחיל כאן</a>."
+
+#: node_modules/undescores-for-npm/template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "נראה שאנחנו לא מוצאים את מה שחיפשת. אולי חיפוש יכול לעזור."
+
+#. translators: %s: Name of current post.
+#: node_modules/undescores-for-npm/template-parts/content.php:33
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "להמשך לקרוא את %s <span class=\"meta-nav\">&larr;</span>"
+
+#: page-contact.php:26 page-contact.php:137
+msgid "Phone:"
+msgstr "טלפון:"
+
+#: page-contact.php:50
+msgid "Opening Hours:"
+msgstr "שעות פתיחה:"
+
+#: page-contact.php:62 page-contact.php:161
+msgid "Address:"
+msgstr "כתובת:"
+
+#: page-contact.php:149
+msgid "Opening hours:"
+msgstr ""
+
+#: searchform.php:10 searchform.php:16
+msgid "Search"
+msgstr "חיפוש"
+
+#: searchform.php:13
+msgid "Search &hellip;"
+msgstr "חפש &hellip;"
+
+#: sidebar-hero.php:26 woocommerce/myaccount/orders.php:89
+msgid "Previous"
+msgstr "קודם"
+
+#: sidebar-hero.php:34 woocommerce/myaccount/orders.php:93
+msgid "Next"
+msgstr "הבא"
+
+#. translators: %s: app name
+#: woocommerce/auth/form-grant-access.php:25
+#: woocommerce/auth/form-login.php:29
+msgid "%s would like to connect to your store"
+msgstr "%s רוצה להתחבר לחנות שלך"
+
+#: woocommerce/auth/form-grant-access.php:29
+msgid "This will give \"%1$s\" %2$s access which will allow it to:"
+msgstr "זה יעניק ל “%s” <strong>%s</strong> גישה אשר תאפשר לו:"
+
+#: woocommerce/auth/form-grant-access.php:39
+msgid "Logged in as %s"
+msgstr "מחובר כ %s"
+
+#: woocommerce/auth/form-grant-access.php:39
+msgid "Logout"
+msgstr "להתנתק"
+
+#: woocommerce/auth/form-grant-access.php:43
+msgid "Approve"
+msgstr "מאושר"
+
+#: woocommerce/auth/form-grant-access.php:44
+msgid "Deny"
+msgstr "דחה"
+
+#. translators: %1$s: app name, %2$s: URL
+#: woocommerce/auth/form-login.php:38
+msgid ""
+"To connect to %1$s you need to be logged in. Log in to your store below, or "
+"<a href=\"%2$s\">cancel and return to %1$s</a>"
+msgstr ""
+"על מנל להתחבר ל %1$s עליך להיכנס למערכת. כנסי לחנו למטה או <a href=\"%2$s"
+"\">בטלי וחיזרי לעמוד %1$s</a>"
+
+#: woocommerce/auth/form-login.php:44 woocommerce/myaccount/form-login.php:44
+msgid "Username or email address"
+msgstr "שם משתמש או כתובת דוא\"ל"
+
+#: woocommerce/auth/form-login.php:48 woocommerce/global/form-login.php:39
+#: woocommerce/myaccount/form-login.php:48
+#: woocommerce/myaccount/form-login.php:98
+msgid "Password"
+msgstr "סיסמה"
+
+#: woocommerce/auth/form-login.php:53 woocommerce/global/form-login.php:48
+#: woocommerce/myaccount/form-login.php:37
+#: woocommerce/myaccount/form-login.php:56
+msgid "Login"
+msgstr "התחבר"
+
+#: woocommerce/auth/header.php:29
+msgid "Application authentication request"
+msgstr "בקשה לאימות יישומים"
+
+#: woocommerce/cart/cart-empty.php:33
+msgid "Return to shop"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:48
+msgid ""
+"There are no shipping methods available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:50
+msgid "Enter your full address to see shipping costs."
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:28
+msgid "Cart totals"
+msgstr "סה\"כ בעגלת הקניות"
+
+#: woocommerce/cart/cart-totals.php:33 woocommerce/cart/cart-totals.php:34
+#: woocommerce/cart/mini-cart.php:79 woocommerce/checkout/review-order.php:59
+msgid "Subtotal"
+msgstr "סיכום ביניים"
+
+#: woocommerce/cart/cart-totals.php:55 woocommerce/cart/cart-totals.php:56
+msgid "Shipping"
+msgstr "משלוח"
+
+#: woocommerce/cart/cart-totals.php:71
+msgid "(estimated for %s)"
+msgstr "(מוערך עבור: %s)"
+
+#: woocommerce/cart/mini-cart.php:87
+msgid "No products in the cart."
+msgstr "אין מוצרים בעגלה."
+
+#: woocommerce/cart/proceed-to-checkout-button.php:27
+msgid "Proceed to checkout"
+msgstr "מעבר לתשלום"
+
+#: woocommerce/cart/shipping-calculator.php:33
+msgid "Calculate shipping"
+msgstr "חשב עלויות משלוח"
+
+#: woocommerce/cart/shipping-calculator.php:39
+msgid "Select a country&hellip;"
+msgstr "בחירת ארץ&hellip;"
+
+#: woocommerce/cart/shipping-calculator.php:55
+#: woocommerce/cart/shipping-calculator.php:58
+#: woocommerce/cart/shipping-calculator.php:68
+msgid "State / County"
+msgstr "מדינה"
+
+#: woocommerce/cart/shipping-calculator.php:59
+msgid "Select a state&hellip;"
+msgstr "בחרו מדינה/מחוז &hellip;"
+
+#: woocommerce/cart/shipping-calculator.php:76
+msgid "City"
+msgstr "עיר"
+
+#: woocommerce/cart/shipping-calculator.php:84
+msgid "Postcode / ZIP"
+msgstr "מיקוד"
+
+#: woocommerce/checkout/cart-errors.php:27
+msgid ""
+"There are some issues with the items in your cart (shown above). Please go "
+"back to the cart page and resolve these issues before checking out."
+msgstr ""
+"יש כמה בעיות עם פריטים בסל הקניות (המוצג לעיל). נא לחזור לסל הקניות כדי "
+"לפתור את הבעיות האלה לפני התשלום."
+
+#: woocommerce/checkout/cart-errors.php:31
+msgid "Return to cart"
+msgstr "חזרה לסל הקניות"
+
+#: woocommerce/checkout/form-billing.php:52
+msgid "Create an account?"
+msgstr "צור חשבון?"
+
+#: woocommerce/checkout/form-checkout.php:29
+msgid "You must be logged in to checkout."
+msgstr "אתה חייב להיות מחובר כדי לבצע צ'ק אאוט."
+
+#: woocommerce/checkout/form-checkout.php:55
+msgid "Your order"
+msgstr "ההזמנה שלך"
+
+#: woocommerce/checkout/form-coupon.php:28
+msgid "Have a coupon?"
+msgstr "הזן קופון"
+
+#: woocommerce/checkout/form-coupon.php:28
+msgid "Click here to enter your code"
+msgstr "*(לא נאפשר כפל הנחת קופון ונקודות)"
+
+#: woocommerce/checkout/form-coupon.php:36
+msgid "Coupon code"
+msgstr "קוד קופון"
+
+#: woocommerce/checkout/form-coupon.php:40
+msgid "Apply coupon"
+msgstr "מימוש קופון"
+
+#: woocommerce/checkout/form-login.php:27
+msgid "Returning customer?"
+msgstr "<h2>לקוח רשום?</h2>"
+
+#: woocommerce/checkout/form-login.php:28
+msgid "Click here to login"
+msgstr "לחצי כאן כדי להתחבר"
+
+#: woocommerce/checkout/form-login.php:33
+msgid ""
+"If you have shopped with us before, please enter your details in the boxes "
+"below. If you are a new customer, please proceed to the Billing &amp; "
+"Shipping section."
+msgstr "אם קנית בעבר, מלא שם משתמש וסיסמה. ולא, מלא \"פרטי חיוב ומשלוח חדשים\""
+
+#: woocommerce/checkout/form-pay.php:30
+msgid "Qty"
+msgstr "כמות"
+
+#: woocommerce/checkout/form-pay.php:31
+msgid "Totals"
+msgstr "סה\"כ"
+
+#: woocommerce/checkout/form-pay.php:81
+msgid ""
+"Sorry, it seems that there are no available payment methods for your "
+"location. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
+msgstr ""
+"מצטערים, אין אפשרויות תשלום הזמינות עבור המיקום שלך. צרו עימנו קשר כדי לבצע "
+"תשלום באמצעים חלופיים."
+
+#: woocommerce/checkout/form-shipping.php:29
+msgid "Ship to a different address?"
+msgstr "תרצה/י משלוח לכתובת אחרת?"
+
+#: woocommerce/checkout/form-shipping.php:63
+msgid "Additional information"
+msgstr "מידע נוסף"
+
+#: woocommerce/checkout/order-receipt.php:26
+#: woocommerce/checkout/thankyou.php:46
+msgid "Order number:"
+msgstr "מספר הזמנה:"
+
+#: woocommerce/checkout/order-receipt.php:30
+#: woocommerce/checkout/thankyou.php:51
+msgid "Date:"
+msgstr "תאריך:"
+
+#: woocommerce/checkout/order-receipt.php:34
+#: woocommerce/checkout/thankyou.php:63
+msgid "Total:"
+msgstr "סך הכל:"
+
+#: woocommerce/checkout/order-receipt.php:39
+#: woocommerce/checkout/thankyou.php:69
+msgid "Payment method:"
+msgstr "אמצעי תשלום:"
+
+#: woocommerce/checkout/payment.php:36
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+"אין אפשרויות תשלום הזמינות עבור המדינה שלך. צרו קשר בכדי לבצע תשלום באמצעים "
+"חלופיים."
+
+#: woocommerce/checkout/payment.php:36
+msgid "Please fill in your details above to see available payment methods."
+msgstr "אנא הכניסו פרטים לעיל על מנת לקבל את אמצעי התשלום הזמינים."
+
+#: woocommerce/checkout/terms.php:26
+msgid ""
+"I&rsquo;ve read and accept the <a href=\"%s\" target=\"_blank\" class="
+"\"woocommerce-terms-and-conditions-link\">terms &amp; conditions</a>"
+msgstr ""
+"קראתי ואני מסכים ל<a href=\"%s\" class=\"woocommerce-terms-and-conditions-"
+"link\"> תנאי השימוש</a>"
+
+#: woocommerce/checkout/thankyou.php:30
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr "למרבה הצער לא ניתן לבצע את ההזמנה  הבנק דחה את הבקשה שלך."
+
+#: woocommerce/checkout/thankyou.php:33
+msgid "Pay"
+msgstr "שלם"
+
+#: woocommerce/checkout/thankyou.php:35
+msgid "My account"
+msgstr "חשבון משתמש"
+
+#: woocommerce/checkout/thankyou.php:41 woocommerce/checkout/thankyou.php:83
+msgid "Thank you. Your order has been received."
+msgstr "תודה! הזמנתך התקבלה בהצלחה."
+
+#: woocommerce/checkout/thankyou.php:57
+msgid "Email:"
+msgstr "דוא״ל:"
+
+#: woocommerce/content-single-product.php:77
+msgid "אחריות:"
+msgstr ""
+
+#: woocommerce/content-single-product.php:83
+msgid "זמן משלוח:"
+msgstr ""
+
+#: woocommerce/content-single-product.php:89
+msgid "אתר היצרן:"
+msgstr ""
+
+#: woocommerce/emails/admin-cancelled-order.php:28
+#: woocommerce/emails/plain/admin-cancelled-order.php:25
+msgid "The order #%1$s from %2$s has been cancelled. The order was as follows:"
+msgstr ""
+
+#: woocommerce/emails/admin-failed-order.php:28
+#: woocommerce/emails/plain/admin-failed-order.php:25
+msgid "Payment for order #%1$s from %2$s has failed. The order was as follows:"
+msgstr ""
+
+#: woocommerce/emails/admin-new-order.php:28
+msgid "You have received an order from %s. The order is as follows:"
+msgstr "קיבלתם הזמנה מאת %s. ההזמנה היא כדלקמן:"
+
+#: woocommerce/emails/customer-completed-order.php:28
+#: woocommerce/emails/plain/customer-completed-order.php:25
+msgid ""
+"Hi there. Your recent order on %s has been completed. Your order details are "
+"shown below for your reference:"
+msgstr "הרשמתך לשירות האיתותים של המאותתת הושלמה בהצלחה."
+
+#. translators: %1s item is the name of the site, %2s is a html link
+#: woocommerce/emails/customer-invoice.php:36
+#: woocommerce/emails/plain/customer-invoice.php:29
+msgid "An order has been created for you on %1$s. %2$s"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:44
+msgid "Pay for this order"
+msgstr ""
+
+#: woocommerce/emails/customer-new-account.php:27
+#: woocommerce/emails/plain/customer-new-account.php:25
+msgid "Thanks for creating an account on %1$s. Your username is %2$s"
+msgstr "תודה שיצרת חשבון ב- %1$s. השם משתמש לך הוא %2$s"
+
+#: woocommerce/emails/customer-new-account.php:31
+msgid "Your password has been automatically generated: %s"
+msgstr "הסיסמה שלך נוצרה באופן אוטומטי: %s"
+
+#: woocommerce/emails/customer-new-account.php:35
+#: woocommerce/emails/plain/customer-new-account.php:31
+msgid ""
+"You can access your account area to view your orders and change your "
+"password here: %s."
+msgstr ""
+"באפשרותך לגשת לחשבונך על מנת לצפות בהזמנות שלך ולשנות את הסיסמא שלך כאן: %s."
+
+#: woocommerce/emails/customer-note.php:28
+#: woocommerce/emails/plain/customer-note.php:25
+msgid "Hello, a note has just been added to your order:"
+msgstr "שלום, שים לב הערה התווספה להזמנה שלך:"
+
+#: woocommerce/emails/customer-note.php:32
+#: woocommerce/emails/plain/customer-note.php:33
+msgid "For your reference, your order details are shown below."
+msgstr "לעיונך, להלן פרטי ההזמנה שלך."
+
+#: woocommerce/emails/customer-on-hold-order.php:28
+#: woocommerce/emails/plain/customer-on-hold-order.php:25
+msgid ""
+"Your order is on-hold until we confirm payment has been received. Your order "
+"details are shown below for your reference:"
+msgstr ""
+"ההזמנה התקבלה וממתינה לאישור התשלום, ותשלח ביום משלוחים הקרוב. פרטי ההזמנה "
+"מוצגים להלן:"
+
+#: woocommerce/emails/customer-processing-order.php:28
+#: woocommerce/emails/plain/customer-processing-order.php:25
+msgid ""
+"Your order has been received and is now being processed. Your order details "
+"are shown below for your reference:"
+msgstr "הזמנתך התקבלה. פרטי ההזמנה מופיעים להלן:"
+
+#: woocommerce/emails/customer-refunded-order.php:30
+msgid "Hi there. Your order on %s has been partially refunded."
+msgstr "שלום. התקבל החזר חלקי עבור הזמנתך ב %s."
+
+#: woocommerce/emails/customer-refunded-order.php:32
+msgid "Hi there. Your order on %s has been refunded."
+msgstr "שלום. התקבל החזר מלא עבור הזמנתך ב %s."
+
+#: woocommerce/emails/customer-reset-password.php:27
+#: woocommerce/emails/plain/customer-reset-password.php:25
+msgid "Someone requested that the password be reset for the following account:"
+msgstr "התקבלה בקשה לאיפוס הסיסמה עבור המשתמש הבא:"
+
+#: woocommerce/emails/customer-reset-password.php:28
+#: woocommerce/emails/plain/customer-reset-password.php:27
+msgid "Username: %s"
+msgstr "שם משתמש: %s"
+
+#: woocommerce/emails/customer-reset-password.php:29
+#: woocommerce/emails/plain/customer-reset-password.php:28
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr "אם זו טעות, פשוט התעלם מהודעה זו ודבר לא יקרה."
+
+#: woocommerce/emails/customer-reset-password.php:30
+#: woocommerce/emails/plain/customer-reset-password.php:29
+msgid "To reset your password, visit the following address:"
+msgstr "על מנת לאפס את הסיסמה, יש להיכנס לכתובת הבא:"
+
+#: woocommerce/emails/customer-reset-password.php:33
+msgid "Click here to reset your password"
+msgstr "לחצי כאן כדי לאפס את הסיסמה"
+
+#: woocommerce/emails/email-addresses.php:28
+#: woocommerce/emails/plain/email-addresses.php:23
+#: woocommerce/myaccount/form-edit-address.php:23
+#: woocommerce/myaccount/my-address.php:27
+#: woocommerce/myaccount/my-address.php:32
+#: woocommerce/order/order-details-customer.php:33
+msgid "Billing address"
+msgstr "כתובת לחיוב"
+
+#: woocommerce/emails/email-addresses.php:31
+#: woocommerce/order/order-details-customer.php:36
+#: woocommerce/order/order-details-customer.php:54
+#: woocommerce/single-product/meta.php:31
+msgid "N/A"
+msgstr "לא זמין"
+
+#: woocommerce/emails/email-addresses.php:42
+#: woocommerce/emails/plain/email-addresses.php:35
+#: woocommerce/myaccount/form-edit-address.php:23
+#: woocommerce/myaccount/my-address.php:28
+#: woocommerce/order/order-details-customer.php:52
+msgid "Shipping address"
+msgstr "כתובת למשלוח"
+
+#: woocommerce/emails/email-customer-details.php:28
+#: woocommerce/emails/plain/email-customer-details.php:25
+msgid "Customer details"
+msgstr "פרטי הלקוח"
+
+#: woocommerce/emails/email-downloads.php:25
+#: woocommerce/emails/plain/email-downloads.php:23
+#: woocommerce/order/order-downloads.php:25
+msgid "Downloads"
+msgstr "ספרים דיגיטליים והורדות"
+
+#: woocommerce/emails/email-downloads.php:56
+#: woocommerce/emails/plain/email-downloads.php:43
+#: woocommerce/order/order-downloads.php:63
+msgid "Never"
+msgstr "אף פעם"
+
+#. translators: %s: Order ID.
+#: woocommerce/emails/email-order-details.php:36
+msgid "Order #%s"
+msgstr "הזמנות #%s"
+
+#: woocommerce/emails/email-order-details.php:79
+#: woocommerce/emails/plain/email-order-details.php:46
+#: woocommerce/order/order-details.php:84
+msgid "Note:"
+msgstr "הערה:"
+
+#: woocommerce/emails/email-order-items.php:34
+msgid "Product image"
+msgstr "תמונת המוצר"
+
+#: woocommerce/emails/plain/admin-new-order.php:25
+msgid "You have received an order from %s."
+msgstr "קיבלת הזמנה מאת  %s."
+
+#: woocommerce/emails/plain/customer-new-account.php:28
+msgid "Your password is %s."
+msgstr "הסיסמה שלך הוא %s."
+
+#: woocommerce/emails/plain/customer-refunded-order.php:25
+msgid ""
+"Hi there. Your order on %s has been refunded. Your order details are shown "
+"below for your reference:"
+msgstr "שלום רב. קבלת זיכוי עבור הזמנתך מ-%s. להלן פרטי ההזמנה:"
+
+#. translators: %s: Order ID.
+#: woocommerce/emails/plain/email-order-details.php:25
+msgid "Order number: %s"
+msgstr "מספר הזמנה:  %s"
+
+#. translators: %s: Order link.
+#: woocommerce/emails/plain/email-order-details.php:51
+msgid "View order: %s"
+msgstr "הצג הזמנה: %s"
+
+#: woocommerce/global/form-login.php:35
+#: woocommerce/myaccount/form-lost-password.php:30
+msgid "Username or email"
+msgstr "שם משתמש או כתובת דוא\"ל"
+
+#: woocommerce/global/form-login.php:51
+#: woocommerce/myaccount/form-login.php:58
+msgid "Remember me"
+msgstr "זכור אותי"
+
+#: woocommerce/global/form-login.php:55
+#: woocommerce/myaccount/form-login.php:62
+msgid "Lost your password?"
+msgstr "איפוס סיסמה?"
+
+#: woocommerce/global/quantity-input.php:33
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr "כמות"
+
+#: woocommerce/global/quantity-input.php:33
+msgid "%s quantity"
+msgstr ""
+
+#: woocommerce/loop/no-products-found.php:24
+msgid "No products were found matching your selection."
+msgstr "לא נמצאו מוצרים שתואמים את בחירתך."
+
+#. translators: %d: total results
+#: woocommerce/loop/result-count.php:29
+msgid "Showing the single result"
+msgid_plural "Showing all %d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: first result 2: last result 3: total results
+#: woocommerce/loop/result-count.php:34
+msgctxt "with first and last result"
+msgid "Showing the single result"
+msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/loop/sale-flash.php:28
+#: woocommerce/single-product/sale-flash.php:28
+msgid "Sale!"
+msgstr "מבצע!"
+
+#. translators: 1: user display name 2: logout url
+#: woocommerce/myaccount/dashboard.php:29
+msgid "Hello %1$s (not %1$s? <a href=\"%2$s\">Log out</a>)"
+msgstr "שלום %1$s (לא %1$s? <a href=\"%2$s\">התנתק</a>)"
+
+#: woocommerce/myaccount/dashboard.php:37
+msgid ""
+"From your account dashboard you can view your <a href=\"%1$s\">recent "
+"orders</a>, manage your <a href=\"%2$s\">shipping and billing addresses</a> "
+"and <a href=\"%3$s\">edit your password and account details</a>."
+msgstr ""
+"אתם נמצאים בדף ניהול החשבון שלכם מכאן תוכלו לראות את ה<a href=\"%1$s"
+"\">הזמנות האחרונות</a>, לנהל את <a href=\"%2$s\">כתובות המשלוח והחיוב</a>, "
+"ו<a href=\"%3$s\">לערוך את הסיסמא ואת פרטי החשבון</a>."
+
+#: woocommerce/myaccount/downloads.php:41 woocommerce/myaccount/orders.php:101
+msgid "Go shop"
+msgstr "המשך קניה"
+
+#: woocommerce/myaccount/downloads.php:43
+msgid "No downloads available yet."
+msgstr "אין עדיין הורדות זמינות."
+
+#: woocommerce/myaccount/form-add-payment-method.php:53
+#: woocommerce/myaccount/payment-methods.php:80
+msgid "Add payment method"
+msgstr "הוסף אמצעי תשלום"
+
+#: woocommerce/myaccount/form-add-payment-method.php:59
+msgid ""
+"New payment methods can only be added during checkout. Please contact us if "
+"you require assistance."
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:30
+msgid "First name"
+msgstr "שם פרטי"
+
+#: woocommerce/myaccount/form-edit-account.php:34
+msgid "Last name"
+msgstr "שם משפחה"
+
+#: woocommerce/myaccount/form-edit-account.php:40
+#: woocommerce/myaccount/form-login.php:91
+msgid "Email address"
+msgstr "כתובת מייל"
+
+#: woocommerce/myaccount/form-edit-account.php:45
+msgid "Password change"
+msgstr "שינוי סיסמה"
+
+#: woocommerce/myaccount/form-edit-account.php:48
+msgid "Current password (leave blank to leave unchanged)"
+msgstr "הסיסמה הנוכחית (השאר ריק כדי לא לבצע שינוי)"
+
+#: woocommerce/myaccount/form-edit-account.php:52
+msgid "New password (leave blank to leave unchanged)"
+msgstr "סיסמא חדשה (להשאיר ריק במידה ולא רוצים להחליף סיסמא)"
+
+#: woocommerce/myaccount/form-edit-account.php:56
+msgid "Confirm new password"
+msgstr "אשר סיסמא חדשה"
+
+#: woocommerce/myaccount/form-edit-account.php:66
+msgid "Save changes"
+msgstr "שמור שינויים"
+
+#: woocommerce/myaccount/form-edit-address.php:52
+msgid "Save address"
+msgstr "שמור כתובת"
+
+#: woocommerce/myaccount/form-login.php:75
+#: woocommerce/myaccount/form-login.php:108
+msgid "Register"
+msgstr "הרשמה"
+
+#: woocommerce/myaccount/form-login.php:84
+msgid "Username"
+msgstr "שם משתמש"
+
+#: woocommerce/myaccount/form-lost-password.php:27
+msgid ""
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
+msgstr "הזן שם משתמש או דוא\"ל. אימייל עם קישור לאיפוס סיסמה ישלח אליך מיד."
+
+#: woocommerce/myaccount/form-lost-password.php:40
+msgid "Reset password"
+msgstr "איפוס סיסמה"
+
+#: woocommerce/myaccount/form-reset-password.php:27
+msgid "Enter a new password below."
+msgstr "הזן סיסמה חדשה למטה."
+
+#: woocommerce/myaccount/form-reset-password.php:30
+msgid "New password"
+msgstr "סיסמה חדשה (10 תווים לפחות)"
+
+#: woocommerce/myaccount/form-reset-password.php:34
+msgid "Re-enter new password"
+msgstr "חזרו על הסיסמה החדשה"
+
+#: woocommerce/myaccount/form-reset-password.php:47
+msgid "Save"
+msgstr "שמור"
+
+#: woocommerce/myaccount/lost-password-confirmation.php:24
+msgid "Password reset email has been sent."
+msgstr "נשלח לינק לאיפוס הסיסמה."
+
+#: woocommerce/myaccount/lost-password-confirmation.php:27
+msgid ""
+"A password reset email has been sent to the email address on file for your "
+"account, but may take several minutes to show up in your inbox. Please wait "
+"at least 10 minutes before attempting another reset."
+msgstr ""
+"אימייל לאיפוס סיסמה נשלח לכתובת האימייל שלך (לא מצאת? חפש/י בזבל), תמיד "
+"מומלץ וקל להיכנס עם הרשת החברתית שלך."
+
+#: woocommerce/myaccount/my-address.php:41
+msgid "The following addresses will be used on the checkout page by default."
+msgstr "הכתובות הבאות ישמשו בתהליך הרכישה באופן אוטומטי"
+
+#: woocommerce/myaccount/my-address.php:57
+msgid "You have not set up this type of address yet."
+msgstr "לא הגדרת את סוג הכתובת הזאת עדיין."
+
+#: woocommerce/myaccount/my-downloads.php:30
+msgid "Available downloads"
+msgstr "הורדות זמינות"
+
+#: woocommerce/myaccount/my-downloads.php:39
+msgid "%s download remaining"
+msgid_plural "%s downloads remaining"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/myaccount/my-orders.php:13
+msgid "Order"
+msgstr "הזמנה"
+
+#: woocommerce/myaccount/my-orders.php:14
+msgid "Date"
+msgstr "תאריך"
+
+#: woocommerce/myaccount/my-orders.php:30
+msgid "Recent orders"
+msgstr "הזמנות אחרונות"
+
+#: woocommerce/myaccount/my-orders.php:55 woocommerce/myaccount/orders.php:51
+msgctxt "hash before order number"
+msgid "#"
+msgstr "#"
+
+#. translators: 1: formatted order total 2: total order items
+#: woocommerce/myaccount/my-orders.php:67 woocommerce/myaccount/orders.php:63
+msgid "%1$s for %2$s item"
+msgid_plural "%1$s for %2$s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/myaccount/orders.php:103
+msgid "No order has been made yet."
+msgstr "עדין לא בוצעו הזמנות."
+
+#. translators: 1: credit card type 2: last 4 digits
+#: woocommerce/myaccount/payment-methods.php:52
+msgid "%1$s ending in %2$s"
+msgstr "%s מסתיים ב %s"
+
+#: woocommerce/myaccount/payment-methods.php:73
+msgid "No saved methods found."
+msgstr "לא נמצאו שיטות שמורות."
+
+#. translators: 1: order number 2: order date 3: order status
+#: woocommerce/myaccount/view-order.php:29 woocommerce/order/tracking.php:27
+msgid "Order #%1$s was placed on %2$s and is currently %3$s."
+msgstr "הזמנה #%1$s נרשמה בתאריך %2$s וכעת %3$s."
+
+#: woocommerce/myaccount/view-order.php:37 woocommerce/order/tracking.php:35
+msgid "Order updates"
+msgstr "עדכוני הזמנה"
+
+#: woocommerce/myaccount/view-order.php:43 woocommerce/order/tracking.php:41
+msgid "l jS \\o\\f F Y, h:ia"
+msgstr "l, j בF, Y. H:i."
+
+#: woocommerce/order/form-tracking.php:29
+msgid ""
+"To track your order please enter your Order ID in the box below and press "
+"the \"Track\" button. This was given to you on your receipt and in the "
+"confirmation email you should have received."
+msgstr ""
+"כדי לעקוב אחר ההזמנה שלך, הזן את מזהה ההזמנה שלך בתיבה למטה ולחץ על הלחצן "
+"\"עקוב אחר\". זה ניתן לך על הקבלה שלך בדוא\"ל אישור היית צריך לקבל."
+
+#: woocommerce/order/form-tracking.php:31
+msgid "Order ID"
+msgstr "מספר הזמנה"
+
+#: woocommerce/order/form-tracking.php:31
+msgid "Found in your order confirmation email."
+msgstr "נמצא בדוא\"ל אישור ההזמנה שלך."
+
+#: woocommerce/order/form-tracking.php:32
+msgid "Billing email"
+msgstr "כתובת אימייל לחיוב"
+
+#: woocommerce/order/form-tracking.php:32
+msgid "Email you used during checkout."
+msgstr "דוא\"ל שבו השתמשת במהלך היציאה."
+
+#: woocommerce/order/form-tracking.php:35
+msgid "Track"
+msgstr "בדוק מצב"
+
+#: woocommerce/order/order-again.php:25
+msgid "Order again"
+msgstr "הזמן שוב"
+
+#: woocommerce/order/order-details.php:39
+msgid "Order details"
+msgstr "פרטי הזמנה"
+
+#: woocommerce/order/order-downloads.php:57
+msgid "&infin;"
+msgstr "&infin;"
+
+#: woocommerce/product-searchform.php:25
+msgid "Search for:"
+msgstr "חיפוש:"
+
+#: woocommerce/product-searchform.php:26
+msgid "Search products&hellip;"
+msgstr "חפש מוצרים&hellip;"
+
+#: woocommerce/product-searchform.php:27
+msgctxt "submit button"
+msgid "Search"
+msgstr "חיפוש"
+
+#: woocommerce/single-product/add-to-cart/variable.php:32
+msgid "This product is currently out of stock and unavailable."
+msgstr "פריט  זה חסר כרגע במלאי."
+
+#: woocommerce/single-product/add-to-cart/variable.php:43
+msgid "Clear"
+msgstr "נקה"
+
+#: woocommerce/single-product/add-to-cart/variation.php:25
+msgid ""
+"Sorry, this product is unavailable. Please choose a different combination."
+msgstr "מצטערים, מוצר זה אינו זמין כרגע. אנא בחרי שילוב אחר."
+
+#: woocommerce/single-product/meta.php:31
+msgid "SKU:"
+msgstr "מספר פריט"
+
+#: woocommerce/single-product/meta.php:35
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/meta.php:37
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/photoswipe.php:51
+msgid "Close (Esc)"
+msgstr "סגור (Esc)"
+
+#: woocommerce/single-product/photoswipe.php:53
+msgid "Share"
+msgstr "שיתוף"
+
+#: woocommerce/single-product/photoswipe.php:55
+msgid "Toggle fullscreen"
+msgstr "עבור למסך מלא"
+
+#: woocommerce/single-product/photoswipe.php:57
+msgid "Zoom in/out"
+msgstr "התקרב / הקטן"
+
+#: woocommerce/single-product/photoswipe.php:74
+msgid "Previous (arrow left)"
+msgstr "הקודם (חץ שמאלה)"
+
+#: woocommerce/single-product/photoswipe.php:76
+msgid "Next (arrow right)"
+msgstr "הבא (חץ ימינה)"
+
+#: woocommerce/single-product/product-attributes.php:28
+msgid "Weight"
+msgstr "משקל"
+
+#: woocommerce/single-product/product-attributes.php:35
+msgid "Dimensions"
+msgstr "ממדים"
+
+#: woocommerce/single-product/product-image.php:56
+msgid "Awaiting product image"
+msgstr "ממתין לתמונת מוצר"
+
+#: woocommerce/single-product/rating.php:37
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/review-meta.php:28
+msgid "Your review is awaiting approval"
+msgstr "הסקירה שלך ממתינה לאישור"
+
+#: woocommerce/single-product/review-meta.php:36
+msgid "verified owner"
+msgstr "לקוח מרוצה"
+
+#: woocommerce/single-product/tabs/description.php:25
+msgid "Description"
+msgstr "הסבר כללי על הבעיה שהמיזם פותר/הצורך אותו אמור המיזם למלא:"
+
+#: woocommerce/single-product/up-sells.php:27
+msgid "You may also like&hellip;"
+msgstr "…אולי גם תאהבו"
+
+#. translators: 1: reviews count 2: product name
+#: woocommerce/single-product-reviews.php:34
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product-reviews.php:36
+msgid "Reviews"
+msgstr "חוות דעת"
+
+#: woocommerce/single-product-reviews.php:58
+msgid "There are no reviews yet."
+msgstr "טרם נכתבו חוות דעת."
+
+#: woocommerce/single-product-reviews.php:71
+msgid "Add a review"
+msgstr "הוספת חוות דעת"
+
+#: woocommerce/single-product-reviews.php:71
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "תהיה הראשון לרשום ביקורת"
+
+#: woocommerce/single-product-reviews.php:72
+msgid "Leave a Reply to %s"
+msgstr "השאירו תגובה ל %s"
+
+#: woocommerce/single-product-reviews.php:82
+msgid "Submit"
+msgstr "שלח"
+
+#: woocommerce/single-product-reviews.php:88
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr "עליך <a href=\"%s\"> להתחבר </a> כדי לפרסם ביקורת."
+
+#: woocommerce/single-product-reviews.php:92
+msgid "Your rating"
+msgstr "הדירוג שלך"
+
+#: woocommerce/single-product-reviews.php:93
+msgid "Rate&hellip;"
+msgstr "ציון"
+
+#: woocommerce/single-product-reviews.php:94
+msgid "Perfect"
+msgstr "מעולה"
+
+#: woocommerce/single-product-reviews.php:95
+msgid "Good"
+msgstr "טוב מאד"
+
+#: woocommerce/single-product-reviews.php:96
+msgid "Average"
+msgstr "ממוצע"
+
+#: woocommerce/single-product-reviews.php:97
+msgid "Not that bad"
+msgstr "לא רע"
+
+#: woocommerce/single-product-reviews.php:98
+msgid "Very poor"
+msgstr "גרוע מאודpressure tendency"
+
+#: woocommerce/single-product-reviews.php:102
+msgid "Your review"
+msgstr "חוות הדעת שלך"
+
+#: woocommerce/single-product-reviews.php:111
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr "רק משתמשים רשומים אשר רכשו מוצר זה יכולים לרשום חוות דעת."
+
+#. Theme Name of the plugin/theme
+msgid "Veartix StartPC"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://veartix.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Modified Understrap Theme"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Article Page Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Calculator Page Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Contact Page Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Warranty Page Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blank Page Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Left and Right Sidebar Layout"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Empty Page Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Left Sidebar Layout"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Right Sidebar Layout"
+msgstr ""

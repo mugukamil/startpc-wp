@@ -1,0 +1,154 @@
+---
+title: Calculator
+cats: [['זכרון', 'ram', 'Desktop RAM,Laptop RAM'], ['כרטיס מסך', 'gpu', 'NVIDIA,AMD'], ['דיסק קשיח', 'hard disk', 'HDD,SSD'], ['כונן אופטי', 'optical drive', 'CD,DVD'], ['מארז', 'case', 'ATX,mATX'], ['ספק כוח', 'power supply', '500W,600W'], ['גוף קירור למארז', 'chassis cooler', '75w,95w'], ['תוכנה', 'software', 'Apps,Systems'], ['מסך מחשב', 'monitor', '4k,2k'], ['זרועות למסכים', 'arms for monitor', '2arms,3arms'], ['ציוד היקפי', 'peripheral', 'Keyboard,Mouse'], ['מצלמות רשת', 'webcam', 'HD,4k']]
+---
+extends layouts/_layout
+block content
+  .calculator#main
+    .container
+      .calculator__recommendations
+        p מחפשים מחשב מוכן?
+        a(href="catalog.html") המומלצים שלנו
+      .calculator__header
+        p.calculator__title מחשב בהרכבה עצמית
+        p.calculator__sub צריכים עזרה? אתם מוזמנים ליצור איתנו קשר ונשמח לעזור בשעות הפעילות&nbsp;
+          a(href="tel:09-7737447") 09-7737447
+      main.calculator__main.main
+        aside.site-sidebar.calc-sidebar.sidebar
+          .calculator__cat.calculator__cat--closed(data-cid="cpu" data-subcategories="Intel,AMD" data-compulsory="1")
+            table.calc-sidebar__table
+              caption מעבד&nbsp;
+                span *
+              tr.calc-sidebar__t-header
+                th דגם
+                th כמות
+                th מחיר
+          .calculator__cat.calculator__cat--closed(data-cid="cooling cpu" data-subcategories="Liquid Coolers,CPU Coolers" data-compulsory="1")
+            table.calc-sidebar__table
+              caption קירור למעבד&nbsp;
+                span *
+              tr.calc-sidebar__t-header
+                th דגם
+                th כמות
+                th מחיר
+          .calculator__cat.calculator__cat--closed(data-cid="motherboard" data-subcategories="Intel,AMD" data-compulsory="1")
+            table.calc-sidebar__table
+              caption לוח אם&nbsp;
+                span *
+              tr.calc-sidebar__t-header
+                th דגם
+                th כמות
+                th מחיר
+          each cap, i in cats
+            .calculator__cat.calculator__cat--closed(data-cid="#{cap[1]}" data-max="1" data-subcategories=(cap[2]) data-compulsory=(i == 0 || i == 1 || i == 4 || i == 5 || i == 6 ? 1 : 0))
+              table.calc-sidebar__table
+                if i == 0 || i == 1 || i == 4 || i == 5 || i == 6
+                  caption #{cap[0]}&nbsp;
+                    span *
+                else
+                  caption= cap[0]
+                tr.calc-sidebar__t-header
+                  th דגם
+                  th מחיר
+                  th כמות
+          .calculator__cat.calculator__cat--closed.calculator__cat--checkbox
+            input.custom-checkbox__input.js-checkbox-diff-name#water-cooling(type="checkbox", name="calculator-water-cooling")
+            label.custom-checkbox__label(for="water-cooling" tabindex="0")
+              span.custom-checkbox__icon.custom-checkbox__icon--small(tabindex="0")
+              strong קירור מים
+              span  - תוספת המחיר תמסר בטלפון
+          .calc-sidebar__required-text
+            p * רכיבים שחובה לבחור
+          .calc-sidebar__price
+            p סה”כ:&nbsp;
+              span ₪
+              span#js-total-price 0
+          .calc-sidebar__cart
+            button.js-add-to-cart הוסף לסל הקניות שלך
+          ul.calc-sidebar__share
+            li
+              a.calc-sidebar__share-link(href="")
+                i.share-icon.share-icon--html(aria-hidden="true")
+                span HTML
+            li
+              a.calc-sidebar__share-link(href="")
+                i.share-icon.share-icon--pdf(aria-hidden="true")
+                span PDF
+            li
+              a.calc-sidebar__share-link(href="")
+                i.share-icon.share-icon--fb(aria-hidden="true")
+                span Facebook
+          hr.calc-sidebar__hr
+          p.calc-sidebar__delivery זמן אספקה: עד 7 ימי עבודה.
+        .calculator__content.calc-content
+          ul.calc-content__tabs
+            li
+              button.calc-content__tabs__btn.calc-content__tabs__btn--active(data-tab="all") הצג הכל
+            li
+              button.calc-content__tabs__btn(data-tab="intel") Intel
+            li
+              button.calc-content__tabs__btn(data-tab="amd") AMD
+          .calc-content__in
+            .calc-content__header
+              div.calc-content__form-wrapper
+                a(role="button" class="js-show-sidebar" title="show sidebar")
+                  i(class="fa fa-times" aria-controls="navigation" aria-expanded="false" role="img")
+                  span(class="hamlines" aria-controls="navigation" aria-expanded="true" role="img")
+                form.calc-content__search
+                  div.calc-content__search-container
+                    input.calc-content__search-input(type="text" placeholder="חיפוש..." autocomplete="off" title="search")
+                    a.calc-content__search-btn(href="search.html")
+                      i.fa.fa-search(role="icon")
+              .calc-content__filter
+                p.calc-content__filter-text סינון לפי
+                .calc-content__filter-dropdown-out
+                  select.calc-content__filter-dropdown(title="filter dropdown")
+                    option(value="מחיר - מהזול ליקר") מחיר - מהזול ליקר
+                    option(value="מחיר - מהזול ליקר") מחיר - מהזול ליקר
+                    option(value="מחיר - מהזול ליקר") מחיר - מהזול ליקר
+                    option(value="מחיר - מהזול ליקר") מחיר - מהזול ליקר
+              .calc-content__shows
+                button.calc-content__show.active.js-show-grid(aria-label="grid view")
+                  svg(xmlns='http://www.w3.org/2000/svg', width='31', height='31', viewbox='0 0 31 31')
+                    path(fill='#909090', d='M0 31V0h31v31z')
+                    path(fill='#fff', d='M13 18v-5h5v5zM13 26v-5h5v5zM13 10V5h5v5zM21 18v-5h5v5zM21 26v-5h5v5zM21 10V5h5v5zM5 18v-5h5v5zM5 26v-5h5v5zM5 10V5h5v5z')
+                button.calc-content__show.js-show-list(aria-label="list view")
+                  svg(xmlns='http://www.w3.org/2000/svg', width='31', height='31', viewbox='0 0 31 31')
+                    path(fill='#909090', d='M0 31V0h31v31z')
+                    path(fill='#fff', d='M5 10V5h21v5zM5 18v-5h21v5zM5 26v-5h21v5z')
+            .calc-content__products.calc-products
+              -for (let j = 1; j < 6; j++)
+                each cid, i in cats.concat([['', 'cpu', 'amd,intel'], ['', 'motherboard', 'amd,intel'], ['', 'cooling cpu', 'cpu coolers,liquid coolers']])
+                  .calc-product(tabindex="0" data-subcat=(j > 3 ? cid[2].split(',')[0].toLowerCase() : cid[2].split(',')[1].toLowerCase()) data-cid=(cid[1]) data-pid=((i + 2 * j) * j * cid[2].length * 7))
+                      p.calc-product__text AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX
+                      div.calc-product__logo-out
+                        img.calc-product__logo(src="img/amd.jpg", alt="product brand")
+                      div.calc-product__img-out
+                        img.calc-product__img(src="img/product-image.png", alt="product image")
+                      ul.calc-product__tags.product-tags
+                        li.product-tags__tag Unlocked
+                        li.product-tags__tag 3.4GHz
+                        li.product-tags__tag 8 Core
+                      p.calc-product__warranty 5 שנות אחריות
+                      if (i == 2)
+                        p.calc-product__price
+                          span(data-price="5252") ₪5,252
+                      else if (i == 5)
+                        p.calc-product__price
+                          span(data-price="7312") ₪7,312
+                      else if (i == 6)
+                        p.calc-product__price
+                          s ₪2,648
+                          span(data-price="1348") ₪1,348
+                      else
+                        p.calc-product__price
+                          s ₪7,648
+                          span(data-price="7312") ₪7,312
+                      .calc-product__hover
+                        a.calc-product__more(href="product.html" target="_blank") פרטים נוספים
+                          span.calc-product__icon(aria-hidden="true")
+                        a.calc-product__add-to-cart(href="" data-cid=(cid[1]) data-pid=((i + 2 * j) * j * cid[2].length * 7)) הוסף למפרט
+                          span.calc-product__icon(aria-hidden="true")
+                        a.calc-product__remove-from-cart(href="" data-cid=(cid[1]) data-pid=((i + 2 * j) * j * cid[2].length * 7)) הסר מהמפרט
+                          span.calc-product__icon(aria-hidden="true")
+

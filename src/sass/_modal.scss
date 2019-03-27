@@ -1,0 +1,72 @@
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
+
+// Container that the modal scrolls within
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  // Prevent Chrome on Windows from adding a focus outline. For details, see
+  // https://github.com/twbs/bootstrap/pull/10951.
+  outline: 0;
+  // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
+  // gnarly iOS Safari bug: https://bugs.webkit.org/show_bug.cgi?id=158342
+  // See also https://github.com/twbs/bootstrap/issues/17695
+
+  // When fading in the modal, animate it to slide down
+  &.fade .modal__dialog {
+    @include tr(all .25s);
+    transform: translate(0, -25%);
+  }
+  &.show .modal__dialog { transform: translate(0, 0); }
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal__dialog {
+  position: relative;
+  width: auto;
+  max-width: 470px;
+  box-shadow: 1px 1px 29px rgba(0, 0, 0, 0.17);
+  background-color: #25262a;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 208px;
+  text-align: center;
+}
+
+.modal__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // counteract the pointer-events: none; in the .modal-dialog
+  pointer-events: auto;
+  background-clip: padding-box;
+  // Remove focus outline from opened modal
+  outline: 0;
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #161719;
+
+  // Fade for backdrop
+  &.fade { opacity: 0; }
+  &.show { opacity: 0.95; }
+}

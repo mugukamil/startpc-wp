@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="he">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Cart</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body>
+    <div id="skip"><a href="#main">Skip to main content</a></div>
+    <div id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true" class="modal fade modal--search">
+      <div class="modal__dialog"><button type="button" aria-label="close modal" class="modal__close js-close-modal"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewbox="0 0 26 26"><path fill="#fff" transform="translate(-787 -156)" d="M788.35 181.35l-.7-.7L799.29 169l-11.64-11.65.7-.7L800 168.29l11.65-11.64.7.7L800.71 169l11.64 11.65-.7.7L800 169.71z"></path></svg></button>
+        <div
+          role="document" class="modal__content">
+          <p id="searchModalLabel" class="modal__title">חיפוש באתר</p>
+          <form>
+            <div class="modal__input-out modal__input-out--empty"><input type="text" name="search-modal" placeholder="נא להזין את מונח החיפוש..." title="search" class="modal__input modal__input--search"><a href="search" aria-label="search" class="modal__search"></a></div>
+          </form>
+      </div>
+    </div>
+    </div>
+    <div id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true" class="modal fade modal--order">
+      <div class="modal__dialog"><button type="button" aria-label="close modal" class="modal__close js-close-modal"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewbox="0 0 26 26"><path fill="#fff" transform="translate(-787 -156)" d="M788.35 181.35l-.7-.7L799.29 169l-11.64-11.65.7-.7L800 168.29l11.65-11.64.7.7L800.71 169l11.64 11.65-.7.7L800 169.71z"></path></svg></button>
+        <div
+          role="document" class="modal__content">
+          <p id="orderModalLabel" class="modal__title">הזמנתך נקלטה בהצלחה</p>
+          <p class="modal__sub">אנו ניצור איתך קשר בהקדם האפשרי</p>
+      </div>
+    </div>
+    </div>
+    <div class="facebook"><button class="facebook__btn">facebook</button>
+      <div class="facebook__frame"><iframe name="f3f30d045e22348" width="285" height="300" allowfullscreen title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.4/plugins/page.php?adapt_container_width=true&amp;app_id=128011213963529&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F18W0fzbK7xg.js%3Fversion%3D42%23cb%3Dfd7eff5a453a8%26domain%3Dwww.startpc.co.il%26origin%3Dhttp%253A%252F%252Fwww.startpc.co.il%252Ff1e548f4919c874%26relation%3Dparent.parent&amp;container_width=465&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fstartpc.gaming&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=false&amp;width=285"
+          style="border: none; visibility: visible;"></iframe></div>
+    </div>
+    <header class="site-header">
+      <div class="container"><a href="/" aria-label="Link to home page" class="site-header__logo"><img src="img/logo.png" alt="StartPC Logo"></a>
+        <nav role="navigation" class="site-nav">
+          <div class="menu-toggle"><button aria-label="Menu" class="hamburger"><i aria-controls="navigation" aria-expanded="false" role="img" class="fa fa-bars"></i><i aria-controls="navigation" aria-expanded="false" role="img" class="fa fa-times"></i></button></div>
+          <ul id="navigation"
+            class="site-nav__menu">
+            <li class="site-nav__item"><a href="">עמוד ראשי</a></li>
+            <li class="site-nav__item site-nav__item--mega"><a href="">קטלוג מוצרים<span class="site-nav__sub-arrow"></span></a>
+              <ul class="site-nav__mega-menu mega-menu">
+                <li class="mega-menu__column">
+                  <ul>
+                    <li>
+                      <div class="mega-menu__header"><a href="">מחשבי גיימינג</a><img src="img/mega-menu1.png" alt="מחשבי גיימינג" class="mega-menu__img"></div>
+                      <ul class="mega-menu__links">
+                        <li class="mega-menu__link"><a href="">מערכות - VALUE</a></li>
+                        <li class="mega-menu__link"><a href="">מערכות - SOLID</a></li>
+                        <li class="mega-menu__link"><a href="">מערכות - SUPREME</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mega-menu__column">
+                  <ul>
+                    <li>
+                      <div class="mega-menu__header"><a href="">חומרה וציוד היקפי</a><img src="img/mega-menu2.png" alt="מחשבי גיימינג" class="mega-menu__img"></div>
+                      <ul class="mega-menu__links">
+                        <li class="mega-menu__link"><a href="">פתרונות קירור</a></li>
+                        <li class="mega-menu__link"><a href="">כרטיסי מסך</a></li>
+                        <li class="mega-menu__link"><a href="">דיסקים קשיחים</a></li>
+                        <li class="mega-menu__link"><a href="">מקלדות ועכברים</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mega-menu__column">
+                  <ul>
+                    <li>
+                      <div class="mega-menu__header"><a href="">מסכי מחשב</a><img src="img/mega-menu3.png" alt="מחשבי גיימינג" class="mega-menu__img"></div>
+                      <ul class="mega-menu__links">
+                        <li class="mega-menu__link"><a href="">מסכי מגע</a></li>
+                        <li class="mega-menu__link"><a href="">מסכים קעורים</a></li>
+                        <li class="mega-menu__link"><a href="">מסכי גיימינג</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mega-menu__column">
+                  <ul>
+                    <li>
+                      <div class="mega-menu__header"><a href="">מחשבים ניידים</a><img src="img/mega-menu4.png" alt="מחשבי גיימינג" class="mega-menu__img"></div>
+                      <ul class="mega-menu__links">
+                        <li class="mega-menu__link"><a href="">11.1 - 12.1 אינץ’</a></li>
+                        <li class="mega-menu__link"><a href="">12.1 - 14.1 אינץ’</a></li>
+                        <li class="mega-menu__link"><a href="">15 - 16 אינץ’</a></li>
+                        <li class="mega-menu__link"><a href="">17 אינץ’ ומעלה</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="site-nav__item"><a href="">הרכבה עצמית</a></li>
+            <li class="site-nav__item"><a href="">שירות ואחריות</a></li>
+            <li class="site-nav__item"><a href="">צור קשר</a></li>
+          </ul>
+        </nav>
+        <div class="cart-and-search">
+          <ul>
+            <li class="cart-and-search__item cart-and-search__item--cart"><a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="26px" height="32px" viewbox="0 0 26 33" class="icon-cart"><path fill="#fff" d="M26 28.66L24.12 8.03a.89.89 0 0 0-.89-.8h-3.82A6.38 6.38 0 0 0 13 1a6.38 6.38 0 0 0-6.42 6.22H2.76a.88.88 0 0 0-.9.8L.02 28.67l-.01.08C0 31.09 2.19 33 4.88 33h16.24c2.7 0 4.88-1.91 4.88-4.26v-.08zM13 2.76a4.6 4.6 0 0 1 4.62 4.46H8.38A4.6 4.6 0 0 1 13 2.77zm8.12 28.47H4.88c-1.7 0-3.06-1.1-3.09-2.45L3.57 9h3v2.68c0 .49.4.88.9.88s.9-.39.9-.88V9h9.25v2.68c0 .49.4.88.9.88s.9-.39.9-.88V9h3l1.79 19.78c-.03 1.35-1.4 2.45-3.09 2.45z"></path><text x="13" y="25" class="js-cart-qty icon-cart__text">3</text></svg></a>
+              <div
+                class="cart-dropdown">
+                <ul>
+                  <li><img src="img/cart-img1.png" alt="" class="cart-dropdown__img">
+                    <div class="cart-dropdown__info">
+                      <p class="cart-dropdown__title cart-dropdown__title--ltr">AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX</p>
+                      <p class="cart-dropdown__price">3,675 ₪ / 2 יחידות</p>
+                    </div><button aria-label="remove item" class="cart-dropdown__close js-close"></button></li>
+                  <li><img src="img/cart-img2.png" alt="" class="cart-dropdown__img">
+                    <div class="cart-dropdown__info">
+                      <p class="cart-dropdown__title">מחשב בהרכבה עצמית</p>
+                      <p class="cart-dropdown__price">3,675 ₪ / 2 יחידות</p>
+                    </div><button aria-label="remove item" class="cart-dropdown__close js-close"></button></li>
+                  <li><img src="img/cart-img2.png" alt="" class="cart-dropdown__img">
+                    <div class="cart-dropdown__info">
+                      <p class="cart-dropdown__title">מחשב בהרכבה עצמית</p>
+                      <p class="cart-dropdown__price">3,675 ₪ / 2 יחידות</p>
+                    </div><button aria-label="remove item" class="cart-dropdown__close js-close"></button></li>
+                </ul>
+                <hr class="cart-dropdown__hr">
+                <p class="cart-dropdown__total">סה”כ: 10,801 ₪</p>
+                <div class="cart-dropdown__btn"><button class="btn">הזמנה</button></div>
+        </div>
+        </li>
+        <li class="cart-and-search__item"><button type="button" data-toggle="modal" data-target="searchModal" aria-label="Search" class="js-toggle-modal cart-and-search__button"></button></li>
+        </ul>
+      </div>
+      </div>
+    </header>
+    <div id="main" class="simple-page cart-page">
+      <div class="container">
+        <div class="simple-page__header">
+          <h1 class="simple-page__title"><span>סל הקניות שלך</span></h1>
+        </div>
+        <main class="cart-page__main">
+          <div class="cart-page__content">
+            <div class="cart-page__table">
+              <table class="cart-table">
+                <thead>
+                  <tr>
+                    <th>תמונה</th>
+                    <th>המוצר</th>
+                    <th>כמות</th>
+                    <th>מחיר</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="plus-minus">
+                    <td class="cart-table__img"><img src="img/cart-page-img1.png" alt=""></td>
+                    <td>
+                      <p class="cart-table__name">מסך מחשב 25 אינץ’ של חברת DELL</p>
+                    </td>
+                    <td>
+                      <div class="input-plus-minus"><button type="button" data-type="plus" aria-label="increase quantity by 1" class="btn-number"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M15.000,7.994 L7.994,7.994 L7.994,15.000 L7.006,15.000 L7.006,7.994 L-0.000,7.994 L-0.000,7.006 L7.006,7.006 L7.006,-0.000 L7.994,-0.000 L7.994,7.006 L15.000,7.006 L15.000,7.994 Z"></path></svg></button>
+                        <input
+                          type="text" value="1" min="1" max="100" title="product quantity" class="input-number"><button type="button" data-type="minus" aria-label="decrease quantity by 1" class="btn-number"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="1px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M0.000,0.994 L0.000,0.006 L15.000,0.006 L15.000,0.994 L0.000,0.994 Z"></path></svg></button></div>
+                    </td>
+                    <td>
+                      <p data-price="7312" class="cart-table__price js-cart-price">₪7,312</p>
+                    </td>
+                    <td><button aria-label="remove item" class="cart-table__remove js-remove-cart-item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewbox="0 0 26 26"><path fill="#797979" transform="translate(-787 -156)" d="M788.35 181.35l-.7-.7L799.29 169l-11.64-11.65.7-.7L800 168.29l11.65-11.64.7.7L800.71 169l11.64 11.65-.7.7L800 169.71z"></path></svg></button></td>
+                  </tr>
+                  <tr class="plus-minus">
+                    <td class="cart-table__img"><img src="img/cart-page-img2.png" alt=""></td>
+                    <td>
+                      <p class="cart-table__name">מחשב בהרכבה עצמית:</p>
+                      <p class="cart-table__info">מארז: Gigabyte XC300W</p>
+                      <p class="cart-table__info">מעבד: Intel i7-6900K 3.2GH</p>
+                      <p class="cart-table__info">לוח אם: MSI Z270 GAMING M5</p>
+                      <p class="cart-table__info">זכרון: 32G (2x16G) Corsair Vengance LPX</p>
+                      <p class="cart-table__info">כרטיס מסך: ASUS Nvidia GeForce GTX1080Ti</p>
+                      <p class="cart-table__info">דיסק קשיח: Seagate 4T 3.5'' Sata3 Barracuda</p>
+                      <p class="cart-table__info">ספק כוח: Antec HCP-1000 80</p>
+                    </td>
+                    <td>
+                      <div class="input-plus-minus"><button type="button" data-type="plus" aria-label="increase quantity by 1" class="btn-number"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M15.000,7.994 L7.994,7.994 L7.994,15.000 L7.006,15.000 L7.006,7.994 L-0.000,7.994 L-0.000,7.006 L7.006,7.006 L7.006,-0.000 L7.994,-0.000 L7.994,7.006 L15.000,7.006 L15.000,7.994 Z"></path></svg></button>
+                        <input
+                          type="text" name="quant[2]" value="1" min="1" max="100" title="product quantity" class="input-number"><button type="button" data-type="minus" aria-label="decrease quantity by 1" class="btn-number"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="1px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M0.000,0.994 L0.000,0.006 L15.000,0.006 L15.000,0.994 L0.000,0.994 Z"></path></svg></button></div>
+                    </td>
+                    <td>
+                      <p data-price="12588" class="cart-table__price js-cart-price">₪12,588</p>
+                    </td>
+                    <td><button aria-label="remove item" class="cart-table__remove js-remove-cart-item"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewbox="0 0 26 26"><path fill="#797979" transform="translate(-787 -156)" d="M788.35 181.35l-.7-.7L799.29 169l-11.64-11.65.7-.7L800 168.29l11.65-11.64.7.7L800.71 169l11.64 11.65-.7.7L800 169.71z"></path></svg></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <aside class="site-sidebar cart-page__sidebar cart-sidebar">
+            <p class="cart-sidebar__title">ביצוע הזמנה</p>
+            <form required class="cart-sidebar__form cart-form">
+              <div class="cart-form__50-50 cart-form__row"><input type="text" placeholder="שם פרטי *" required autocomplete="off" title="first name" class="cart-form__input js-heb-en"><input type="text" placeholder="שם משפחה *" required autocomplete="off" title="last name" class="cart-form__input js-heb-en"></div>
+              <div
+                class="cart-form__100 cart-form__row"><input type="tel" placeholder="מספר טלפון *" required autocomplete="off" title="phone" class="cart-form__input"></div>
+      <div class="cart-form__100 cart-form__row"><input type="text" placeholder="דואר אלקטרוני *" required autocomplete="off" title="email" pattern="^([\w]+[.-]?[^\W_]?[a-zA-Z0-9]+)+@([\w][.-]?)*[\w-]\.[a-zA-Z_-]([\w-]*)[^\W_]$|^([\w]+[.-]?[^\W_]?[a-zA-Z0-9]+)+@(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+          class="cart-form__input js-email"></div>
+      <div class="cart-form__60-40 cart-form__row"><input type="text" placeholder="עיר *" required autocomplete="off" title="city" class="cart-form__input js-heb-en"><input type="text" placeholder="רחוב *" required autocomplete="off" title="street" class="cart-form__input js-heb-en"></div>
+      <div class="cart-form__40-30-30 cart-form__row"><input type="text" placeholder="בית *" required autocomplete="off" title="home" class="cart-form__input js-num"><input type="text" placeholder="דירה *" required autocomplete="off" title="apartment" class="cart-form__input js-num"><input type="text"
+          placeholder="מיקוד *" required autocomplete="off" title="postal code" class="cart-form__input js-num"></div>
+      <div class="cart-form__row custom-checkbox cart-form__checkbox"><input id="diff-name" type="checkbox" name="checkout-different-name" class="custom-checkbox__input js-checkbox-diff-name"><label for="diff-name" tabindex="0" class="custom-checkbox__label"><span tabindex="0" class="custom-checkbox__icon custom-checkbox__icon--small"></span>ברצוני לקבל חשבונית על שם אחר</label></div>
+      <div
+        style="display: none" class="cart-form__100 cart-form__row cart-form__small-margin js-input-diff-name"><input type="text" placeholder="שם על החשבונית" autocomplete="off" title="name on invoice" class="cart-form__input js-heb-en"></div>
+    <div class="cart-form__2col cart-form__row cart-form__row--with-bg">
+      <div class="cart-form__col1 custom-radio"><input id="self-collection" type="radio" name="self-collection" checked class="cart-form__radio custom-radio__input"><label for="self-collection" tabindex="0" class="custom-radio__label"><span tabindex="0" class="custom-radio__icon custom-radio__icon--white"></span>איסוף עצמי מסניף</label></div>
+      <div
+        class="cart-form__col2">
+        <div tabindex="0" class="sel js-select cart-form__select"><select hidden aria-hidden="true" title="place" class="cart-form__select"><option>אודים</option><option value="אודים">אודים</option><option value="אשדוד">אשדוד</option><option value="תל אביב">תל אביב</option><option value="חיפה">חיפה</option></select></div>
+    </div>
+    </div>
+    <div class="cart-form__100 cart-form__row cart-form__row--with-bg custom-radio"><input id="delivery-to-home" type="radio" name="self-collection" class="contact-form__radio custom-radio__input"><label for="delivery-to-home" tabindex="0" class="custom-radio__label"><span tabindex="0" class="custom-radio__icon custom-radio__icon--white"></span>משלוח עד הבית: ₪39</label></div>
+    <hr
+      class="cart-form__hr">
+      <div class="cart-form__row">
+        <div class="cart-form__commission"><span>₪1,845 לחודש ב-</span>
+          <div tabindex="0" class="sel js-select cart-form__commission-select"><select hidden aria-hidden="true" title="per month" class="cart-form__commission-select"><option>11</option><option value="11">11</option><option value="12">12</option><option value="13">13</option></select></div><span>תשלומים (₪398 עמלה)</span></div>
+      </div>
+      <div class="cart-form__row">
+        <p class="cart-form__total">סה”כ: ₪<span class="js-cart-total">23,749</span></p>
+      </div>
+      <hr class="cart-form__hr cart-form__hr--small-margin">
+      <div class="cart-form__row custom-checkbox cart-form__checkbox"><input id="agreement" type="checkbox" name="agreement" class="custom-checkbox__input js-agreement"><label for="agreement" tabindex="0" class="custom-checkbox__label"><span tabindex="0" class="custom-checkbox__icon custom-checkbox__icon--small"></span>אני מאשרת שקראתי, הבנתי והסכמתי&nbsp;<a href="">לתקנון</a></label></div>
+      <div
+        class="cart-form__row"><input type="submit" value="אישור הזמנה" disabled class="cart-form__submit"></div>
+        </form>
+        </aside>
+        </main>
+        </div>
+        </div>
+        <footer class="site-footer"><a href="#0" class="cd-top cd-is-visible">Scroll to top<i aria-hidden="true" class="fa fa-chevron-up"></i></a>
+          <div class="container">
+            <div class="site-footer__menu footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a href="">עמוד ראשי</a></li>
+                <li class="footer-menu__item"><a href="">קטלוג מוצרים</a></li>
+                <li class="footer-menu__item"><a href="">הרכבה עצמית</a></li>
+                <li class="footer-menu__item"><a href="">שירות ואחריות</a></li>
+                <li class="footer-menu__item"><a href="">צור קשר</a></li>
+              </ul>
+            </div>
+            <div class="site-footer__copyright"><a href=""><span class="site-footer__copyright-text">UI & Graphics by</span><img src="img/veartix.png" alt="veartix" class="site-footer__copyright-img"></a></div>
+          </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+          WebFont.load(
+          {
+            google:
+            {
+              families: ['Arimo:400,700:latin,hebrew', 'Heebo:hebrew', 'Roboto']
+            }
+          });
+
+        </script>
+        <script type="text/javascript" src="js/app.js"></script>
+  </body>
+
+</html>

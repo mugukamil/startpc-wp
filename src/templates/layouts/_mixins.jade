@@ -1,0 +1,55 @@
+- var svgSprite = 'img/sprite.svg'
+
+mixin icon(name, modClass)
+  if modClass == undefined
+    - var modClass = ''
+  else
+    - var modClass = ' ' + modClass
+  svg(class=name + modClass)
+    use(xlink:href= svgSprite + '#' + name)
+
+mixin product(qty, catalog = false)
+  -for (let i = 0; i < qty; i++)
+    -var cat = catalog && (i % 3 === 0 ? 'gaming computer' : i % 2 === 0 ? 'hardware' : i % 7 === 0 ? 'monitors' : i % 5 === 0 ? 'laptops' : 'consoles')
+    -var filter = catalog && (i < 2 ? 'cpu-corei7' : i < 4 ? 'cpu-corei5' : i < 6 ? 'cpu-amd5' : i < 8 ? 'cpu-amd7' : i < 10 ? 'mb-x299' : i < 12 ? 'mb-320m' : i < 14 ? 'mb-b250' : i < 16 ? 'mb-b350' : 'mem-8gb')
+    -var filterCat = catalog && (i < 3 ? 'all-in-one' : i < 6 ? 'brand-pc' : i < 9 ? 'recommended' : 'deals')
+    .calc-product(tabindex="0" data-cat=(cat) data-pid=(i) data-filter=(filter) data-filtercat=(filterCat))
+      p.calc-product__text AMD Quad Core RYZEN 5 1400 3.2Ghz-3.4GHz AM4 BOX
+      div.calc-product__logo-out
+        img.calc-product__logo(src="img/amd.jpg", alt="product brand")
+      div.calc-product__img-out
+        img.calc-product__img(src="img/product-image.png", alt="product image")
+      ul.calc-product__tags.product-tags
+        li.product-tags__tag Unlocked
+        li.product-tags__tag 3.4GHz
+        li.product-tags__tag 8 Core
+      p.calc-product__warranty 5 שנות אחריות
+      if (i == 2)
+        p.calc-product__price
+          span(data-price="5252") ₪5,252
+      else if (i == 5)
+        p.calc-product__price
+          span(data-price="7312") ₪7,312
+      else if (i == 6)
+        p.calc-product__price
+          s ₪2,648
+          span(data-price="1348") ₪1,348
+      else
+        p.calc-product__price
+          s ₪7,648
+          span(data-price="7312") ₪7,312
+      .calc-product__hover
+        a.calc-product__more(href="product.html" target="_blank") פרטים נוספים
+          span.calc-product__icon(aria-hidden="true")
+        if (catalog)
+          a.calc-product__add-to-cart(href="" data-pid=(i) data-cid="cpu") הוסף לסל
+            span.calc-product__icon(aria-hidden="true")
+        else
+          a.calc-product__add-to-cart(href="" data-cid=(cid) data-pid=(i)) הוסף למפרט
+            span.calc-product__icon(aria-hidden="true")
+        if (catalog)
+          a.calc-product__remove-from-cart(href="" data-cid=(cid) data-pid=(i)) להסיר מסל
+            span.calc-product__icon(aria-hidden="true")
+        else
+          a.calc-product__remove-from-cart(href="" data-cid=(cid) data-pid=(i)) הסר מהמפרט
+            span.calc-product__icon(aria-hidden="true")

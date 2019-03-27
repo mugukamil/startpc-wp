@@ -1,0 +1,25 @@
+include _mixins
+doctype html
+html(lang="he")
+  head
+    include _head
+
+  body(class=bodyClass)
+    block header
+      include ../partials/_header
+    block content
+    include ../partials/_footer
+
+
+    block scripts
+      script(src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js')
+      script.
+        WebFont.load({
+          google: {
+            families: ['Arimo:400,700:latin,hebrew', 'Heebo:hebrew', 'Roboto']
+          }
+        });
+      script(type="text/javascript" src="js/app.js")
+      if (title == 'Contact')
+        script.
+          loadMap("#map");

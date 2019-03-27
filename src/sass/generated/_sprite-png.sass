@@ -1,0 +1,54 @@
+$icons: (0:0)
+$icons: map-merge($icons,('share-fb': (X: 0px, Y:0px, W: 29px, H: 31px, TW: 107px, TH: 31px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('share-html': (X: -39px, Y:0px, W: 29px, H: 31px, TW: 107px, TH: 31px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('share-pdf': (X: -78px, Y:0px, W: 29px, H: 31px, TW: 107px, TH: 31px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2
+
+
+@mixin s($i)
+  +sprite($i)
+@mixin sp($i)
+  +sprite-position($i)
+@mixin sr($i)
+  +sprite-retina($i)
+
+.share-fb
+  width: 29px
+  height: 31px
+  background-image: url('../img/sprite.png')
+  background-position: 0px 0px
+.share-html
+  width: 29px
+  height: 31px
+  background-image: url('../img/sprite.png')
+  background-position: -39px 0px
+.share-pdf
+  width: 29px
+  height: 31px
+  background-image: url('../img/sprite.png')
+  background-position: -78px 0px

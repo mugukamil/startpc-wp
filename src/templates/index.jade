@@ -1,0 +1,38 @@
+---
+title: Index Page
+---
+extends layouts/_layout
+block content
+  main#main
+    include partials/_main-slider
+    .categories
+      .category.category--big(tabindex="0")
+        figure
+          img.category--big__img(src="img/dekstop-pc.png", alt="desktop pc")
+          figcaption.category--big__txt
+            p מחשבי גיימינג
+      .categories__flex-wrapper
+        .categories__flex-container
+          .category.category--small.category--videocard(tabindex="0")
+            figure
+              img.category--small__img(src="img/videocard.png", alt="videocard")
+              figcaption.category--small__txt
+                p חומרה וציוד היקפי
+          .category.category--small.category--black-bg(tabindex="0")
+            figure
+              img.category--small__img(src="img/laptop.png", alt="laptop")
+              figcaption.category--small__txt
+                p מחשבים ניידים
+        .categories__flex-container
+          .category.category--small.category--consoles(tabindex="0")
+            figure
+              img.category--small__img(src="img/monitor.png", alt="monitor")
+              figcaption.category--small__txt
+                p מסכי מחשב
+          .category.category--small.category--monitors(tabindex="0")
+            figure
+              img.category--small__img(src="img/ps4.png", alt="playstation")
+              figcaption.category--small__txt
+                p קונסולות ואביזרים
+
+

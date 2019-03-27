@@ -1,0 +1,4183 @@
+.container
+    max-width: 1170px
+    margin: 0 auto
+    +clr
+    +r(1170)
+        padding-right: 10px
+        padding-left: 10px
+        .contact &,
+        .warranty-page &,
+        .product-page &
+            padding-right: 20px
+            padding-left: 20px
+    &--small
+        max-width: 770px
+        margin: 0 auto
+
+.dir-rtl
+    direction: rtl
+
+.site-elements
+    &__tabs
+        border-bottom: 1px solid rgba(255, 255, 255, .2)
+    &__tab
+        display: inline-block
+        vertical-align: top
+        &:not(:last-child)
+            margin-left: 35px
+            +r(480)
+                margin-left: 15px
+        a,
+        button
+            opacity: .4
+            color: #ffffff
+            font-size: 18px
+            font-family: Arimo, sans-serif
+            font-weight: 400
+            line-height: 30px
+            text-transform: uppercase
+            background-color: transparent
+            padding-bottom: 10px
+            +r(480)
+                font-size: 15px
+        &--active
+            border-bottom: 1px solid #15bfff
+            a
+                opacity: 1
+
+
+div.su-tabs
+    background: none
+
+
+div.su-tabs-pane
+    background: none
+
+div.su-tabs-nav
+    @extend .site-elements__tabs
+    span
+        display: inline-block
+        vertical-align: top
+        &:not(:last-child)
+            margin-left: 35px
+            +r(480)
+                margin-left: 15px
+        opacity: .4
+        color: #ffffff
+        font-size: 18px
+        font-family: Arimo, sans-serif
+        font-weight: 400
+        line-height: 30px
+        text-transform: uppercase
+        background-color: transparent
+        padding-bottom: 10px
+        &:hover
+            border-bottom: 1px solid #15bfff
+        +r(480)
+            font-size: 15px
+        &.su-tabs-current
+            border-bottom: 1px solid #15bfff
+            opacity: 1
+            background: none
+
+.quote-symbol
+    color: #14b9f6
+    font-size: 72px
+    font-weight: 700
+    line-height: 64px
+    text-transform: uppercase
+
+.site-header
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 1030
+    background-color: #141414
+    min-height: 98px
+    padding-top: 20px
+    // position: relative
+    +r(780)
+        height: 98px
+        text-align: center
+        overflow: visible
+    &__logo
+        display: inline-block
+        vertical-align: top
+        +r(780)
+            margin-right: 10%
+
+.site-nav
+    display: inline-block
+    vertical-align: top
+    margin-top: 20px
+    margin-right: 92px
+    max-width: 731px
+    +r(1060)
+        margin-right: 50px
+    +r(991)
+        margin-right: 30px
+        margin-left: 30px
+    +r(910)
+        margin-right: 10px
+    +r(780)
+        margin-right: 0
+        margin-left: 0
+    &__menu
+        +r(780)
+            opacity: 0
+            visibility: hidden
+            overflow: hidden
+            height: 0
+            width: 0
+        &.mob
+            +r(780)
+                display: flex
+                flex-direction: column
+                list-style-type: none
+                text-align: center
+                position: fixed
+                background-color: #141414
+                top: 92px
+                padding-bottom: 92px
+                left: 0
+                height: 100%
+                opacity: 1
+                visibility: visible
+                overflow: visible
+                width: 100%
+                z-index: 2
+                overflow-y: scroll
+                +tr(opacity .25s ease .1s)
+                > li
+                    margin-top: 10px
+                    margin-bottom: 10px
+                    a
+                        padding-bottom: 10px
+                        padding-top: 10px
+                        width: 100%
+                        &:hover
+                            color: #15bfff
+                            box-shadow: none !important
+                .menu-item.current-menu-item
+                    > a
+                        box-shadow: none
+                        color: #15bfff
+                .site-nav__item--mega
+                    &:hover
+                        a
+                            box-shadow: none !important
+    &__sub-arrow,
+    .dropdown .caret
+        background-image: url(../img/dropdown-arrow-white.svg)
+        background-repeat: no-repeat
+        background-position: 50%
+        width: 30px
+        height: 30px
+        display: inline-block
+        position: absolute
+        right: 10px
+        top: 0
+        +tr(transform .2s)
+        &.open
+            transform: rotateX(180deg)
+        +rmin(780)
+            display: none
+    &__item,
+    .menu-item
+        display: inline-block
+        vertical-align: top
+        margin-left: 53px
+        &:last-child
+            margin-left: 0
+        +r(1170)
+            margin-left: 20px
+        +r(910)
+            margin-left: 5px
+        &.current-menu-item
+            > a
+                box-shadow: 0 3px 0 #15bfff
+        &--mega,
+        &.menu-item-has-children
+            +rmin(781)
+                &:hover
+                    .mega-menu
+                        visibility: visible
+                        overflow: visible
+                        opacity: 1
+                    > a
+                        box-shadow: 0 3px 0 #31c09e !important
+        > a
+            color: #ffffff
+            font-size: 18px
+            font-weight: 700
+            display: inline-block
+            padding-bottom: 34px
+            margin-bottom: 3px
+            +r(910)
+                font-size: 16px
+                position: relative
+            &:hover
+                box-shadow: 0 3px 0 #15bfff
+
+.site-sidebar
+    width: 317px
+    display: inline-block
+    vertical-align: top
+    margin-left: 11px
+    +r(900)
+        flex: 0 1 316px
+    +r(780)
+        width: 100%
+        display: block
+        flex-basis: auto
+        order: 2
+        margin-top: 20px
+
+.cart-and-search
+    float: left
+    margin-top: 12px
+    &__item
+        display: inline-block
+        vertical-align: middle
+        position: relative
+        z-index: 2
+        a
+            display: inline-block
+        &--cart
+            &:hover
+                +rmin(780)
+                    .cart-dropdown
+                        opacity: 1
+                        visibility: visible
+                        &:before
+                            opacity: 1
+                            visibility: visible
+
+        &:not(:first-child):before
+            content: ''
+            display: inline-block
+            width: 1px
+            height: 18px
+            background-color: #ffffff
+            margin-left: 36px
+            margin-right: 30px
+            +r(1060)
+                margin-left: 10px
+                margin-right: 5px
+    &__button
+        background-color: transparent
+        background-image: url(../img/icon-search.png)
+        background-repeat: no-repeat
+        background-size: 100%
+        width: 20px
+        height: 20px
+        vertical-align: top
+        &:hover
+            background-image: url(../img/icon-search--hover.png)
+
+.main-slider
+    background-color: #161616
+    background-image: url(../img/slider-bg.jpg)
+    background-size: cover
+    min-height: 666px
+    overflow: hidden
+    &__link
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+    &__plus
+        color: #ffffff
+        font-family: "ProximaNova-Bold"
+        font-size: 96px
+        font-weight: 700
+        line-height: 110px
+        letter-spacing: -4px
+        position: absolute
+        left: 641px
+        top: 313px
+        z-index: 2
+        +r(1400)
+            left: 540px
+        +r(1260)
+            left: 52%
+        +r(860)
+            position: static
+            display: block
+            font-size: 72px
+    &__gpus
+        position: absolute
+        left: 649px
+        top: 390px
+        +rmin(1800)
+            left: 690px
+        +r(1400)
+            left: 520px
+        +r(1260)
+            left: 55%
+            top: 300px
+        +r(860)
+            position: static
+            padding-bottom: 100px
+    &__gpu
+        display: inline-block
+        position: relative
+        margin-right: 31px
+        z-index: 1
+        +rmin(1800)
+            margin-right: 70px
+        +r(1260)
+            width: 60%
+            margin-right: 0
+            display: block
+        +r(860)
+            width: 20%
+            margin-right: auto
+            margin-left: 30%
+        img
+            // position: absolute
+            // top: 0
+            // left: 0
+            max-width: 100%
+        p
+            position: absolute
+            top: 15px
+            right: -91px
+            color: #15bfff
+            font-size: 30px
+            font-weight: 700
+            line-height: 48px
+            width: 169px
+            z-index: -1
+            background-color: #ffffff
+            padding-right: 14px
+            text-align: right
+            a
+                color: #15bfff
+            +r(1260)
+                width: 130px
+                font-size: 26px
+                line-height: 1.5
+            +r(860)
+                width: 140px
+            +r(480)
+                width: 120px
+                font-size: 22px
+                line-height: 1.3
+    .slick-arrow
+    .home .tparrows
+        width: 32px
+        height: 23px
+        font-size: 0
+        background-color: transparent
+        position: absolute
+        top: 49%
+        z-index: 5
+    .slick-prev
+        background-image: url(../img/arrow-right.png)
+        right: 112px
+        +r(1170)
+            right: 10px
+    .slick-next
+        background-image: url(../img/arrow-left.png)
+        left: 112px
+        +r(1170)
+            left: 10px
+    .slick-dots
+        position: absolute
+        bottom: 62px
+        left: -8px
+        list-style: none
+        display: block
+        text-align: center
+        padding: 0
+        width: 100%
+        li
+            position: relative
+            display: inline-block
+            cursor: pointer
+            margin-left: 13px
+            button
+                display: block
+                background: none
+                outline: none
+                line-height: 0px
+                font-size: 0px
+                color: red
+                cursor: pointer
+                &:before
+                    content: ""
+                    width: 8px
+                    height: 8px
+                    display: block
+                    box-sizing: border-box
+                    border-radius: 50%
+                    transition: all 0.1s ease
+                    background-color: #4b4b4b
+                &:hover
+                    &:before
+                        background-color: #83ced5
+            &.slick-active button:before
+                background-color: #83ced5
+    &__list
+        li
+            color: #ffffff
+            font-size: 18px
+            font-weight: 400
+            line-height: 30px
+            text-transform: uppercase
+            text-align: right
+            +r(1200)
+                font-size: 16px
+            &:before
+                content: ''
+                display: inline-block
+                width: 6px
+                height: 6px
+                background-color: #15bfff
+                border-radius: 50%
+                vertical-align: middle
+                margin-left: 8px
+    &__slide
+        position: relative
+        min-height: 666px
+        &--1
+            +r(640)
+                text-align: center
+        &--2
+            .main-slider__img
+                +r(460)
+                    bottom: 90px
+        &--without-border
+            .main-slider__title
+                padding-top: 125px
+                font-size: 72px
+                +r(860)
+                    font-size: 55px
+                    line-height: 90px
+                    padding-top: 60px
+                +r(640)
+                    font-size: 45px
+                    line-height: 70px
+                &:before
+                    content: none
+        &--4
+            .main-slider__title
+                padding-top: 141px
+                font-size: 72px
+                letter-spacing: 2.8px
+                line-height: 90px
+                +r(860)
+                    font-size: 55px
+                    line-height: 90px
+                    padding-top: 60px
+                +r(640)
+                    font-size: 45px
+                    line-height: 70px
+            .main-slider__sub
+                +r(860)
+                    margin-bottom: 20px
+            &__bg
+                width: 100%
+                position: absolute
+                bottom: -4px
+        &--5
+            background-image: url(../img/slide5-bg.jpg)
+            background-repeat: no-repeat
+            background-size: 100% 100%
+            text-align: center
+        &--6
+            background-image: url(../img/slide6-bg.png)
+            background-repeat: no-repeat
+            background-position-x: -210px
+            background-position-y: -170px
+            .main-slider__title
+                font-size: 57px
+                margin-bottom: 5px
+                +r(640)
+                    font-size: 45px
+                    line-height: 70px
+            .main-slider__sub
+                font-size: 20px
+                margin-bottom: 49px
+            .main-slider__price--hardware
+                margin-right: 241px
+                padding-right: 50px
+                +r(1540)
+                    margin-right: 10%
+                +r(1200)
+                    margin-right: 0
+                +r(860)
+                    text-align: center
+                    padding-right: 10px
+                    padding-left: 10px
+                    text-align: center
+                +r(440)
+                    font-size: 40px
+                    s
+                        font-size: 30px
+            .main-slider__img--hardware
+                top: 32px
+                left: 47px
+                z-index: 1
+                +r(1200)
+                    top: auto
+                    width: 50%
+                +r(860)
+                    position: static
+                    margin-left: auto
+                    margin-right: auto
+                    display: block
+                    margin-top: 30px
+        &--7
+            padding-top: 138px
+            +r(480)
+                padding-top: 40px
+            &__bg
+                width: 100%
+                position: absolute
+                bottom: -92px
+                z-index: -1
+                +r(768)
+                    bottom: -42px
+            .main-slider__title
+                padding-top: 0
+                letter-spacing: 1.8px
+                line-height: 100px
+                +r(1200)
+                    font-size: 45px
+                    line-height: 1.5
+                &:before
+                    content: none
+            .main-slider__sub
+                margin-bottom: 40px
+                letter-spacing: 0.75px
+                +r(1200)
+                    font-size: 16px
+            .main-slider__img--intel
+                z-index: 1
+                position: static
+                margin-left: 55px
+                +r(1200)
+                    max-width: 45%
+                    margin-left: 20px
+                    margin-top: 40px
+            .main-slider__texts
+                display: inline-block
+                vertical-align: top
+                margin-top: 28px
+                padding-bottom: 80px
+            .container
+                max-width: 1275px
+                +r(1300)
+                    text-align: center
+        &--wave
+            min-height: 666px
+            overflow: hidden
+            +r(768)
+                min-height: 500px
+            .main-slider__title
+                letter-spacing: 3px
+            .main-slider__sub
+                margin-bottom: 127px
+                +r(480)
+                    margin-bottom: 80px
+            .main-slider__img
+                top: auto
+                bottom: 0px
+                left: 0
+                width: 100%
+                max-width: none
+                +r(768)
+                    width: 150%
+                +r(480)
+                    width: 200%
+    &__product
+        display: inline-block
+        vertical-align: top
+        margin-top: 54px
+        +r(860)
+            display: block
+        & + &
+            margin-right: 104px
+            +r(860)
+                margin-right: 0
+                padding-bottom: 100px
+        img
+            max-width: 100%
+            +r(860)
+                max-width: 30%
+        &-price
+            color: #17bff9
+            font-size: 40px
+            font-weight: 700
+            text-transform: uppercase
+            &--2
+                margin-left: -38px
+                +r(860)
+                    margin-left: auto
+        &-text
+            color: #ffffff
+            font-size: 24px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+            margin-bottom: 11px
+            &--1
+                margin-top: 39px
+            &--2
+                margin-top: -18px
+                margin-left: -38px
+                +r(860)
+                    margin-left: auto
+                +r(640)
+                    margin-top: 0
+            strong
+                font-size: 30px
+                font-weight: 700
+                display: block
+    &__content
+        max-width: 1920px
+        margin-left: auto
+        margin-right: auto
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        +r(860)
+            position: static
+            text-align: center
+    &__img
+        position: absolute
+        left: 0
+        top: 51px
+        z-index: 0
+        pointer-events: none
+        +r(1165)
+            max-width: 650px
+            width: 60%
+            top: auto
+            bottom: 0
+        &--monitor
+            left: 0px
+            top: 28px
+            z-index: 1
+            max-width: 41%
+            +r(1400)
+                top: auto
+            +r(1165)
+                max-width: 500px
+                top: 30%
+            +r(860)
+                position: static
+    &__title
+        color: #ffffff
+        font-size: 65px
+        font-weight: 400
+        line-height: 110px
+        position: relative
+        padding-top: 177px
+        margin-bottom: 0px
+        max-width: 735px
+        position: relative
+        z-index: 2
+        word-break: break-all
+        word-break: break-word
+        +r(860)
+            font-size: 55px
+            line-height: 90px
+        +r(640)
+            font-size: 45px
+            line-height: 70px
+            padding-top: 100px
+            text-align: center
+            &:before
+                top: 100px
+        &:before
+            content: ''
+            position: absolute
+            display: inline-block
+            top: 170px
+            width: 50px
+            height: 3px
+            background-color: #83ced5
+    &__sub
+        color: #ffffff
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 80px
+        max-width: 700px
+        position: relative
+        z-index: 1
+        +r(640)
+            font-size: 16px
+            text-align: center
+        &--small
+            font-size: 16px
+    &__btn
+        width: 200px
+        min-height: 60px
+        background-image: linear-gradient(56deg, #32c09d 0%, #15bfff 100%)
+        color: #ffffff
+        position: relative
+        z-index: 1
+        font-size: 22px
+        font-weight: 700
+        text-transform: uppercase
+        box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.26)
+        word-break: break-all
+        word-break: break-word
+        &:hover
+            box-shadow: none
+            background-image: none
+            background-color: #0893c7
+    &__price
+        font-size: 60px
+        font-weight: 700
+        color: #ffffff
+        text-transform: uppercase
+        max-width: 850px
+        background-color: #15bfff
+        background-image: linear-gradient(56deg, #32c09d 0%, #15bfff 100%)
+        padding-top: 10px
+        padding-bottom: 10px
+        padding-right: 34px
+        margin-right: 160px
+        position: relative
+        display: block
+        cursor: pointer
+        z-index: 0
+        +r(1500)
+            margin-right: 80px
+        +r(1300)
+            font-size: 50px
+            margin-right: 0
+        +r(860)
+            max-width: none
+        +r(640)
+            width: 100%
+        s
+            font-size: 36px
+            font-weight: 400
+            text-decoration: line-through
+            margin-right: 25px
+    &__icons
+        position: relative
+        z-index: 1
+        +r(640)
+            text-align: center
+        li
+            display: inline-block
+            & + li
+                margin-right: 30px
+                +r(380)
+                    margin-right: 0
+    &__icon-link
+        width: 121px
+        height: 121px
+        box-shadow: 1px 1px 27px rgba(0, 0, 0, 0.41)
+        background-color: rgba(17, 17, 17, .5)
+        display: flex
+        border-radius: 100%
+        align-items: center
+        +tr(all .35s)
+        +r(480)
+            width: 90px
+            height: 90px
+        &:hover
+            background-color: rgba(17, 17, 17, .8)
+        img
+            margin: 0 auto
+            width: 50%
+
+.categories
+    display: flex
+    flex-flow: row wrap
+    &__flex-container
+        display: flex
+        flex: 2 1 0%
+        flex-wrap: wrap
+        +r(840)
+            flex-wrap: wrap
+
+    &__flex-wrapper
+        flex: 2 1 0%
+        +r(1350)
+            flex: 2 1 100%
+    &__big
+        display: inline-block
+        vertical-align: top
+    &__small
+        display: inline-block
+        vertical-align: top
+        +clr
+
+
+
+.category
+    &--big
+        min-height: 1170px
+        background-color: #000
+        background-image: url(../img/category-bg--big.jpg)
+        background-size: cover
+        display: flex
+        justify-content: center
+        align-items: center
+        flex: 1 1 9%
+        border: 1px solid black
+        +r(1350)
+            flex: 2 1 100%
+        +r(780)
+            min-height: 700px
+        +r(480)
+            min-height: 550px
+        &:hover
+            background-image: url(../img/videocard-bg.jpg)
+            cursor: pointer
+        &__txt
+            display: block
+            color: #ffffff
+            font-size: 48px
+            font-weight: 700
+            text-align: center
+            margin-top: 30px
+            +r(480)
+                font-size: 42px
+        &__img
+            max-width: 575px
+            width: 100%
+            +r(590)
+                max-width: 100%
+                min-width: 320px
+    &--small
+        min-height: 585px
+        background-color: #000
+        background-image: url(../img/category-bg--small.jpg)
+        background-size: cover
+        display: flex
+        justify-content: center
+        flex: 2 1 49%
+        min-width: 320px
+        text-align: center
+        border: 1px solid black
+        +r(640)
+            min-height: 480px
+        &:hover
+            background-image: url(../img/videocard-bg.jpg)
+            cursor: pointer
+        figure
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            padding-bottom: 20px
+            width: 100%
+        &__img
+            width: 100%
+            max-width: 475px
+            +rmin(640)
+                min-height: 350px
+                object-fit: contain
+                font-family: 'object-fit: contain;'
+            +r(590)
+                width: 85%
+        &__txt
+            color: #ffffff
+            font-size: 34px
+            font-weight: 700
+            text-align: center
+            margin-top: 53px
+
+.site-footer
+    background-color: #141414
+    padding-top: 38px
+    padding-bottom: 40px
+    position: absolute
+    bottom: 0
+    width: 100%
+    z-index: 1
+    +r(621)
+        bottom: -175px
+    +clr
+    &__copyright
+        direction: ltr
+        float: left
+        +r(620)
+            float: none
+            text-align: center
+        +r(480)
+            margin-top: 5px
+            font-size: 12px
+        &-text
+            color: #ffffff
+            font-family: Roboto
+            font-size: 16px
+            font-weight: 400
+            margin-right: 5px
+    &__social
+        li
+            display: inline-block
+            vertical-align: top
+    &__icon
+        border: 1px solid #4b4b4b
+        border-radius: 50%
+        width: 34px
+        height: 34px
+        cursor: pointer
+        display: inline-block
+        text-align: center
+        font-size: 0
+        +r(480)
+            width: 24px
+            height: 24px
+            i
+                font-size: 16px
+                line-height: 22px
+        i
+            color: #37383d
+            font-size: 18px
+            font-weight: 400
+            line-height: 34px
+
+.footer-menu
+    margin-top: 5px
+    display: inline-block
+    +r(620)
+        display: block
+        text-align: center
+        margin-bottom: 40px
+    .menu-item
+        display: inline-block
+        font-size: 16px
+        font-weight: 400
+        +r(800)
+            font-size: 14px
+        +r(780)
+            font-size: 12px
+        +r(620)
+            display: block
+            font-size: 16px
+            margin-bottom: 10px
+        & + li
+            &:before
+                content: '|'
+                display: inline-block
+                color: white
+                margin-left: 20px
+                margin-right: 16px
+                +r(780)
+                    margin-left: 10px
+                    margin-right: 5px
+                +r(620)
+                    content: none
+        a
+            color: #ffffff
+            &:hover
+                color: #15bfff
+
+.for-bg
+    width: 100%
+    height: 100%
+    overflow-x: hidden
+    position: absolute
+    z-index: -1
+    &:before
+        content: ''
+        position: absolute
+        top: -532px
+        left: 0
+        right: -360px
+        background: rgba(42, 42, 42, 0.5)
+        width: 150%
+        height: 917px
+        transform: rotate(22.5deg)
+        z-index: -1
+
+.calculator,
+.catalog,
+.search-page
+    background-color: #0e0e0e
+    padding-bottom: 87px
+    position: relative
+    z-index: 1
+    +clr
+    +r(780)
+        .calc-product
+            width: 100%
+            min-height: auto
+            text-align: left
+            display: flex
+            padding: 9px 20px 10px 20px
+            align-items: baseline
+            flex-direction: row
+            +r(540)
+                padding-left: 10px
+                padding-right: 10px
+            &:hover
+            .calc-product__hover
+                flex-direction: row
+                .calc-product__add-to-cart
+                    margin-top: 0
+                    margin-right: 12px
+            .calc-product__more,
+            .calc-product__add-to-cart
+                +r(540)
+                    a
+                        padding-left: 0
+                        font-size: 14px
+            .calc-product__text
+                width: 555px
+                order: 2
+                margin-left: 0
+                +r(880)
+                    width: 280px
+                    text-align: center
+                +r(540)
+                    font-size: 13px
+            .calc-product__logo-out
+                order: 3
+                margin-right: 15px
+                +r(540)
+                    margin-right: 10px
+                    img
+                        width: 40px
+            .calc-product__price
+                order: 1
+                margin-top: 0
+                max-width: 140px
+                min-width: 115px
+                text-align: right
+                +r(540)
+                    min-width: auto !important
+                    span
+                        font-size: 14px
+                        margin-left: 0
+                        display: block
+                    s
+                        font-size: 12px
+            .calc-product__logo,
+            .calc-product__text
+                margin-bottom: 0
+            .calc-product__img-out,
+            .calc-product__tags,
+            .calc-product__warranty
+                display: none
+    &__main
+        display: flex
+        align-items: flex-start
+        position: relative
+        +r(780)
+            flex-direction: column
+    &__header
+        color: #fff
+        padding-top: 68px
+        margin-bottom: 24px
+
+    &__title
+        line-height: 30px
+        font-size: 24px
+        font-weight: 700
+    &__sub
+        font-size: 16px
+        font-weight: 400
+        margin-top: 7px
+        a
+            text-decoration: underline
+            color: #fff
+    &__content
+        width: 843px
+        display: inline-block
+        vertical-align: top
+        +r(780)
+            display: block
+            width: 100%
+            flex-basis: auto
+
+
+
+.calculator
+    +r(780)
+        &__header
+            text-align: center
+        .calc-product
+            width: 100%
+            min-height: auto
+            text-align: left
+            display: flex
+            padding: 9px 20px 10px 20px
+            align-items: baseline
+            +r(540)
+                padding-left: 10px
+                padding-right: 10px
+            &:hover
+            .calc-product__hover
+                flex-direction: row
+                .calc-product__add-to-cart
+                    margin-top: 0
+                    margin-right: 12px
+            .calc-product__more,
+            .calc-product__add-to-cart
+                +r(540)
+                    a
+                        padding-left: 0
+                        font-size: 14px
+            .calc-product__text
+                width: 555px
+                order: 2
+                margin-left: 0
+                +r(880)
+                    width: 280px
+                    text-align: center
+                +r(540)
+                    font-size: 13px
+            .calc-product__logo-out
+                order: 3
+                margin-right: 15px
+                +r(540)
+                    margin-right: 10px
+                    img
+                        width: 40px
+
+            .calc-product__logo,
+            .calc-product__text
+                margin-bottom: 0
+            .calc-product__img-out,
+            .calc-product__tags,
+            .calc-product__warranty
+                display: none
+    &__recommendations
+        float: left
+        background-color: #484848
+        text-align: center
+        padding-top: 5px
+        padding-bottom: 9px
+        padding-left: 27px
+        padding-right: 26px
+        margin-top: 58px
+        margin-bottom: 24px
+        +r(780)
+            display: none
+        p
+            color: #ffffff
+            font-size: 18px
+            font-weight: 400
+            line-height: 30px
+            margin-bottom: 7px
+        a
+            background-color: #eeeeee
+            color: #010101
+            font-size: 16px
+            font-weight: 400
+            line-height: 28px
+            padding-left: 22px
+            padding-right: 23px
+            display: inline-block
+            &:hover
+                background-color: white
+    &__cat
+        margin-bottom: 7.4px
+        cursor: pointer
+        &--active
+            caption
+                background-image: linear-gradient(56deg, #32c09d 0%, #15bfff 100%)
+        caption
+            background-color: #c4c4c4
+            font-size: 16px
+            color: #000000
+            font-weight: 700
+            text-align: right
+            padding-right: 18px
+            line-height: 40px
+            span
+                color: #ff0000
+                font-weight: 400
+        &--closed
+            caption
+                background-color: #eee
+            &:not(:first-child)
+                margin-top: 8px
+            tbody
+                display: none
+        &--checkbox
+            label
+                font-size: 14px
+                font-weight: 400
+                background-color: #eee
+                color: #000000
+                font-weight: 700
+                text-align: right
+                padding-right: 18px
+                line-height: 40px
+                display: block
+                text-indent: -20px
+                padding-right: 40px
+            .custom-checkbox__icon
+                width: 14px
+                height: 14px
+                margin-left: 6px
+            strong
+                font-size: 16px
+                font-weight: 700
+            span:last-child
+                +r(400)
+                    display: block
+                    margin-right: 20px
+    &__header
+        +r(480)
+            margin-top: 20px
+            padding-top: 0
+
+.simple-page
+    margin-bottom: 150px
+    &__header
+        padding-top: 54px
+        margin-bottom: 50px
+    &__title
+        color: #ffffff
+        font-size: 34px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 6px
+        text-align: center
+        position: relative
+        z-index: 1
+        +r(480)
+            font-size: 24px
+        &:before
+            content: ''
+            position: absolute
+            left: 0
+            right: 0
+            display: block
+            border-top: 1px solid #454545
+            top: 50%
+            z-index: -1
+        span
+            background-color: black
+            padding-left: 85px
+            padding-right: 87px
+            +r(780)
+                padding-left: 10px
+                padding-right: 10px
+
+.catalog,
+.search-page
+    padding-bottom: 127px
+    .woocommerce-products-header
+        +clr
+    &__header
+        margin-bottom: 28px
+        padding-top: 58px
+    &__tabs
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        +r(780)
+            flex-direction: column
+    &__tab
+        position: relative
+        overflow: visible
+        line-height: 57px
+        border: 1px solid #ffffff
+        cursor: pointer
+        text-align: center
+        background-color: transparent
+        display: flex
+        flex-basis: 217px
+        margin-top: 20px
+        &-flex
+            min-height: 57px
+            flex-basis: 217px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding-right: 13px
+            padding-left: 20px
+        +clr
+        +r(780)
+            // width: 100%
+            flex-basis: 100%
+            margin-bottom: 10px
+            &:hover,
+            &.active
+                &:after
+                    content: none
+        &:hover,
+        &.active
+            background-color: #fff
+            &:after
+                content: ''
+                display: inline-block
+                position: absolute
+                bottom: -17px
+                left: 43%
+                +arr(32, 16, white, b)
+            h2
+                color: black
+            svg
+                use
+                    fill: black
+        img
+            max-width: 40px
+        h2
+            color: #ffffff
+            font-size: 15px
+            font-weight: bold
+            line-height: 26px
+            letter-spacing: 0.75px
+            display: flex
+            padding-left: 10px
+            padding-right: 10px
+            flex-basis: 100%
+            justify-content: center
+            +r(1000)
+                font-size: 14px
+            +r(900)
+                font-size: 13px
+            +r(780)
+                font-size: 15px
+        svg
+            margin-right: 13px
+            +r(1000)
+                width: 25px
+                margin-right: 10px
+            +r(900)
+                width: 22px
+                margin-right: 5px
+            +r(780)
+                width: auto
+                margin-right: 15px
+
+.search,
+.search-page
+    &__result
+        color: #ffffff
+        font-size: 24px
+        font-weight: 400
+        span
+            color: #38ba9f
+
+.main
+    +r(780)
+        flex-direction: row
+        overflow-x: hidden
+
+.sidebar
+    position: sticky
+    top: 100px
+    align-self: flex-start
+    +r(780)
+        width: 316px
+        flex-basis: 316px
+        order: 0
+        margin-top: 0
+        position: static
+        // display: none
+        flex-grow: 1
+        flex-shrink: 0
+        visibility: hidden
+        margin-right: -316px
+        margin-left: 0
+        +tr(margin 0.2s)
+        &.show
+            display: block
+            visibility: visible
+            margin-right: 0
+            margin-left: 5px
+    +r(400)
+        width: 260px
+        flex-basis: 260px
+        margin-right: -260px
+
+.calc-sidebar
+    width: 316px
+    &__required-text
+        color: #ff0000
+        font-size: 12px
+        font-weight: 400
+        line-height: 12px
+    &__price
+        color: #ffffff
+        font-size: 21px
+        font-weight: 400
+        margin-bottom: 16px
+        margin-top: 15px
+        letter-spacing: 0.2px
+    &__qty
+        &:hover
+            .btn-number
+                display: inline-block
+        .btn-number
+            display: none
+        input
+            width: 13px
+            text-align: center
+            direction: ltr
+    &__cart
+        +r(1170)
+            text-align: center
+        a,
+        button
+            vertical-align: top
+            color: #ffffff
+            font-size: 16px
+            font-weight: 700
+            width: 100%
+            min-height: 44px
+            line-height: 44px
+            background-color: #30c0a3
+            box-shadow: inset 0 -5px #178b74
+            transition: all 0.2s
+            display: inline-block
+            text-align: center
+            &:hover
+                background-color: #178b74
+    &__share
+        margin-top: 14px
+        +r(1170)
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+        +r(640)
+            text-align: center
+            justify-content: space-around
+        +r(400)
+            flex-direction: column
+            li
+                margin-top: 2px
+        li
+            display: inline-block
+            vertical-align: top
+        &-link
+            width: 102px
+            min-height: 31px
+            display: inline-block
+            background-color: #2e2e2e
+            padding-top: 8px
+            padding-bottom: 10px
+            color: #ffffff
+            font-size: 12px
+            font-weight: 400
+            line-height: 14px
+            text-align: center
+            position: relative
+            padding-left: 25px
+            &:hover
+                background-color: lighten(#2e2e2e, 10%)
+            span
+                max-width: 55px
+                display: inline-block
+                word-break: break-all
+            +rr(900, 1170)
+                width: 90px
+            +r(360)
+                width: 90px
+    &__hr
+        border-top: 0
+        border-right: 0
+        border-left: 0
+        border-bottom: 1px solid #2c2c2c
+        margin-top: 14px
+    &__delivery
+        color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        line-height: 18px
+    &__table
+        th
+            color: #000000
+            font-size: 12px
+            font-weight: 700
+            background-color: #eee
+            line-height: 22px
+            &:first-child
+                padding-right: 35px
+            &:nth-child(2)
+                padding-right: 26px
+                max-width: 65px
+                +r(480)
+                    padding-right: 10px
+            &:nth-child(3)
+                padding-right: 30px
+                text-align: right
+                width: 88px
+                +r(480)
+                    text-align: center
+                    padding-right: 0
+        td
+            color: #000000
+            font-size: 12px
+            font-weight: 400
+            background-color: #fff
+            text-align: center
+            padding-top: 8px
+            padding-bottom: 4px
+            line-height: 13px
+            &:first-child
+                width: 173px
+                padding-right: 30px
+                +r(1170)
+                    padding-right: 5px
+            &:nth-child(2)
+                padding-right: 27px
+                max-width: 65px
+                word-break: break-all
+                +r(1170)
+                    padding-right: 10px
+            &:nth-child(3)
+                padding-right: 0
+.product-tags
+    display: flex
+    &__tag
+        display: inline-block
+        vertical-align: top
+        background-color: #f5f5f5
+        padding-left: 8px
+        padding-right: 8px
+        color: #777777
+        font-size: 12px
+        font-weight: 400
+        line-height: 29px
+        &:before
+            content: none
+        & + &
+            margin-right: 4px
+        &:hover
+            background-color: grey
+            color: white
+
+
+.calc-content
+    +tr(transform 0.2s)
+    +r(780)
+        &--sidebar-opened
+            flex-shrink: 1
+            .hamlines
+                display: none
+            .fa
+                display: inline-block
+    +r(900)
+        flex: 1 0 25%
+    &__in
+        background-color: #eeeeee
+        padding-top: 18px
+        padding-right: 8px
+        padding-left: 8px
+        padding-bottom: 8px
+    &__products
+        display: flex
+        flex-flow: row wrap
+        justify-content: flex-start
+        +r(1170)
+            justify-content: center
+    &__shows
+        display: inline-block
+        vertical-align: top
+        +r(780)
+            display: none
+    &__show
+        background-color: transparent
+        &.active,
+        &:hover
+            svg
+                path:first-child
+                    fill: #484848
+        svg
+            width: 31px
+            height: 31px
+            cursor: pointer
+    &__tabs
+        margin-bottom: 1px
+        &--inactive
+            display: none
+        +r(780)
+            display: none
+        li
+            display: inline-block
+            vertical-align: top
+            & + li
+                margin-right: 1px
+            +r(550)
+                display: block
+                margin-bottom: 5px
+        &__btn
+            min-width: 114px
+
+            background-color: #fff
+            color: #000000
+            font-size: 16px
+            font-weight: 400
+            line-height: 38px
+            +rr(781, 845)
+                width: 100px
+            +r(780)
+                width: 90px
+            +r(550)
+                width: 100%
+            &--active
+                background-color: #c4c4c4
+    &__header
+        margin-bottom: 13px
+        display: flex
+        justify-content: space-between
+        +r(910)
+            flex-direction: column
+            align-items: center
+            > div:not(:first-child)
+                margin-top: 15px
+    &__form-wrapper
+        +r(780)
+            width: 100%
+            display: flex
+            justify-content: space-between
+    &__search
+        display: inline-block
+        vertical-align: top
+        margin-left: 37px
+        +r(1170)
+            margin-left: 0
+        +r(910)
+            width: 90%
+        +r(500)
+            width: 90%
+        &-container
+            position: relative
+        &-btn
+            display: inline-block
+            font-size: 16px
+            position: absolute
+            color: #484848
+            background: transparent
+            left: 10px
+            top: 8px
+            z-index: 2
+        &-input,
+        .aws-container .aws-search-field
+            color: #484848
+            font-size: 14px
+            font-weight: 400
+            padding-right: 34px
+            padding-left: 34px
+            width: 345px
+            padding-top: 7px
+            padding-bottom: 7px
+            height: 31px
+            background-color: white
+            +r(1170)
+                width: 200px
+            +r(910)
+                width: 100%
+    &__filter
+        display: flex
+        align-items: flex-start
+        margin-left: 37px
+        text-align: center
+        +r(1170)
+            margin-left: 0
+        +r(910)
+            width: 100%
+            justify-content: center
+        +r(550)
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-text
+            color: #484848
+            font-size: 14px
+            font-weight: 400
+            padding: 7.5px 34px
+            background-color: white
+            display: inline-block
+            margin-left: 2px
+            +r(991)
+                padding-right: 20px
+                padding-left: 20px
+            +r(550)
+                flex-basis: 40%
+                margin-left: 10px
+        &-dropdown-out
+            position: relative
+            display: inline-block
+            vertical-align: top
+            +r(910)
+                width: 60%
+            +r(550)
+                flex-basis: 58%
+                margin-top: 0
+            // &:after
+            //  content: ''
+            //  display: inline-block
+            //  font-family: 'FontAwesome'
+            //  color: #484848
+            //  font-size: 12px
+            //  font-weight: 400
+            //  position: absolute
+            //  top: 9px
+            //  left: 10px
+        &-dropdown
+            +custom-select-reset
+            background-color: white
+            width: 212px
+            height: 31px
+            color: #484848
+            font-size: 14px
+            font-weight: 400
+            padding-right: 34px
+            padding-left: 34px
+            background-image: url(../img/dropdown-arrow.svg)
+            background-repeat: no-repeat
+            background-position: 5% 50%
+            background-size: 13px
+            +r(1170)
+                width: 180px
+            +r(910)
+                width: 100%
+                padding-right: 20px
+            +r(550)
+                padding-right: 10px
+
+.share-icon
+    position: absolute
+    left: 0
+    top: 0
+    @each $icon in html, pdf, fb
+        &--#{$icon}
+            display: inline-block
+            vertical-align: top
+            +s(share-#{$icon})
+
+.calc-product
+    width: 204px
+    min-height: 348px
+    background-color: #ffffff
+    border: 2px solid #fff
+    padding-top: 17px
+    padding-bottom: 5px
+    text-align: center
+    display: inline-block
+    vertical-align: top
+    margin-bottom: 2px
+    margin-left: 2px
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    &:last-child
+        margin-left: 0
+    +r(1170)
+        &.calc-product--list
+            width: 100%
+    +r(530)
+        width: 320px
+    &--active,
+        border: 2px solid
+        border-image: linear-gradient(to right, #15bfff, #31c09e) 10
+        cursor: pointer
+    &--added
+        .calc-product__remove-from-cart
+            display: block
+        .calc-product__add-to-cart
+            display: none
+    &:hover
+        cursor: pointer
+        .calc-product__hover
+            opacity: 1
+            overflow: visible
+            visibility: visible
+    &--gallery
+        width: 273px
+        min-height: 382px
+        height: 100%
+        &:last-child
+            margin-left: auto
+        +rr(991, 1170)
+            width: 270px
+            margin-left: auto
+            margin-right: auto
+        +r(990)
+            width: 260px
+            margin-left: auto
+            margin-right: auto
+        +r(640)
+            width: 280px
+        +r(400)
+            width: 270px
+        &:hover
+            background-image: none
+        .calc-product__tags
+            justify-content: center
+        .calc-product__logo-out
+            margin: 0 auto
+        .calc-product__text
+            font-size: 16px
+            line-height: 22px
+            max-width: 235px
+            margin-left: 35px
+            width: auto
+            text-align: left
+            direction: ltr
+            +r(990)
+                font-size: 14px
+            +r(640)
+                margin-left: auto
+                margin-right: auto
+        .calc-product__price
+            margin-top: 19px
+            margin-right: 13px
+            span
+                font-size: 24px
+            s
+                font-size: 16px
+        .product-tags__tag
+            padding-left: 18px
+            padding-right: 18px
+        .calc-product__warranty
+            padding-left: 84px
+            padding-right: 84px
+        .calc-product__img-out
+            margin-bottom: 33px
+            margin-top: 30px
+    &__align-end
+        margin-top: auto
+        width: 100%
+    &__checkbox
+        width: 20px
+        height: 20px
+        display: inline-block
+        border: 1px solid #c5c5c5
+        margin-left: -30px
+        margin-top: 3px
+        margin-right: 10px
+        vertical-align: top
+        text-align: center
+        &--active
+            background-color: #15bfff
+            border: none
+            svg
+                display: inline-block
+                margin-top: 3px
+                margin-left: 1px
+    &__img-out
+        margin-bottom: 11px
+        width: 100%
+        img
+            height: auto
+    &--list
+        width: 100%
+        min-height: auto
+        text-align: left
+        display: flex
+        padding: 9px 20px 10px 20px
+        align-items: baseline
+        justify-content: space-between
+        flex-direction: row
+        +r(540)
+            padding-left: 10px
+            padding-right: 10px
+        &:hover
+        .calc-product__hover
+            flex-direction: row
+            .calc-product__add-to-cart,
+            .calc-product__remove-from-cart
+                margin-top: 0
+                margin-right: 12px
+        .calc-product__more,
+        .calc-product__add-to-cart,
+        .calc-product__remove-from-cart
+            +r(540)
+                a
+                    padding-left: 0
+                    font-size: 14px
+        .calc-product__text
+            width: 555px
+            order: 2
+            margin-left: 0
+            +r(880)
+                width: 280px
+                text-align: center
+            +r(540)
+                font-size: 13px
+        .calc-product__brand-text
+            margin-bottom: 0
+        .calc-product__logo-out
+            order: 3
+            margin-right: 55px
+            +r(540)
+                margin-right: 10px
+                img
+                    width: 40px
+        .calc-product__price
+            order: 1
+            margin-top: 0
+            max-width: 140px
+            display: flex
+            flex-direction: row-reverse
+            align-items: center
+            +r(540)
+                ins
+                    font-size: 14px
+                    margin-left: 0
+                    display: block
+                del
+                    font-size: 12px
+        .calc-product__logo,
+        .calc-product__text
+            margin-bottom: 0
+        .calc-product__img-out,
+        .calc-product__tags,
+        .calc-product__warranty
+            display: none
+    &__text
+        color: #000000
+        font-size: 14px
+        font-weight: 400
+        line-height: 16px
+        width: 155px
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 18px
+    &__logo-out
+        max-width: 50px
+    &__logo
+        margin-bottom: 17px
+    &__tags
+        margin-top: 14px
+        justify-content: center
+    &__warranty
+        margin-top: 4px
+        display: inline-block
+        background-color: #f5f5f5
+        width: 97.5%
+        color: #777777
+        font-size: 12px
+        font-weight: 400
+        line-height: 29px
+    &__brand-text
+        text-transform: uppercase
+        font-size: 14px
+        opacity: .5
+        color: #000
+        margin-bottom: 17px
+    &__price
+        margin-top: 8px
+        del
+            text-decoration: line-through
+            font-weight: 400
+            line-height: 12px
+            color: #777777
+            font-size: 14px
+            margin-right: 7px
+        ins,
+        > span
+            color: #30c0a3
+            font-size: 18px
+            text-decoration: none
+    &__hover
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        overflow: hidden
+        visibility: hidden
+        opacity: 0
+        background-color: rgba(255, 255, 255, .8)
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        +tr(all .30s ease-out)
+        a.added_to_cart
+            display: none
+    &__more,
+    &__add-to-cart,
+    &__remove-from-cart
+        width: 150px
+        position: relative
+        line-height: 30px
+        text-align: center
+        padding-left: 5px
+        padding-right: 20px
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5)
+        color: #ffffff
+        font-size: 16px
+        font-weight: 400
+        text-transform: uppercase
+        display: inline-block
+        +tr(all .25s)
+        span
+            background-repeat: no-repeat
+            background-position: 50%
+    &__remove-from-cart
+        display: none
+        background-color: #ff1515
+        margin-top: 12px
+        +r(780)
+            margin-top: 0
+            margin-right: 10px
+        &:hover
+            background-color: lighten(#ff1515, 10%)
+        span
+            background-image: url(../img/remove-from-cart.png)
+            background-size: 60%
+    &__icon
+        width: 30px
+        height: 100%
+        background-color: #ffffff
+        opacity: 0.5
+        display: inline-block
+        position: absolute
+        right: 0
+    &__more
+        background-color: #32c09d
+        &:hover
+            background-color: lighten(#32c09d, 10%)
+        span
+            background-image: url(../img/icon-more.svg)
+            background-size: 60%
+    &__add-to-cart
+        margin-top: 12px
+        background-color: #15bfff
+        &:hover
+            background-color: lighten(#15bfff, 10%)
+        span
+            background-image: url(../img/icon-add-to-cart.svg)
+
+.contact
+    background-color: #000
+
+.contact-info
+    position: relative
+    margin-bottom: 50px
+    min-height: 1286px
+    +rmin(1000)
+        .contact-form__submit
+            margin-top: 36px
+    +r(991)
+        margin-bottom: 100px
+    &__map
+        position: absolute
+        left: 0
+        top: 0
+        width: 50%
+        height: 0
+        padding-bottom: 1280px
+        +r(991)
+            display: block
+            position: relative
+            width: 90%
+            padding-bottom: 780px
+            margin: 0 auto
+        +r(640)
+            padding-bottom: 500px
+    &__heading
+        color: #ffffff
+        font-size: 36px
+        font-weight: 400
+        +r(768)
+            text-align: center
+
+.contact-table
+    margin-bottom: 44px
+    padding-top: 47px
+    max-width: 520px
+    +r(1110)
+        width: 400px
+    +r(991)
+        width: 90%
+        max-width: none
+        margin-left: auto
+        margin-right: auto
+    table
+        margin-top: 25px
+    &__row
+        th
+            color: #555555
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            width: 50px
+            padding-left: 62px
+            text-align: right
+            +r(400)
+                padding-left: 20px
+        td
+            padding-top: 32px
+            span
+                color: #777777
+                font-size: 14px
+                font-weight: 400
+                margin-right: 17px
+                letter-spacing: normal
+    table p,
+    &__text
+        color: #ffffff
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 1.5px
+        line-height: 1.4
+        +r(400)
+            font-size: 14px
+            max-width: 252px
+        & + p
+            margin-top: 6px
+            a
+                color: inherit
+        span
+            color: #777777
+            font-size: 14px
+            font-weight: 400
+            margin-right: 17px
+            letter-spacing: normal
+        a
+            color: #fff
+
+.contact-form
+    width: 500px
+    +r(1100)
+        width: 400px
+    +r(991)
+        width: 90%
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 50px
+    .js-repair-input
+        margin-top: 22px
+    form
+        margin-top: 10px
+    &__input,
+    &__textarea,
+    &__select,
+    &__label
+        text-align: right 
+        background-color: transparent
+        color: white
+        font-size: 16px
+        font-weight: 400
+        font-family: Arimo
+        height: 34px
+        border-bottom: 1px solid #2b2b2b
+        width: 100%
+        margin-top: 35px
+        +placeholder-color(#555)
+    select
+        display: none
+    &__label
+        border-bottom: 0
+        cursor: pointer
+        color: #555
+    &__select
+        +custom-select-reset
+        border-bottom: 1px solid #2b2b2b
+        background-image: url(../img/dropdown-arrow.svg)
+        background-repeat: no-repeat
+        background-position: 0% 50%
+        font-family: Arimo
+        font-size: 16px
+        font-weight: 400
+        line-height: 34px
+        margin-top: 27px
+        text-align: right
+        option
+            color: #959494
+            background-color: #2b2b2b
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-right: 5px
+            cursor: pointer
+            border-bottom: 1px solid #424040
+    &__textarea
+        border-top: 0
+        border-right: 0
+        border-left: 0
+        resize: none
+        height: 137px
+    &__submit
+        color: #ffffff
+        font-size: 24px
+        font-weight: 400
+        text-transform: uppercase
+        background-color: #31c09e
+        display: inline-block
+        width: 100%
+        min-height: 79px
+        line-height: 79px
+        box-shadow: inset 0 -7px #178b74
+        margin-top: 34px
+        white-space: normal
+        padding-right: 10px
+        padding-left: 10px
+        &:hover
+            background-color: #178b74
+    &__repair
+        display: none
+    &__checkbox
+        + label
+            margin-top: 43px
+            display: inline-block
+            text-indent: -24px
+            margin-right: 24px
+            line-height: 1.5
+    &__2col
+        display: flex
+        justify-content: space-between
+        align-items: center
+        +r(400)
+            flex-direction: column-reverse
+            align-items: stretch
+            .contact-form__col1,
+            .contact-form__col2
+                flex-basis: auto
+
+    &__col1
+        flex-basis: 50%
+
+    &__col2
+        flex-basis: 40%
+        margin-bottom: 43px
+        +r(400)
+            margin-bottom: 10px
+        select
+            margin-top: 0
+
+
+.custom-radio
+    .contact-form__label
+        display: inline-block
+        text-indent: -21px
+        margin-right: 21px
+        margin-top: 0
+        +r(400)
+            margin-top: 10px
+    &__input
+        display: none
+        + .custom-radio__label
+            .custom-radio__icon
+                display: inline-block
+                margin-left: 16px
+                cursor: pointer
+                border-radius: 50%
+                vertical-align: middle
+                width: 11px
+                height: 11px
+                box-shadow: 0 0 0 2px #555
+                +r(1170)
+                    margin-left: 10px
+                &--white
+                    box-shadow: 0 0 0 2px white
+        &:checked + .custom-radio__label
+            .custom-radio__icon
+                background-color: #31c09e
+                box-shadow: 0 0 0 2px #555
+                border-radius: 50%
+                border: 2px solid black
+                width: 11px
+                height: 11px
+                &--white
+                    border: 2px solid #797979
+                    box-shadow: 0 0 0 2px white
+                    background-color: white
+
+.custom-checkbox
+    &__icon
+        display: inline-block
+        margin-left: 10px
+        cursor: pointer
+        vertical-align: middle
+        width: 15px
+        height: 15px
+        border: 1px solid #555
+        background-color: transparent
+        &--small
+            width: 13px
+            height: 13px
+    &__input
+        display: none
+        &:checked
+            + .custom-checkbox__label
+                .custom-checkbox__icon
+                    background-image: url(../img/checkbox.svg)
+                    background-repeat: no-repeat
+                    background-position: 50% 50%
+                    &--small
+                        background-image: url(../img/checkbox--small.svg)
+
+.contact-extra
+    padding-bottom: 42px
+    &__hr
+        background: url(../img/contact-hr.png) no-repeat
+        background-size: contain
+        height: 30px
+        margin-bottom: 26px
+    &__title
+        font-family: Heebo
+        font-weight: 400
+        color: #ffffff
+        font-size: 40px
+        letter-spacing: -0.25px
+        +r(670)
+            text-align: center
+            span
+                display: block
+        span
+            color: #777777
+            font-size: 30px
+    &__addresses
+        margin-top: 37px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        flex-direction: row
+        align-content: center
+        +r(1130)
+            justify-content: space-around
+
+.contact-address
+    width: 370px
+    border: 1px solid #2e2e2e
+    display: inline-block
+    vertical-align: top
+    margin-top: 15px
+    &:first-child
+        +r(780)
+            margin-bottom: 25px
+    &__table
+        padding-top: 29px
+        padding-right: 29px
+        padding-left: 29px
+        padding-bottom: 5px
+    &__header
+        background-color: #2e2e2e
+        padding-top: 10px
+        padding-bottom: 16px
+        text-align: center
+        margin: 1px
+        word-break: break-all
+        word-break: break-word
+        p
+            color: #ffffff
+            font-size: 18px
+            font-weight: 400
+            line-height: 30px
+        strong
+            color: #31c09e
+            font-size: 30px
+            font-weight: 700
+    &__table-row
+        a
+            color: #fff
+        td,
+        th
+            color: #555555
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            padding-bottom: 21px
+            text-align: right
+            &:first-child
+                width: 60px
+                padding-left: 37px
+                line-height: 24px
+    &__table-text
+        color: #ffffff
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        line-height: 24px
+        letter-spacing: 1.5px
+        span
+            color: #777777
+            font-size: 14px
+            font-weight: 400
+            margin-right: 10px
+            letter-spacing: normal
+
+.icon-cart
+    width: 26px
+    height: 32px
+    position: relative
+    &:hover
+        path
+            fill: #15bfff
+    &__text
+        font-family: Arimo
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        fill: #15bfff
+        direction: ltr
+        text-anchor: middle
+
+.mega-menu
+    display: flex
+    justify-content: space-between
+    width: 888px
+    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.35)
+    background-color: #ececec
+    padding-right: 40px
+    padding-top: 30px
+    padding-bottom: 50px
+    position: absolute
+    opacity: 0
+    visibility: hidden
+    overflow: hidden
+    top: 100%
+    right: 22%
+    +clr
+    z-index: 2
+    transition: all .3s ease .1s
+    +r(1080)
+        width: 680px
+        padding-right: 20px
+        right: 10%
+    +r(780)
+        width: auto
+        padding: 0
+        box-shadow: none
+        flex-direction: column
+        background-color: lighten(black, 10%)
+        &--open
+            min-height: auto
+            opacity: 1
+            visibility: visible
+            overflow: visible
+            position: static
+    > li
+        display: inline-block
+        vertical-align: top
+        &:first-child
+            display: none
+        +r(780)
+            display: block
+    &__column
+        width: 174px
+        +r(1080)
+            width: 150px
+        +r(780)
+            width: auto
+            margin-top: 10px
+            margin-bottom: 5px
+    &__header
+        +tr(all .25s)
+        img
+            +gray
+            max-width: 100%
+            +r(780)
+                display: none
+        &:hover
+            cursor: pointer
+            .mega-menu__title
+                color: #31c09e
+            img
+                filter: none
+    &__title
+        color: #010101
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        margin-bottom: 23px
+        display: inline-block
+        +r(780)
+            color: white
+            margin-bottom: 0
+    &__links
+        margin-top: 15px
+        +r(780)
+            display: none
+        li
+            display: block
+            a
+                color: #848484
+                font-size: 14px
+                font-weight: 400
+                line-height: 22px
+                &:hover
+                    color: #31c09e
+
+.cart-dropdown
+    background-color: #ececec
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    min-height: 100px
+    top: 184%
+    left: -9px
+    width: 319px
+    padding: 22px 22px 13px 22px
+    +tr(all .25s ease-in .15s)
+    &:before
+        content: ''
+        position: absolute
+        top: -9px
+        left: 14px
+        display: inline-block
+        +arr(20, 10, #ececec, t)
+        opacity: 0
+        visibility: hidden
+        overflow: hidden
+        +tr(all .25s ease-in .15s)
+    li
+        display: block
+        border: 1px solid #ffffff
+        padding-top: 2px
+        padding-bottom: 2px
+        position: relative
+
+        & + li
+            margin-top: 4px
+    &__img,
+    .attachment-woocommerce_thumbnail
+        display: inline-block
+        vertical-align: top
+        width: 80px
+        margin-right: 5px
+        margin-top: 2px
+        margin-bottom: -1px
+        height: auto
+    &__info
+        display: inline-block
+        vertical-align: top
+        margin-right: 12px
+        margin-top: 3px
+    &__title
+        color: #232222
+        font-size: 12px
+        font-weight: 400
+        line-height: 16px
+        margin-bottom: 6px
+        width: 133px
+        min-height: 48px
+        &--ltr
+            margin-right: 13px
+            text-align: left
+            margin-top: 0
+            margin-bottom: 5px
+    &__price
+        color: #000000
+        font-size: 12px
+        font-weight: 700
+        max-width: 105px
+    &__hr
+        opacity: 0.1
+        border: 0
+        border-bottom: 1px solid #4d4d4d
+        margin-bottom: 9px
+    &__total
+        color: #000000
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        margin-bottom: 14px
+    &__btn,
+    .woocommerce-mini-cart__buttons.buttons
+        button,
+        .button
+            display: none
+            align-items: center
+            justify-content: center
+            color: #ffffff
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            width: 100%
+            min-height: 44px
+            background-color: #31c09e
+            border-bottom: 5px solid #178b74
+            word-break: break-all
+            word-break: break-word
+            text-align: center
+            &.checkout
+                display: flex
+                margin-right: auto
+                margin-left: auto
+            &:hover
+                background-color: #178b74
+    &__close,
+    .cart_list .woocommerce-mini-cart-item .remove.remove_from_cart_button
+        position: absolute
+        top: 4px
+        left: 4px
+        background-image: url(../img/cart-close.svg)
+        background-color: transparent
+        background-size: contain
+        width: 9px
+        height: 9px
+        font-size: 0
+    &__footer
+        color: #000000
+        font-size: 14px
+        font-weight: 700
+        text-align: center
+        margin-top: 10px
+
+
+.menu-toggle
+    position: absolute
+    top: 35px
+    right: .5em
+    cursor: pointer
+    +rmin(780)
+        display: none
+
+.hamburger
+    background-color: transparent
+    .fa-bars
+        color: white
+        font-size: 24px
+    .fa-times
+        color: white
+        display: none
+        font-size: 24px
+
+.menu-toggle.open
+    .fa-bars
+        display: none
+    .fa-times
+        display: inline-block
+
+
+.catalog-sidebar,
+.search-sidebar
+    background-color: #eee
+    min-height: 931px
+    &__list,
+    .product-categories,
+    .woof_list
+        background-color: #fff
+    .children
+        display: none
+    &__category
+        &:first-child
+            .catalog-sidebar__title,
+            .search-sidebar__title
+                padding-top: 10px
+    &__title,
+    .woof_container_inner h4
+        color: #000000
+        font-size: 16px
+        font-weight: 700
+        padding-top: 10px
+        padding-bottom: 12px
+        padding-right: 17px
+    .current-cat a
+        background-color: #31c09e
+        color: white
+    &__link,
+    &__label,
+    .cat-item a,
+    .woof_list li
+        color: #000000
+        font-size: 16px
+        font-weight: 400
+        line-height: 30px
+        padding-right: 19px !important
+        padding-left: 17px !important
+        cursor: pointer
+        border-bottom: 1px solid  #eee
+        display: block
+        &:hover,
+        &--active
+            background-color: #31c09e
+            color: white
+    &__checkbox,
+    .woof_checkbox_term
+        display: none
+        + label
+            span,
+            &:before
+                content: ''
+                margin-left: 17px
+                display: inline-block
+                cursor: pointer
+                vertical-align: middle
+                border: 1px solid white
+                width: 9px
+                height: 9px
+                box-shadow: 0 0 0 1px black
+        &:checked
+            + label 
+                span,
+                &:before
+                    content: ''
+                    background-color: #32c09d
+
+.modal
+    &--search,
+    &--order
+        text-align: center
+    &--search
+        .modal__title
+            margin-bottom: 51px
+        .modal__dialog
+            min-height: 259px
+    &--order
+        .modal__dialog
+            min-height: 217px
+    &__dialog
+        padding: 64px
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            height: 3px
+            top: 0
+            bottom: 0
+            right: 0
+            left: 0
+            background-color: #15bfff
+            background-image: linear-gradient(to left, #15bfff 0%, #32c09d 100%)
+    &__close
+        background-color: transparent
+        position: absolute
+        top: -52px
+        left: 47%
+        &:hover
+            path
+                fill: #15bfff
+    &__title
+        color: #ffffff
+        font-size: 30px
+        font-weight: 700
+    &__sub
+        color: #ffffff
+        font-size: 18px
+        font-weight: 400
+        line-height: 30px
+    &__input-out
+        position: relative
+        max-width: 330px
+        margin-right: 5px
+        &:after
+            content: ''
+            position: absolute
+            height: 1px
+            bottom: 0
+            right: 0
+            left: 0
+            background-color: #616161
+            background-image: linear-gradient(to left, #15bfff 0%, #32c09d 100%)
+        &--empty
+            &:after
+                background-image: none
+    &__input
+        background-color: transparent
+        color: #ffffff
+        font-size: 14px
+        width: 100%
+        font-weight: 400
+        line-height: 30px
+        padding-bottom: 9px
+        padding-left: 15px
+        +placeholder-color(#fff)
+    &__search
+        background-image: url(../img/icon-search.png)
+        width: 15px
+        height: 15px
+        background-repeat: no-repeat
+        background-size: 100%
+        background-color: transparent
+        position: absolute
+        left: -1px
+        top: 8px
+
+
+.cart-page
+    &__main
+        display: flex
+        align-items: flex-start
+        +r(780)
+            flex-direction: column
+    &__content
+        background-color: #eeeeee
+        width: 843px
+        display: inline-block
+        vertical-align: top
+        margin-left: 12px
+        +r(780)
+            display: block
+            width: 100%
+            flex-basis: auto
+            margin-bottom: 20px
+    &__sidebar
+        background-color: #eeeeee
+        margin-left: 0
+        padding-top: 10px
+    &__table
+        padding-left: 12px
+        padding-right: 12px
+        padding-bottom: 7px
+        +r(768)
+            padding-left: 5px
+            padding-right: 5px
+
+.cart-sidebar
+    &__title
+        color: #000000
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+    &__form
+        background-color: white
+        padding-left: 12px
+        padding-right: 12px
+        padding-bottom: 10px
+        margin-top: 13px
+        padding-top: 12px
+        .woocommerce-checkout-payment
+            color: black
+            display: none
+
+.cart-table
+    thead
+        tr
+            color: #898989
+            font-size: 12px
+            font-weight: 700
+            +r(500)
+                display: none
+        th
+            text-align: center
+            padding-top: 14px
+            padding-bottom: 12px
+            &:first-child
+                text-align: right
+                padding-right: 50px
+            &:nth-child(2)
+                text-align: right
+            &:nth-child(4)
+                padding-right: 32px
+    tbody
+        tr
+            background-color: #fff
+            border-bottom: 5px solid #eeeeee
+            +r(500)
+                margin-bottom: 20px
+                &:not(:last-child)
+                    border-bottom: 20px solid #eeeeee
+    td
+        vertical-align: top
+        text-align: center
+        &:nth-child(2)
+            text-align: right
+        +r(500)
+            display: block
+            width: 100%
+            max-width: none
+            text-align: center
+            margin-top: 20px
+            margin-bottom: 20px
+    &__name,
+    &__info
+        color: #000000
+        font-size: 14px
+        font-weight: 400
+        line-height: 18px
+        max-width: 349px
+        +r(500)
+            max-width: none
+    &__name
+        margin-top: 19px
+        margin-right: -5px
+        text-transform: uppercase
+        +r(991)
+            margin-right: 5px
+        +r(500)
+            font-size: 13px
+            margin-right: 0
+            margin-left: 0
+            font-size: 18px
+            text-align: center
+            margin-bottom: 20px
+        a
+            color: inherit
+            &:hover
+                text-decoration: underline
+    &__info
+        font-size: 12px
+        margin-right: 31px
+        line-height: 1.4
+        +r(1070)
+            margin-right: 13px
+        +r(500)
+            font-size: 14px
+            line-height: 1.5
+            text-align: center
+            margin-left: 0
+            margin-right: 0
+        &:last-child
+            padding-bottom: 9px
+    &__img
+        max-width: 139px
+        width: 139px
+        height: 139px
+        background-color: #e1e1e1
+        display: flex
+        justify-content: center
+        align-items: center
+        +r(991)
+            width: auto
+        +r(500)
+            background-color: #fff
+            img
+                max-width: 32%
+        a
+            width: 100%
+        img
+            max-width: 90%
+    &__price
+        margin-top: 23px
+        margin-left: auto
+        margin-right: 27px
+        color: #000000
+        font-size: 14px
+        font-weight: 400
+        line-height: 12px
+        word-break: break-all
+        max-width: 110px
+        min-width: 49px
+        +r(1070)
+            margin-right: 10px
+        +r(780)
+            margin-right: 5px
+        +r(500)
+            font-size: 18px
+            margin-left: auto
+            margin-right: auto
+    &__remove
+        background-color: transparent
+        margin-top: 63px
+        margin-left: 32px
+        margin-right: 16px
+        display: inline-block
+        +r(1070)
+            margin-left: 20px
+            margin-right: 15px
+        +r(780)
+            margin-left: 5px
+            margin-right: 5px
+        +r(500)
+            margin-top: 0
+        &:hover
+            path
+                fill: black
+
+.cart-form
+    &__50-50,
+    &__60-40,
+    &__40-30-30
+        display: flex
+        justify-content: space-between
+    &__50-50
+        input
+            width: 131px
+            +r(780)
+                width: 40%
+    &__100
+        input
+            width: 100%
+            &[type="email"]::placeholder
+                direction: rtl
+    &__60-40
+        input
+            &:first-child
+                width: 102px
+                +r(780)
+                    width: 40%
+            &:last-child
+                width: 161px
+                +r(780)
+                    width: 40%
+    &__40-30-30
+        input
+            width: 61px
+            +r(780)
+                width: 30%
+            &:last-child
+                width: 110px
+                +r(780)
+                    width: 30%
+    &__input,
+    .input-text.form-control.input-lg
+        color: #797979
+        font-size: 14px
+        font-weight: 400
+        line-height: 34px
+        height: 34px
+        border-bottom: 1px solid #797979
+        text-align: right
+        &:hover
+            border-bottom: 1px solid black
+            color: black
+            +placeholder-color(black)
+    &__row
+        margin-bottom: 13px
+        &--with-bg
+            min-height: 37px
+            background-color: #797979
+            padding-left: 12px
+            padding-right: 15px
+            display: flex
+            align-items: center
+            margin-bottom: 11px
+            select,
+            label
+                color: #ffffff
+                font-size: 14px
+                font-weight: 400
+                line-height: 34px
+            .contact-form__col2
+                margin-bottom: 0
+            select
+                height: 30px
+    &__submit
+        color: #ffffff
+        font-size: 18px
+        font-weight: 400
+        text-transform: uppercase
+        background-color: #31c09e
+        display: inline-block
+        width: 100%
+        min-height: 47px
+        border-bottom: 5px solid #178b74
+        white-space: normal
+        padding-right: 10px
+        padding-left: 10px
+        margin-top: 2px
+        font-family: Arimo, sans-serif
+        padding-top: 4px
+        &:hover,
+        &[disabled]
+            background-color: #178b74
+            opacity: 1
+    &__2col
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+    &__col1
+        flex-basis: 55%
+    &__col2
+        flex-basis: 42.5%
+    &__select
+        background-color: transparent
+        +custom-select-reset
+        border-bottom: 1px solid white
+        background-image: url(../img/dropdown-arrow--white.svg)
+        background-repeat: no-repeat
+        background-position: 0% 50%
+        color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        line-height: 34px
+        text-transform: uppercase
+        width: 100%
+        option
+            color: #959494
+            background-color: #2b2b2b
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-right: 5px
+            cursor: pointer
+            border-bottom: 1px solid #424040
+    &__total
+        color: #000000
+        font-size: 18px
+        font-weight: 700
+        letter-spacing: 0.36px
+        line-height: 14px
+        text-align: center
+        margin-top: 24px
+        margin-bottom: 24px
+    &__commission
+        color: #000000
+        font-size: 14px
+        font-weight: 400
+        line-height: 12px
+    &__commission-select
+        background-color: transparent
+        +custom-select-reset
+        border-bottom: 1px solid white
+        background-image: url(../img/dropdown-arrow--black.svg)
+        background-repeat: no-repeat
+        background-position: 5% 33%
+        color: #000000
+        font-family: Arimo
+        font-size: 14px
+        font-weight: 400
+        line-height: 12px
+        width: 44px
+        border-bottom: 1px solid black
+        padding-bottom: 3px
+        padding-right: 8px
+        height: 17px
+        option
+            color: #959494
+            background-color: #2b2b2b
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-right: 5px
+            cursor: pointer
+            border-bottom: 1px solid #424040
+    &__hr
+        border-top: 0
+        border-color: #000
+        margin-bottom: 22px
+        &--small-margin
+            margin-bottom: 16px
+    &__checkbox
+        margin-top: 16px
+        margin-bottom: 5px
+        label
+            color: #000000
+            font-size: 12px
+            font-weight: 400
+            line-height: 24px
+            text-transform: uppercase
+            a
+                color: #32c09d
+    &__small-margin
+        margin-bottom: 10px
+
+.input-plus-minus
+    margin-top: 12px
+    max-width: 109px
+    height: 33px
+    background-color: #e1e1e1
+    display: flex
+    align-content: center
+    justify-content: space-between
+    padding-left: 8px
+    padding-right: 9px
+    +r(500)
+        margin-left: auto
+        margin-right: auto
+    .btn-number
+        background-color: #e1e1e1
+        color: white
+        svg
+            display: inline-block
+            vertical-align: middle
+    .input-number
+        background-color: #e1e1e1
+        text-align: center
+        width: 44px
+        color: #000000
+        font-size: 14px
+        font-weight: 400
+        font-family: Arimo, sans-serif
+        direction: ltr
+        +r(780)
+            width: 30px
+        +r(500)
+            width: 44px
+
+.warranty-page
+    padding-top: 50px
+    &__category
+        margin-bottom: 100px
+        &--small-mb
+            margin-bottom: 77px
+    &__tabs
+        margin-top: 25px
+    &__title
+        color: #ffffff
+        font-size: 30px
+        font-weight: 400
+        margin-bottom: 9px
+        +r(768)
+            text-align: center
+    &__2col
+        display: flex
+        justify-content: space-between
+        +r(768)
+            flex-wrap: wrap
+    &__text,
+    p
+        opacity: 0.5
+        color: #ffffff
+        font-size: 16px
+        font-weight: 400
+        line-height: 30px
+        text-transform: uppercase
+        letter-spacing: 0.2px
+        +r(768)
+            text-align: center
+        &--right
+            max-width: 501px
+            display: inline-block
+            vertical-align: top
+            +r(1170)
+                padding-left: 20px
+            +r(768)
+                max-width: 100%
+                margin-bottom: 40px
+                padding-left: 0
+    &__imgs
+        width: 100%
+        max-width: 570px
+        margin-top: -37px
+        display: inline-block
+        +r(1170)
+            margin-top: 0
+        +r(768)
+            max-width: 680px
+            margin-left: auto
+            margin-right: auto
+        ul
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            +r(880)
+                justify-content: space-around
+        li
+            display: inline-block
+            margin-bottom: 30px
+        figure
+            background-color: rgba(0, 0, 0, 0.3)
+            max-width: 172px
+            max-height: 171px
+            position: relative
+            overflow: hidden
+            img
+                width: 100%
+                opacity: 0.7
+                max-height: 171px
+        figcaption
+            position: absolute
+            bottom: 13px
+            right: 17px
+            color: #ffffff
+            font-size: 16px
+            font-weight: 700
+    &__logos
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 33px
+        padding-right: 1px
+        +r(640)
+            justify-content: space-around
+        img
+            max-width: 200px
+            max-height: 100px
+            margin-bottom: 37px
+
+.article-page
+    padding-top: 60px
+    padding-bottom: 30px
+    a
+        color: #15bfff
+    ol
+        list-style-type: decimal
+        margin-right: 18px
+    ul
+        li
+            &:before
+                content: ''
+                display: inline-block
+                width: 6px
+                height: 6px
+                background-color: #15bfff
+                border-radius: 50%
+                vertical-align: middle
+                margin-left: 8px
+
+    &__elements
+        +clr
+        margin-bottom: 44px
+        +r(768)
+            text-align: center
+    &__video
+        margin-bottom: 35px
+        iframe
+            max-width: 100%
+    &__right,
+    &__left
+        display: inline-block
+        vertical-align: top
+    &__left
+        float: left
+        +r(768)
+            float: none
+            margin-top: 20px
+            text-align: center
+    &__blockquote,
+    blockquote
+        max-width: 515px
+        margin-bottom: 28px
+        color: #ffffff
+        font-size: 18px
+        font-weight: 700
+        line-height: 32px
+        &:before
+            content: '”'
+            color: #14b9f6
+            font-size: 72px
+            font-weight: 700
+            line-height: 64px
+            text-transform: uppercase
+            display: block
+            margin-bottom: -20px
+    &__lists
+        display: inline-block
+        li
+            color: #ffffff
+            font-size: 16px
+            font-weight: 400
+            line-height: 30px
+            text-transform: uppercase
+    &__list
+        display: inline-block
+        &--ordered
+            list-style-type: decimal
+            margin-right: 18px
+        &--unordered,
+            margin-right: 121px
+            li
+                &:before
+                    content: ''
+                    display: inline-block
+                    width: 6px
+                    height: 6px
+                    background-color: #15bfff
+                    border-radius: 50%
+                    vertical-align: middle
+                    margin-left: 8px
+    &__tags
+        display: inline-block
+        vertical-align: top
+        float: left
+        margin-left: 32px
+        margin-top: 9px
+        +r(490)
+            float: none
+            display: block
+            margin-top: 20px
+    &__texts
+        margin-bottom: 57px
+        +r(768)
+            text-align: center
+    &__text
+        color: #ffffff
+        font-size: 16px
+        font-weight: 400
+        line-height: 30px
+        text-transform: uppercase
+        &--secondary
+            color: #969595
+            font-size: 16px
+            font-weight: 400
+            line-height: 30px
+            text-transform: uppercase
+            a
+                color: #15bfff
+                &:hover
+                    text-decoration: underline
+        &--bordered
+            border-right: 3px solid #15bfff
+            padding-right: 15px
+            margin-top: 27px
+    &__tabs
+        margin-bottom: 59px
+    &__img
+        margin-bottom: 23px
+        img
+            max-width: 100%
+    &__btns
+        margin-bottom: 42px
+        +r(768)
+            text-align: center
+            ul
+                margin-left: 0
+        ul
+            display: inline-block
+            margin-left: 67px
+        li
+            margin-bottom: 20px
+    &__img-right,
+    &__img-left
+        +clr
+        margin-bottom: 41px
+        +r(660)
+            text-align: center
+            img
+                float: none
+                margin-bottom: 20px
+                margin-right: 0
+                margin-left: 0
+                max-width: 100%
+        p
+            color: #969595
+            font-size: 16px
+            font-weight: 400
+            line-height: 30px
+            text-transform: uppercase
+        img
+            margin-top: 7px
+    &__img-right
+        img
+            float: right
+            margin-left: 26px
+        p
+            margin-top: -9px
+    &__img-left
+        img
+            float: left
+            margin-right: 26px
+    &__headings
+        margin-left: -6px
+        +r(768)
+            text-align: center
+        .h1
+            margin-bottom: 5px
+        .h2
+            margin-bottom: 14px
+        .h3
+            margin-bottom: 19px
+        .h4
+            margin-bottom: 23px
+        .h5
+            margin-bottom: 20px
+
+
+.article-gallery
+    &__main
+        img
+            max-height: 399px
+    &__nav
+        max-height: 175px
+        margin-bottom: 77px
+        +r(790)
+            max-width: 90%
+            margin-left: auto
+            margin-right: 7%
+        &__item
+            width: 239px
+            +r(790)
+                width: auto
+            & + &
+                margin-right: 27px
+                +r(790)
+                    margin-right: 0
+        img
+            width: 239px
+            height: 178px
+            object-fit: cover
+            font-family: 'object-fit: cover;'
+            +r(790)
+                width: 80%
+                height: 130px
+                object-fit: initial
+                font-family: 'object-fit: initial;'
+            +r(460)
+                height: 80px
+        .slick-arrow
+            font-size: 0
+            position: absolute
+            top: 45%
+        .slick-prev,
+        .slick-next
+            background-image: url(../img/gallery-arrow.png)
+            background-color: transparent
+            width: 15px
+            height: 24px
+            z-index: 99
+        .slick-prev
+            right: -45px
+            transform: rotateY(180deg)
+            +r(860)
+                right: -7%
+            &:hover
+                background-image: url(../img/gallery-arrow-hover.png)
+                transform: rotateY(360deg)
+        .slick-next
+            left: -45px
+            +r(860)
+                left: -3%
+            &:hover
+                transform: rotateY(180deg)
+                background-image: url(../img/gallery-arrow-hover.png)
+
+#searchform
+    margin-top: 20px
+    margin-bottom: 20px
+    .form-control
+        min-height: 40px
+        padding-left: 10px
+        padding-right: 10px
+        margin-top: 10px
+        font-size: 18px
+
+.btn
+    width: 200px
+    min-height: 60px
+    color: #ffffff
+    font-size: 22px
+    text-transform: uppercase
+    text-align: center
+    &-primary
+        background-image: linear-gradient(56deg, #32c09d 0%, #15bfff 100%)
+        min-height: 40px
+        font-size: 18px
+    &--simple
+        background-color: #31c09e
+        font-weight: 400
+        box-shadow: inset 0 -6px 0 #178b74
+        &:hover,
+        &--hover
+            background-color: #178b74
+            box-shadow: none
+            background-image: none
+    &--gradient
+        font-weight: 700
+        background-image: linear-gradient(56deg, #32c09d 0%, #15bfff 100%)
+        box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.26)
+        &:hover,
+        &--hover
+            background-color: #0893c7
+            background-image: none
+            box-shadow: none
+
+.product-page
+    &__breadcrumbs
+        margin-top: 1px
+
+.product
+    &.single
+        margin-top: 24px
+    &__video
+        max-height: 603px
+    &__cols
+        display: flex
+        justify-content: space-between
+        +r(768)
+            flex-wrap: wrap
+    &__col
+        max-width: 570px
+        width: 50%
+        +r(768)
+            max-width: none
+            width: 100%
+            &:first-child
+                margin-left: 0
+                margin-bottom: 40px
+        &:first-child
+            margin-left: 20px
+    &__gallery
+        padding-top: 88px
+        +r(768)
+            text-align: center
+    &__thumbs
+        margin-right: 22px
+        .slick-slide
+            cursor: pointer
+            padding-left: 15px
+    &__name
+        color: #ffffff
+        font-size: 36px
+        font-weight: 400
+    &__manufacturer
+        opacity: 0.3
+        color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        line-height: 30px
+        text-transform: uppercase
+        margin-top: 4px
+    &__price
+        color: #30c0a3
+        font-size: 36px
+        font-weight: 400
+        margin-top: 11px
+        display: flex
+        flex-direction: row-reverse
+        justify-content: flex-end
+        align-items: baseline
+        s,
+        del
+            font-size: 24px
+            text-decoration: line-through
+            color: #777777
+            margin-right: 10px
+    &__desc
+        color: #ffffff
+        font-size: 16px
+        font-weight: 400
+        line-height: 30px
+        max-width: 475px
+        margin-top: 18px
+        +r(768)
+            max-width: none
+    &__add-to-cart
+        display: inline-block
+        width: 100%
+        line-height: 61px
+        margin-top: 28px
+        margin-bottom: 39px
+    &__tab
+        &-content
+            display: block
+            overflow: hidden
+            height: 0
+            margin-top: 0
+            &--visible
+                display: block
+                height: auto
+                margin-top: 31px
+                overflow: visible
+    &__suggestions
+        +r(1170)
+            text-align: center
+        .slick-slide
+            margin: 0 10px
+        .slick-list
+            margin: 0 -10px
+        .slick-arrow
+            font-size: 0
+            position: absolute
+            top: 46.5%
+        .slick-prev,
+        .slick-next
+            background-image: url(../img/gallery-arrow.png)
+            background-color: transparent
+            width: 15px
+            height: 24px
+            z-index: 99
+        .slick-prev
+            right: -61px
+            transform: rotateY(180deg)
+            +r(1280)
+                right: -1%
+            +r(400)
+                right: -4%
+            &:hover
+                background-image: url(../img/gallery-arrow-hover.png)
+                transform: rotateY(360deg)
+        .slick-next
+            left: -61px
+            +r(1280)
+                left: -1%
+            +r(400)
+                left: -4%
+            &:hover
+                transform: rotateY(180deg)
+                background-image: url(../img/gallery-arrow-hover.png)
+    &__table
+        table
+            background-color: #fff
+        th
+            color: #000000
+            line-height: 35px
+            border-bottom: 1px solid #ededed
+            text-align: right
+            font-size: 16px
+            font-weight: bold
+            padding-right: 17px
+            max-width: 130px
+            min-width: 100px
+            word-break: normal
+            direction: rtl
+            +r(768)
+                max-width: none
+            +r(480)
+                font-size: 14px
+        td
+            color: #000000
+            font-size: 14px
+            font-weight: 400
+            padding-right: 60px
+            line-height: 35px
+            border-bottom: 1px solid #ededed
+            text-align: right
+            word-break: break-all
+            +r(768)
+                padding-right: 20px
+            &:not(.dir-rtl)
+                direction: ltr
+            &:last-child
+                +r(768)
+                    padding-left: 10px
+            &.medium-pd
+                padding-right: 43px
+                +r(768)
+                    padding-right: 20px
+            &.small-pd
+                padding-right: 25px
+            &.lh25
+                line-height: 25px
+                padding-bottom: 7px
+                &:last-of-type
+                    line-height: 23px
+            a
+                color: #15bfff
+                &:hover
+                    text-decoration: underline
+        tr:last-child
+            td
+                border-bottom: none
+    &__img
+        margin-bottom: 129px
+        +rmin(1170)
+            padding-right: 22px
+    &__info
+        margin-top: 75px
+        margin-bottom: 111px
+        min-height: 633px
+    &__slider
+        // .slick-slide
+        //     float: left
+
+
+.breadcrumbs
+    &__item
+        color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        display: inline-block
+        &:not(:last-child):after
+            content: '/ \00a0'
+            display: inline-block
+            color: #8d8c8c
+            margin-right: 4px
+        a
+            color: #8d8c8c
+
+.accordion,
+.su-spoiler
+    border-bottom: 1px solid rgba(255, 255, 255, .2)
+    padding-top: 20px
+    padding-bottom: 22px
+    padding-left: 79px
+    +r(768)
+        padding-left: 30px
+    +r(480)
+        padding-left: 10px
+    &__text,
+    .su-spoiler-title
+        color: #ffffff
+        font-size: 16px
+        font-weight: 400
+        line-height: 30px
+        font-family: Arimo
+        text-transform: uppercase
+        position: relative
+        margin-right: 70px
+        display: inline-block
+        +r(480)
+            margin-right: 50px
+        &:before
+            content: '-'
+            font-size: 18.81px
+            position: absolute
+            right: -40px
+            top: 43%
+            display: inline-block
+            line-height: 0.6
+        &.collapsed:before,
+            content: '-'
+            font-size: 18.81px
+            top: 43%
+    .su-spoiler-icon
+        display: none
+    &-closed 
+        .su-spoiler-title:before
+            content: '+'
+            font-size: 18.81px
+            top: 43%
+    &__inner,
+    .su-spoiler-content
+        display: block
+        margin-bottom: -4px
+        opacity: 0.5
+        color: #ffffff
+        font-size: 16px
+        font-weight: 400
+        line-height: 30px
+        font-family: Arimo
+        text-transform: uppercase
+    .su-spoiler-content
+        margin-right: 70px
+
+.facebook
+    z-index: 5
+    position: fixed
+    left: -38px
+    top: 490px
+    transform: rotate(-90deg)
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
+    transition: left .2s, right .2s
+    +r(768)
+        display: none
+    &:hover
+        transform: none
+        filter: none
+        left: 0
+        .facebook__frame
+            display: block
+        .facebook__btn
+            transform: rotate(-90deg)
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
+            position: absolute
+            top: 0
+            right: -373px
+    &__frame
+        background-repeat: no-repeat
+        background-size: 100%
+        max-width: 296px
+        border: 5px solid #3b589e
+        background-color: #ffffff
+        max-width: 296px
+        margin-right: auto
+        margin-left: auto
+        display: none
+        position: absolute
+        left: 0
+        top: -38px
+
+    &__btn
+        background-color: #3b589e
+        color: #ffffff
+        font-family: Arimo
+        font-size: 16px
+        font-weight: 700
+        letter-spacing: 0.8px
+        line-height: 40px
+        padding-right: 15px
+        padding-left: 10px
+        width: 116px
+
+.js-show-sidebar
+    background-color: white
+    padding: 6px 10px
+    vertical-align: top
+    display: inline-block
+    cursor: pointer
+    .fa
+        display: none
+        color: black
+    +r(540)
+        margin-right: 0
+    +rmin(780)
+        display: none
+
+.hamlines
+    top: -3px
+    position: relative
+
+.hamlines,.hamlines:before,.hamlines:after
+    display: inline-block
+    width: 12px
+    height: 3px
+    background: #000
+
+.hamlines:before,.hamlines:after
+    position: absolute
+    left: 0
+    content: ''
+
+.hamlines:before
+    top: 4px
+
+.hamlines:after
+    top: -4px
+
+.warning
+    border: 1px solid red
+
+.cd-top
+    display: inline-block
+    position: fixed
+    right: 10px
+    bottom: 20px
+    overflow: hidden
+    white-space: nowrap
+    visibility: hidden
+    opacity: 0
+    transition: opacity .3s 0s,visibility 0s .3s
+    color: #000
+    border-radius: 2px
+    padding: 10px 15px
+    background:#fff
+    font-size: 0
+    z-index: 20
+    +rmin(1024)
+        right: 30px
+        bottom: 80px
+    +rmin(768)
+        right: 20px
+        bottom: 20px
+    .fa
+        font-size: 16px
+    &.cd-fade-out,
+    &.cd-is-visible,
+    .no-touch &:hover
+        transition: opacity .3s 0s,visibility 0s 0s
+    &.cd-is-visible
+        visibility: visible
+        opacity: 1
+    &.cd-fade-out
+        opacity: .75
+    .no-touch &:hover
+        background-color: #e86256
+        opacity: 1
+.marker-info
+    color: black
+    padding-right: 10px
+
+#skip
+    a
+        position: absolute
+        left: auto
+        top: -10000px
+        width: 1px
+        height: 1px
+        overflow: hidden
+        &:focus
+            position: static
+            width: auto
+            height: auto
+
+ins
+    text-decoration: none
+
+
+
+// WP
+#wpadminbar
+    min-height: 32px
+    height: auto
+
+.wrapper
+    padding-top: 50px
+    padding-bottom: 50px
+
+.entry-content
+    p
+        font-size: 16px
+        font-weight: 400
+        line-height: 30px
+        letter-spacing: 0.2px
+
+.entry-header
+    .entry-title
+        color: #ffffff
+        font-size: 30px
+        font-weight: 400
+        margin-bottom: 9px
+
+.aws-search-result
+    margin-top: 5px
+    direction: ltr
+
+.aws_no_result
+    color: #000
+
+table.shop_attributes td
+    font-style: normal
+
+.actions
+    button.button
+        margin-top: 10px
+        margin-bottom: 10px
+
+.woof_products_top_panel
+    display: none !important
+
+.woof_submit_search_form_container
+    display: none
+
+.woof_list label
+    padding-top: 0
+    padding-bottom: 0
+    vertical-align: baseline
+
+.woof_checkbox_label_selected
+    font-weight: normal
+
+.woocommerce-mini-cart__empty-message
+    color: #000
+
+.search-page
+    .no-results,
+    .page-title
+        color: #000
+        padding: 20px 0
+
+.cart-empty
+    margin-top: 0.5em
+    margin-bottom: 0.5em
+    margin-right: 0.5em
+    font-size: 2em
+    color: black
+
+.button.wc-backward,
+.actions .button
+    margin-top: 0.5em
+    margin-bottom: 1em
+    margin-right: 1em
+    background-color: #178b74;
+    vertical-align: top
+    color: #ffffff
+    font-weight: 700
+    min-height: 44px
+    line-height: 44px
+    padding-right: 10px
+    padding-left: 10px
+    background-color: #30c0a3
+    box-shadow: inset 0 -5px #178b74
+    display: inline-block
+    text-align: center
+    transition: all 0.2s
+    &:hover
+        background-color: #178b74
+
+.checkout.woocommerce-checkout
+    // display: none
+
+.woocommerce-order
+    padding: 1em
+    color: black
+    background: white
+    a
+        color: #15bfff
+    .woocommerce-Price-amount
+        color: #30c0a3;
+    .woocommerce-order-details__title,
+    .woocommerce-column__title
+        margin-bottom: 1em
+    .woocommerce-customer-details
+        address
+            position: relative
+            line-height: 1.75
+            .woocommerce-customer-details--phone,
+            .woocommerce-customer-details--email
+                &:before
+                    margin-right: 0
+                    margin-left: 0
+                    left: 15px
+
+.woocommerce-thankyou-order-received
+    margin-bottom: 2em
+    font-size: 2em
+    text-align: center
+
+.cart-page
+    .woocommerce-info,
+    .woocommerce-message
+        display: none
+
+.woocommerce-order-received
+    .woocommerce
+        .return-to-shop
+            display: none
+    .cart-empty
+        display: none
+
+.home
+  .tparrows
+      width: 32px
+      height: 23px
+      font-size: 0
+      background-color: transparent
+      &:before
+          content: none
+  .tp-leftarrow
+      background-image: url(../img/arrow-left.png)
+  .tp-rightarrow
+      background-image: url(../img/arrow-right.png)
+  .tp-bullet
+      content: ""
+      width: 8px
+      height: 8px
+      display: block
+      border-radius: 50%
+      transition: all 0.1s ease
+      background-color: #4b4b4b
+      &.selected,
+      &:hover
+        background-color: #83ced5
+
+// PRINT
+@media only print
+    .site-header,
+    .facebook,
+    .site-footer__menu
+        display: none
+    .catalog
+        .calc-content,
+        .calculator__recommendations,
+        .calc-sidebar__cart,
+        .calc-sidebar__share,
+        .calculator__cat--closed,
+        .calc-sidebar__required-text
+            display: none
+        .calc-sidebar
+            width: 100%
+        .calc-sidebar__price
+            color: black
+
+// remove X symbol from inputs - ie browsers
+::-ms-clear
+    display: none
+
+.cat-item.cat-item-15
+    display: none
+
+.woocommerce 
+    div.product
+        margin-bottom: 2px
+    .woocommerce-ordering
+        margin: 0
+        width: 60%
+        float: none
+
+.admin-bar
+    margin-top: 130px
+    .site-header
+        margin-top: 32px
+    .sidebar
+        top: 132px
+#wpadminbar
+    // position: static
+    // height: 0
+    // display: none
+    // position: absolute
+
+.text-center
+    text-align: center
+
+.hidden
+    opacity: 0
+    visibility: hidden
+
+// Visual Composer
+div.pp_default .pp_close
+    font-size: 0
+
+.wpb_single_image
+    position: relative
+    .wpb_singleimage_heading
+        position: absolute
+        bottom: 13px
+        right: 17px
+        color: #ffffff
+        font-size: 16px
+        font-weight: 700
+        z-index: 2
+    .vc_figure,
+    .vc_single_image-wrapper,
+    .vc_single_image-img
+        width: 100%
+    .vc_single_image-img
+        opacity: .7
+
+.rtl
+    .rev_slider
+        direction: rtl
+
+.sticky
+    position: sticky

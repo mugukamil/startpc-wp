@@ -1,0 +1,161 @@
+---
+title: Product
+---
+extends layouts/_layout
+block content
+  .product-page
+    .container
+      main.product-page__main#main
+        ul.product-page__breadcrumbs.breadcrumbs
+          li.breadcrumbs__item: a(href="") בית
+          li.breadcrumbs__item: a(href="") קטלוג
+          li.breadcrumbs__item כרטיס גרפי Nvidia
+        .product
+          .product__cols
+            .product__col
+              .product__gallery
+                .product__slider
+                  each i in [1,2,3]
+                    div
+                      a(href="img/product-img.png" data-lightbox="product-slide"): img.product__img(src="img/product-img.png", alt="product-#{i}")
+                .product__thumbs.product__slider-nav
+                  div
+                    img.product__thumb(src="img/product-iimg--small.png", alt="")
+                  div
+                    img.product__thumb(src="img/product-iimg--small.png", alt="")
+                  div
+                    img.product__thumb(src="img/product-iimg--small.png", alt="")
+            .product__col
+              h1.product__name Graphic Card Nvidia
+              p.product__manufacturer Asus
+              p.product__price
+                s ₪7,648
+                | ₪5,252
+              p.product__desc NVXIA GeForce GTX 1080 הוא מופעל על ידי עטורת הפרסים NVIDIA Pascal ™ אדריכלות. גלה ביצועים מדהימים, יעילות צריכת חשמל וחוויו תמשחקים. זוהי פלטפורמת המשחקים האולטימטיבית.
+              div
+                a(href="/cart.html").btn.btn--gradient.product__add-to-cart הוסף לסל הקניות
+              .product__table
+                table
+                  tr
+                    th אחריות:
+                    td.dir-rtl.medium-pd 5 שנים
+                  tr
+                    th זמן משלוח:
+                    td.dir-rtl.medium-pd 7 ימים
+                  tr
+                    th אתר היצרן:
+                    td.dir-rtl.medium-pd: a(href="") http://www.nvidia.in/graphics-cards
+          .product__info
+            .site-elements__tabs.product-page__tabs
+              .site-elements__tab.site-elements__tab--active
+                button.js-tab(data-tab="#tab-table") פרטים
+              .site-elements__tab
+                button.js-tab(data-tab="#tab-suggestions") אפשרויות שדרוג
+              .site-elements__tab
+                button.js-tab(data-tab="#tab-video") ביקורת וידאו
+            .tabs-content
+              #tab-table.product__tab-content.product__tab-content--info.product__tab-content--visible
+                .product__cols
+                  .product__col
+                    .product__table
+                      table
+                        tr
+                          th מותג:
+                          td ASUS
+                        tr
+                          th שם המוצר:
+                          td Nvidia ROG-STRIX-GTX1080TI-O11G-GAMING
+                        tr
+                          th זיכרון:
+                          td GDDR5X 11GB
+                        tr
+                          th ממשק חיבור:
+                          td PCI Express 3.0
+                        tr
+                          th מהירות ליבה:
+                          td.lh25
+                            p OC Mode
+                            p Gaming Mode
+                            p GPU Boost Clock: 1683 MHz
+                        tr
+                          th כמות ליבות:
+                          td 3584
+                        tr
+                          th מהירות זיכרון:
+                          td.lh25
+                            p OC Mode: 11100 MHz
+                            p Gaming Mode (default): 11010 MHz
+                        tr
+                          th מותג:
+                          td ASUS
+                        tr
+                          th שם המוצר:
+                          td Nvidia ROG-STRIX-GTX1080TI-O11G-GAMING
+                        tr
+                          th זיכרון:
+                          td GDDR5X 11GB
+                        tr
+                          th ממשק חיבור:
+                          td PCI Express 3.0
+                        tr
+                          th מהירות ליבה:
+                          td.lh25
+                            p OC Mode
+                            p Gaming Mode
+                            p GPU Boost Clock: 1683 MHz
+                  .product__col
+                    .product__table
+                      table
+                        tr
+                          th ממשק זיכרון:
+                          td.small-pd 352-bit
+                        tr
+                          th רזולוציה מקסימלית:
+                          td.small-pd 7680x4320
+                        tr
+                          th חיבוריות:
+                          td.small-pd.lh25
+                            p DVI Output: Yes x 1 (Native) (DVI-D)
+                            p HDMI Output: Yes x 2 (Native) (HDMI 2.0)
+                            p Display Port  Yes x 2 (Native) (Regular DP)
+                            p HDCP Support: Yes
+                        tr
+                          th חיבור חשמל:
+                          td.small-pd 2 x 8-pin
+              #tab-suggestions.product__tab-content
+                .product__suggestions
+                  -for (let i = 0; i < 8; i++)
+                    div
+                      .calc-product.calc-product--gallery(tabindex="0")
+                        p.calc-product__text
+                          span.calc-product__checkbox
+                            svg(xmlns='http://www.w3.org/2000/svg', fill='#FFFFFF', height='14', viewbox='0 0 24 24', width='15')
+                              path(d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z')
+                          if (i == 3)
+                            | AMD Quad Core RYZEN 5 1400AMD Quad Core RYZEN 5 1400AMD Quad Core RYZEN 5 1400AMD Quad Core RYZEN 5 1400AMD Quad Core RYZEN 5 1400AMD Quad Core RYZEN 5 1400AMD Quad Core RYZEN 5 1400
+                          else
+                            | AMD Quad Core RYZEN 5 1400
+                          br
+                          | 3.2Ghz-3.4GHz
+                        div.calc-product__img-out
+                          img.calc-product__img(src="img/product-gallery-img.png", alt="product image")
+                        ul.calc-product__tags.product-tags
+                          li.product-tags__tag Unlocked
+                          li.product-tags__tag 3.4GHz
+                          li.product-tags__tag 8 Core
+                        p.calc-product__warranty 5 שנות אחריות
+                        p.calc-product__price
+                          s ₪7,648
+                          span ₪7,312
+              #tab-video.product__tab-content
+                .product__video.embed-responsive.embed-responsive-16by9
+                  iframe.embed-responsive-item(width="100%" height="603" src="https://www.youtube.com/embed/EOiNe_GpcHE" allowfullscreen title="video" style="border: 0")
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+/* ===== Select Box ===== */
+.sel {
+  display: inline-block;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px solid #2b2b2b;
+  background-image: url(../img/dropdown-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  width: 100%;
+}
+
+.sel__placeholder {
+  font-family: Arimo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-top: 32px;
+  pointer-events: none;
+  color: #555;
+  user-select: none;
+  visibility: visible;
+}
+
+.cart-form__select {
+  .sel__placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .sel__box {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .sel__box__options {
+    border-bottom: 1px solid white;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    background-color: black;
+    &:last-child {
+      border-bottom: 0;
+    }
+    &:hover,
+    &:focus {
+      color: #32c09d;
+    }
+  }
+}
+
+.sel.cart-form__commission-select {
+  padding-right: 1px;
+  padding-bottom: 0;
+  margin-left: 1px;
+  width: 42px;
+  .sel__placeholder {
+    color: #000000;
+    font-family: Arimo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+    padding-bottom: 15px;
+    &:before {
+      right: 5px;
+    }
+  }
+
+  .sel__box {
+    right: 0;
+    max-height: 100px;
+    overflow-y: scroll;
+
+    &__options {
+      border-bottom: 1px solid white;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        color: #32c09d;
+      }
+    }
+  }
+}
+
+.sel.active .sel__placeholder {
+  // visibility: hidden;
+}
+
+.sel__placeholder::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: attr(data-placeholder);
+  visibility: hidden;
+}
+
+.sel.active .sel__placeholder::before {
+  // visibility: visible;
+}
+
+.sel__box {
+  position: absolute;
+  top: calc(100% + 4px);
+  display: none;
+  list-style-type: none;
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sel.active .sel__box {
+  display: block;
+}
+
+.sel__box__options {
+  display: list-item;
+  user-select: none;
+  color: #959494;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #424040;
+  background-color: #2b2b2b;
+  padding-right: 6px;
+  padding-left: 6px;
+  @include r(480) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  @include r(400) {
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+
+/* ----- Select Box Black Panther ----- */
+
+.sel--black-panther {
+  z-index: 3;
+}

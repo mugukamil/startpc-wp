@@ -1,0 +1,374 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Veartix StartPC\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-09 00:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: inc/template-tags.php:57
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:62 comments.php:92
+msgid "&larr; Older Comments"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:45 inc/template-tags.php:50
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:57
+msgid "1 Comment"
+msgstr ""
+
+#: author.php:33
+msgid "About:"
+msgstr ""
+
+#: page-contact.php:62 page-contact.php:161
+msgid "Address:"
+msgstr ""
+
+#. Author of the theme
+msgid "Anonymous"
+msgstr ""
+
+#. Name of the template
+msgid "Article Page Template"
+msgstr ""
+
+#. Name of the template
+msgid "Blank Page Template"
+msgstr ""
+
+#. Name of the template
+msgid "Calculator Page Template"
+msgstr ""
+
+#: inc/customizer.php:69
+msgid "Choose between Bootstrap's container and container-fluid"
+msgstr ""
+
+#: comments.php:59 comments.php:89
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:111
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: number of comments, 2: post title
+#: comments.php:40
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s: post title
+#: comments.php:34
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#. Name of the template
+msgid "Contact Page Template"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "Container Width"
+msgstr ""
+
+#: inc/customizer.php:39
+msgid "Container width and sidebar defaults"
+msgstr ""
+
+#: inc/custom-header.php:38
+msgid "Default Header Image"
+msgstr ""
+
+#: loop-templates/content-page.php:34
+msgid "Edit"
+msgstr ""
+
+#. %s: Name of current post
+#: inc/template-tags.php:63
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: page-contact.php:38 inc/custom-comments.php:27
+msgid "Email"
+msgstr ""
+
+#. Name of the template
+msgid "Empty Page Template"
+msgstr ""
+
+#: inc/customizer.php:74
+msgid "Fixed width container"
+msgstr ""
+
+#: inc/widgets.php:93
+msgid "Footer Full"
+msgstr ""
+
+#: inc/setup.php:45
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/customizer.php:75
+msgid "Full width container"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width Page"
+msgstr ""
+
+#: inc/widgets.php:73
+msgid "Hero Slider"
+msgstr ""
+
+#: inc/widgets.php:83
+msgid "Hero Static"
+msgstr ""
+
+#. URI of the theme
+msgid "http://veartix.com"
+msgstr ""
+
+#: author.php:67
+msgid "in"
+msgstr ""
+
+#: 404.php:36
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: inc/template-tags.php:57
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/customizer.php:102
+msgid "Left & Right sidebars"
+msgstr ""
+
+#. Name of the template
+msgid "Left and Right Sidebar Layout"
+msgstr ""
+
+#: inc/widgets.php:63
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/customizer.php:101
+msgid "Left sidebar"
+msgstr ""
+
+#. Name of the template
+msgid "Left Sidebar Layout"
+msgstr ""
+
+#. Description of the theme
+msgid "Modified Understrap Theme"
+msgstr ""
+
+#: 404.php:47
+msgid "Most Used Categories"
+msgstr ""
+
+#: inc/custom-comments.php:24
+msgid "Name"
+msgstr ""
+
+#: comments.php:66 comments.php:96
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: sidebar-hero.php:34
+msgid "Next"
+msgstr ""
+
+#: inc/extras.php:101
+msgctxt "Next post link"
+msgid "%title&nbsp;<i class=\"fa fa-angle-right\"></i>"
+msgstr ""
+
+#: inc/customizer.php:103
+msgid "No sidebar"
+msgstr ""
+
+#: loop-templates/content-none.php:16
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/custom-comments.php:49
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: 404.php:29
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: page-contact.php:50
+msgid "Opening Hours:"
+msgstr ""
+
+#: page-contact.php:149
+msgid "Opening hours:"
+msgstr ""
+
+#: loop-templates/content-single.php:29 loop-templates/content-page.php:25
+#: loop-templates/content.php:37
+msgid "Pages:"
+msgstr ""
+
+#: author.php:65
+msgid "Permanent Link:"
+msgstr ""
+
+#: page-contact.php:26 page-contact.php:137
+msgid "Phone:"
+msgstr ""
+
+#: inc/template-tags.php:30
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:26
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/extras.php:93
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:47
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: author.php:53
+msgid "Posts by"
+msgstr ""
+
+#: sidebar-hero.php:26
+msgid "Previous"
+msgstr ""
+
+#: inc/extras.php:98
+msgctxt "Previous post link"
+msgid "<i class=\"fa fa-angle-left\"></i>&nbsp;%title"
+msgstr ""
+
+#: inc/setup.php:44
+msgid "Primary Menu"
+msgstr ""
+
+#: author.php:48
+msgid "Profile"
+msgstr ""
+
+#: inc/setup.php:122
+msgid "Read More..."
+msgstr ""
+
+#: inc/widgets.php:53
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/customizer.php:100
+msgid "Right sidebar"
+msgstr ""
+
+#. Name of the template
+msgid "Right Sidebar Layout"
+msgstr ""
+
+#: searchform.php:10 searchform.php:16
+msgid "Search"
+msgstr ""
+
+#: searchform.php:13
+msgid "Search &hellip;"
+msgstr ""
+
+#. translators:
+#: search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/customizer.php:93
+msgid ""
+"Set sidebar's default position. Can either be: right, left, both or none. "
+"Note: this can be overridden on individual pages."
+msgstr ""
+
+#: inc/customizer.php:92
+msgid "Sidebar Positioning"
+msgstr ""
+
+#: loop-templates/content-none.php:27
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/template-tags.php:52
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/customizer.php:37
+msgid "Theme Layout Settings"
+msgstr ""
+
+#. %1$s: smiley
+#: 404.php:68
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#. Name of the theme
+msgid "Veartix StartPC"
+msgstr ""
+
+#. Name of the template
+msgid "Warranty Page Template"
+msgstr ""
+
+#: author.php:41 inc/custom-comments.php:30
+msgid "Website"
+msgstr ""
+
+#: woocommerce/content-single-product.php:77
+msgid "אחריות:"
+msgstr ""
+
+#: woocommerce/content-single-product.php:89
+msgid "אתר היצרן:"
+msgstr ""
+
+#: woocommerce/content-single-product.php:83
+msgid "זמן משלוח:"
+msgstr ""
